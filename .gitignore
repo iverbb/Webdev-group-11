@@ -1,0 +1,14 @@
+.idea/
+target/
+*.iml
+**/node_modules
+*.class
+*.log
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.doc
