@@ -4,6 +4,6 @@
 ## Made by:
 Iver Baardsgaard Brønstad<br>
 Nora Kastellet<br>
-Hedvig Kvassheim<br>
+Hedvig Bjørnsdatter Kvassheim<br>
 Parisa Ebadat<br>
 Vilde sdfjkjsf
