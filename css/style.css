@@ -12,3 +12,26 @@ section {
 
 h1 {
 }
+
+#map {
+
+}
+
+#mapContainer {
+  position: relative;
+  height: 1200px;
+  width: 791px;
+}
+
+.marker {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-image: url("../img/marker.png");
+  background-size: cover;
+  /* top: 2px;
+  left: 91px;*/
+  opacity: 1.0;
+  -moz-opacity: 1.0;
+  -webkit-opacity: 1.0;
+}
