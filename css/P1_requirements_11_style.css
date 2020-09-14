@@ -77,3 +77,17 @@ a:visited{
 a:hover {
     color: hotpink;
 }
+
+nav {
+  position: relative;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  font-size: 4vh;;
+  padding-bottom: 1vh;
+}
+
+#logo {
+  max-width: 20%;
+}
