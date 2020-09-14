@@ -89,8 +89,8 @@ nav {
   /*font-size: 4vh;*/
   /*padding-bottom: 1vh;*/
   /*margin-left: 0;*/
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.02);
-  /*background: linear-gradient(180deg, rgba(2,0,46,1) 0%,rgba(9,9,121,0.5) 35%, rgba(255,255,255,0) 100%)*/
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.05);
+  /*background: linear-gradient(180deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0.95) 50%, rgba(255,255,255,0.9) 100%)*/
 }
 
 #logo {
