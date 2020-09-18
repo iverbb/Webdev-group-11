@@ -134,6 +134,28 @@
       We are also exploring the possibility of making several filtering functions – chronologically, alphabetical, programmatic, scale and status.
       We would also like to try to include a map showing where the buildings are located.
     </p>
+    <h3>Project Detail View</h3>
+    <p>
+      A page template for displaying images in details, should be able to automatically
+      generate a page from given input image(s) and text. Likely to use URLs with query
+      string to make room for extension to accomodate future images. This will require a
+      javascript function that can draw a reasonable pageview for a single page given
+      the ID of a project as a URL.
+    </p>
+    <h3>Project map</h3>
+    <p>
+      Create an interactive map in which projects can be displayed on a map of the
+      Stavanger area. Requires a javascript function that can take a coordinate, one
+      or more images, and draw a marker on a map. This marker should contain an URL
+      to a project page.
+    </p>
+    <h3>Project Data</h3>
+    <p>
+      Although not a visible part of the website the storage of project data will be done via
+      a JSON object, in which each project will be anotated with an ID, a name, one or more
+      images, an optional text description, as well as optional coordinates(projects without
+      coordinates will not be displayed on the map).
+    </p>
     <h3>Header</h3>
     <p>
       The header needs to include all of these pages, as well as the logo, at all times.
@@ -224,12 +246,33 @@
       A possibility is to make a script in some other language to be run on the backend, if we want to make updates as easy as possible for the client. However, it still constitutes a break in automation.
       It might be possible to port the website to some backend framework after course conclusion, but this might require some extra effort. A backend server is therefore not the priority throughout the course, but more of a possible alternative later on.
     </p>
+
     <p>
-      Prefilled emails opened in the user’s own email software could be a possibility, but it is still less practical than simply having an application stored directly on the website, or sent as email directly from form completion.
-      Also, handling custom url queries might prove challenging.
-      The thought of having a map could be challenging. Adjusting map view coordinates to real coordinates might be somewhat challenging, especially with respect to map size increases. One option is to use a large map and zoom it.
-      This might cause loading issues, if the image is large. Might be worth looking into making a stylized map in svg.
-      The same concern regarding loading time could happen with potential videos, gifs or other animation on the website.
+      Prefilled emails opened in the user’s own email software could be a possibility, but it
+      is still less practical than simply having an application stored directly on the website,
+      or sent as email directly from form completion.
+      Handling custom url queries might prove challenging, and it is not a given that
+      making a template that can easily handle varying number of images in varying shapes
+      and sizes is a straight forward task either.
+      The thought of having a map could be challenging. Adjusting map view coordinates
+      to real coordinates might be somewhat challenging, especially with respect to map
+      size increases. One option is to use a large map and zoom it.
+      It's also worth noting that obtaining an aesthetically pleasing and fitting map in and
+      of itself might be a challenging task. Google map api or similar both require frameworks
+      and work on a pay per click basis, and while the rate is generally low it likely won't
+      be acceptable for the course in any way shape or form. It is also not given that a standard
+      map would fit, either in color, or in terms of level of detail.
+      <br/>
+      This might cause loading issues, if the image is large. Might be worth looking into
+      making a stylized map in svg. The same concern regarding loading time could happen
+      with potential videos, gifs or other animation on the website.
+    </p>
+
+    <p>
+      Another challenge might be to find a way to create a reasonable design for smaller
+      viewports, seeing as images and design play such a central role in the function of
+      the website. As such there might be a need for relatively large modifications to
+      the website when viewed on phones.
     </p>
   </section>
   <hr>
