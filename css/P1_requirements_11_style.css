@@ -53,11 +53,10 @@ h3 {
 }
 
 h4, h5 {
-    line-height: 3px;
     font-size: 18px;
     font-weight: normal;
     text-align: right;
-    line-height: 110%;
+    line-height: 115%;
 }
 
 h5 {
