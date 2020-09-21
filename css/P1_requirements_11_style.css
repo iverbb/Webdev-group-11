@@ -107,3 +107,28 @@ footer {
     bottom: 0;
     margin-bottom: 20px;
 }
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  padding-left: 10px;
+  word-wrap: break-word;
+  line-height: 2ch;
+}
+
+th {
+  text-align: left;
+  padding-left: 10px;
+}
+
+td + td {
+  padding-top: 1ch;
+}
+/* Cool stuff to come
+.filelist {
+  list-style: none;
+}
+*/
