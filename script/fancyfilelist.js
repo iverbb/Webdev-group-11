@@ -9,13 +9,14 @@ function populateList(parent, json) {
                 if (typeof(x) === "object" && x !== null) {
                     let folderName       = Object.keys(x)[0];
                     let folderNode       = decorate(folderName, "../img/foldericon.png");
-                    let listNode         = document.createElement("ul");
-                    let folderImage      = document.createElement("img");
-                    listNode.className   = "filelist";
 
+                    let listNode         = document.createElement("ul");
+                    listNode.className   = "filelist";
                     populateList(listNode, x);
+
                     folderNode.appendChild(listNode);
                     parent.appendChild(folderNode);
+
                 } else {
                     parent.appendChild(decorate(x, selectImg(x)));
                 }
@@ -73,6 +74,8 @@ function selectImg(path) {
         return ("nA: " + parts[0]);
     }
 }
+
+//TODO: create file tooltip function
 
 let filelist = document.getElementById("filelist");
 

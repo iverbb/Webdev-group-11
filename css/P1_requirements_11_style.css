@@ -132,8 +132,15 @@ td + td {
   list-style: none;
 }
 
+.file {
+  margin: auto;
+}
 .file>p {
   margin-bottom: 0;
   margin-top: 0;
 }
 
+.file>img {
+  padding-right: 10px;
+  margin-top: auto;
+}
