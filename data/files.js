@@ -1,0 +1,44 @@
+data = { "filelist" :
+         [ { "html/" :
+             [ "home.html"
+               , "about.html"
+               , "currentprojects.html"
+               , "pastprojects.html"
+               , "ideas.html"
+               , "location.html"
+               , "projectview.html"
+               , "whatitislike.html"
+             ]
+           }
+           , { "css/" :
+               [ "style.css"
+               ]
+             }
+           , { "img/" :
+               [ "project1.png"
+                 , "project2_1.png"
+                 , "project2_2.png"
+                 , "projectn.png"
+                 , "logo.png"
+                 , "forside.png"
+                 , "marker.png"
+                 , "map.png"
+                 , "staffn.png"
+                 , "readme.md"
+               ]
+             }
+           , { "script/" :
+               [ "map.js"
+                 , "customview.js"
+                 , "galleryfilter.js"
+                 , "navbar.js"
+               ]
+             }
+           , { "data/" :
+               [ "data.js"
+                 , "readme.md"
+               ]
+             }
+           , "readme.md"
+         ]
+       };

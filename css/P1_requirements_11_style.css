@@ -131,3 +131,9 @@ td + td {
 .filelist {
   list-style: none;
 }
+
+.file>p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
