@@ -7,7 +7,8 @@ function populateList(parent, json) {
         value.forEach(x =>
             {
                 if (typeof(x) === "object" && x !== null) {
-                    let folderNode       = decorate("folder", "../img/foldericon.png");
+                    let folderName       = Object.keys(x)[0];
+                    let folderNode       = decorate(folderName, "../img/foldericon.png");
                     let listNode         = document.createElement("ul");
                     let folderImage      = document.createElement("img");
                     listNode.className   = "filelist";
@@ -74,4 +75,6 @@ function selectImg(path) {
 }
 
 let filelist = document.getElementById("filelist");
+
+// Requires data.js to be invoked in html to work
 populateList(filelist, data);
