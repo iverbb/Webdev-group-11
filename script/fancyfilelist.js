@@ -10,14 +10,17 @@ function populateList(parent, json) {
         let folderName       = folder.name;
         let folderNode       = decorate(folderName);
         let folderList       = document.createElement("ul");
+        let folderId         = folder.name+"List";
+
         folderList.className = "filelist";
+        folderList.id        = folderId;
+        folderList.style.display = "block";
+        console.log(folderList.id);
 
         folder.files.forEach(file =>
-            { console.log(file);
-              let listNode         = document.createElement("ul");
-              listNode.className   = "filelist";
-              populateList(listNode, file);
-              folderList.appendChild(listNode);
+            { //console.log(file);
+              // Recursion, if this step makes sense to you then you're doing solidly
+              listNode = populateList(folderList, file);
             });
         folderNode.appendChild(folderList);
 
@@ -25,6 +28,19 @@ function populateList(parent, json) {
     }
 }
 
+function listToggle(name) {
+    let toggleFolder  = document.getElementById(name + "List");
+    let toggleTitle   = document.getElementById(name + "Title");
+    let displayStatus = toggleFolder.style.display;
+
+    if (displayStatus == "block") {
+        toggleFolder.style.display = "none";
+        toggleTitle.innerText      = name + "...";
+    } else {
+        toggleFolder.style.display = "block";
+        toggleTitle.innerText      = name;
+    }
+}
 
 
 function decorate(name) {
@@ -32,6 +48,8 @@ function decorate(name) {
 
     let content       = document.createElement("div");
     content.className = "file";
+    content.addEventListener("click", () => { listToggle(name); });
+
 
     let nodeImage    = document.createElement("img");
     nodeImage.src    = selectImg(name);
@@ -39,6 +57,7 @@ function decorate(name) {
     content.appendChild(nodeImage);
 
     let nodeName     = document.createElement("p");
+    nodeName.id      = name + "Title";
     nodeName.innerText = name;
     nodeName.style.display = "inline-block";
     content.appendChild(nodeName);
