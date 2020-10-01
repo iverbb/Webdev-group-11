@@ -2,38 +2,39 @@
 // makes for some nice javascript practice though, learnt how to recurse an object, which is nice.
 
 function populateList(parent, json) {
-    for (let key in json) {
-        let value = json[key];
-        value.forEach(x =>
-            {
-                if (typeof(x) === "object" && x !== null) {
-                    let folderName       = Object.keys(x)[0];
-                    let folderNode       = decorate(folderName, "../img/foldericon.png");
+    if (json.file) {
+        let file = json.file;
+        parent.appendChild(decorate(file.name));
+    } else if (json.folder) {
+        let folder           = json.folder;
+        let folderName       = folder.name;
+        let folderNode       = decorate(folderName);
+        let folderList       = document.createElement("ul");
+        folderList.className = "filelist";
 
-                    let listNode         = document.createElement("ul");
-                    listNode.className   = "filelist";
-                    populateList(listNode, x);
+        folder.files.forEach(file =>
+            { console.log(file);
+              let listNode         = document.createElement("ul");
+              listNode.className   = "filelist";
+              populateList(listNode, file);
+              folderList.appendChild(listNode);
+            });
+        folderNode.appendChild(folderList);
 
-                    folderNode.appendChild(listNode);
-                    parent.appendChild(folderNode);
-
-                } else {
-                    parent.appendChild(decorate(x, selectImg(x)));
-                }
-            }
-        );
+        parent.appendChild(folderNode);
     }
-    //console.log(value);
 }
 
-function decorate(name, image) {
+
+
+function decorate(name) {
     let singularNode = document.createElement("li");
 
     let content       = document.createElement("div");
     content.className = "file";
 
     let nodeImage    = document.createElement("img");
-    nodeImage.src    = image;
+    nodeImage.src    = selectImg(name);
     nodeImage.style.width  = "25px";
     content.appendChild(nodeImage);
 
@@ -71,7 +72,7 @@ function selectImg(path) {
         return ("../img/imgicon.png");
         break;
     default:
-        return ("nA: " + parts[0]);
+        return ("../img/foldericon.png");
     }
 }
 
