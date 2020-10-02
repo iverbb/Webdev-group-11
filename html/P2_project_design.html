@@ -134,25 +134,121 @@
           <th>Deadline</th>
         </tr>
         <tr>
-          <td>hjem.html</td>
+          <td>html/hjem.html</td>
           <td>default landing page</td>
           <td>Ola Nordmann</td>
           <td>Sometime this autumn</td>
         </tr>
         <tr>
-          <td>enkeltprojekt.html</td>
+          <td>html/enkeltprojekt.html</td>
           <td>A template for viewing projects in greater detail</td>
           <td>Iver</td>
           <td>tbd</td>
         </tr>
         <tr>
-          <td>beliggenhet.html</td>
+          <td>html/prosjekt_kronologisk.html</td>
+          <td>html page dedicated to showing a gallery of projects sorted chronologically</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>html/prosjekt_prosjekttype</td>
+          <td>gallery displaying projects that can be filtered according to category(shed, house,               private, public, etc.)</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>html/prosjekt_ideer</td>
+          <td>A gallery of not yet realized projects</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>html/prosjekt_beliggenhet.html</td>
           <td>An interactive map for viewing projects completed in the Stavanger area</td>
           <td>Iver</td>
           <td>tbd</td>
         </tr>
         <tr>
-          <td>map.js</td>
+          <td>html/om_oss.html</td>
+          <td>A page describing the company</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>html/kontakt.html</td>
+          <td>A page dedicated to contact information</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr><!-- Here to give some space between filetypes, for readability -->
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+        </tr>
+        <tr>
+          <td>css/main.css</td>
+          <td>Defines the overall layout of the page</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/hjem.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/prosjekt.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/paa_tegnebordet.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/om_oss.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/kontakt.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/galleri.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/kart.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>css/enkeltprosjekt.css</td>
+          <td>additional design elements relevant for homepage.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr><!-- Here to give some space between filetypes, for readability -->
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+        </tr>
+        <tr>
+          <td>script/kart.js</td>
           <td>
             A function/script for displaying interactive markers on a map, with image
             displayed on hover, as well as appropriate link to detail view.
@@ -161,20 +257,83 @@
           <td>tbdd(kinda done tbh.)</td>
         </tr>
         <tr>
-          <td>enkeltprosjekt.js</td>
+          <td>script/enkeltprosjekt.js</td>
           <td>
             given a project id as querystring: fetch appropriate project data(images,
-            description, title++), and fill out projectdetail.html.
+            description, title++), and fill out html/enkeltprosjekt.html.
           </td>
           <td>Iver</td>
           <td>tbd</td>
         </tr>
         <tr>
+          <td>script/marg.js</td>
+          <td>Adds headers and footers to all pages</td>
           <td></td>
+          <td>tbd</td>
+        </tr>
+        <tr>
+          <td>script/kronologi.js</td>
+          <td>creates an interactive timeline of the company from birth to present date.</td>
           <td></td>
+          <td>tbd</td>
+        </tr>
+        <tr>
+          <td>script/laster.js</td>
+          <td>Display an animation/gif while loading page</td>
           <td></td>
           <td></td>
         </tr>
+        <tr>
+          <td>script/galleri.js</td>
+          <td>Display a gallery of images based on selection criteria</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>script/gallerimeny.js</td>
+          <td>Simple floating drop menu that filters the project gallery</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr><!-- Here to give some space between filetypes, for readability -->
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+        </tr>
+        <tr>
+          <td>img/stavanger.png</td>
+          <td>A stylized map over Stavanger on which to display projects by locality</td>
+          <td>Parisa</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>img/markoer.png</td>
+          <td>A fitting location marker for the projects on the map</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr><!-- Here to give some space between filetypes, for readability -->
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+          <td><br/></td>
+        </tr>
+        <tr>
+          <td>data/prosjektlist.js</td>
+          <td>A javascript object in which to store project data like descriptions, image paths,
+          locations, production dates, etc.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>readme.md</td>
+          <td>A file explaining data formatting to future users</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+
       </table>
     </section>
     <hr/>
