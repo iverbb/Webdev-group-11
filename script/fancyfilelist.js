@@ -50,7 +50,6 @@ function decorate(name) {
     content.className = "file";
     content.addEventListener("click", () => { listToggle(name); });
 
-
     let nodeImage    = document.createElement("img");
     nodeImage.src    = selectImg(name);
     nodeImage.style.width  = "25px";
@@ -65,6 +64,7 @@ function decorate(name) {
     singularNode.appendChild(content);
     return singularNode;
 }
+
 
 function selectImg(path) {
     let parts = path.split(".");

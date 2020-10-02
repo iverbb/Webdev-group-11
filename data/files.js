@@ -38,7 +38,32 @@ data = { "folder" :
                  "description" : "Stylesheets",
                  "files" :
                  [ { "file" :
-                     { "name" : "style.css",
+                     { "name" : "main.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                       { "name" : "home.css",
+                         "description" : ""
+                       }
+                   },
+                   { "file" :
+                     { "name" : "project.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "paategnebordet.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "aboutus.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "contact.css",
                        "description" : ""
                      }
                    },
