@@ -115,6 +115,7 @@ table {
 
 td {
   padding-left: 10px;
+  padding-right: 20px;
   word-wrap: break-word;
   line-height: 2ch;
 }
