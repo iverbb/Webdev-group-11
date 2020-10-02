@@ -7,28 +7,28 @@ data = { "folder" :
                  "description" : "HTML webpages and templates",
                  "files" :
                  [ { "file" :
-                     { "name" : "home.html",
+                     { "name" : "hjem.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "about.html",
+                     { "name" : "prosjekter.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "currentprojects.html",
+                     { "name" : "paa_tegnebordet.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "pastprojects.html",
+                     { "name" : "om_oss.html",
                        "description" : ""}},
                    { "file" :
                      { "name" : "ideas.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "location.html",
+                     { "name" : "beliggenhet.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "projectview.html",
+                     { "name" : "dypdykk.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "whatitislike.html",
+                     { "name" : "kontakt.html",
                        "description" : ""}},
                  ]
                }
@@ -43,12 +43,12 @@ data = { "folder" :
                      }
                    },
                    { "file" :
-                       { "name" : "home.css",
+                       { "name" : "hjem.css",
                          "description" : ""
                        }
                    },
                    { "file" :
-                     { "name" : "project.css",
+                     { "name" : "prosjekt.css",
                        "description" : ""
                      }
                    },
@@ -58,12 +58,12 @@ data = { "folder" :
                      }
                    },
                    { "file" :
-                     { "name" : "aboutus.css",
+                     { "name" : "om_oss.css",
                        "description" : ""
                      }
                    },
                    { "file" :
-                     { "name" : "contact.css",
+                     { "name" : "kontakt.css",
                        "description" : ""
                      }
                    },
