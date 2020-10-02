@@ -1,0 +1,147 @@
+header {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+}
+
+body {
+    background-color: white;
+    color: #767676;   //#222211
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 200%;
+}
+
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 20%;
+}
+
+hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 10%;
+    border: 0.1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+p, ul {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+h1 {
+    font-size: 300%; /* how to fill out the width where the title should be and felxible size to different screen sizes*/
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4, h5 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: right;
+    line-height: 115%;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+#title {
+    margin-bottom: 50px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #222211;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 95px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .05);
+}
+
+#kontor {
+    max-width: 100%;
+}
+
+#logo {
+    height: 45px;
+    margin-left: 10.35%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer {
+    font-size: 16px;
+    color: darkgray;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  padding-left: 10px;
+  padding-right: 20px;
+  word-wrap: break-word;
+  line-height: 2ch;
+}
+
+th {
+  text-align: left;
+  padding-left: 10px;
+}
+
+td + td {
+  padding-top: 1ch;
+}
+
+.filelist {
+  list-style: none;
+}
+
+.file {
+  margin: auto;
+}
+.file>p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.file>img {
+  padding-right: 10px;
+  margin-top: auto;
+}
