@@ -201,3 +201,11 @@ td + td {
 #mobile {
     max-width: 50%;
 }
+
+#arbeidsfordeling>th,td {
+    border: 1px solid;
+    border-color: darkgray;
+    border-collapse: collapse;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
