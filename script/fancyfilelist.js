@@ -73,25 +73,25 @@ function selectImg(path) {
         return ("folder: " + parts[0]);
         break;
     case "js":
-        return ("../img/p2/javascripticon.png");
+        return ("../img/P2/javascripticon.png");
         break;
     case "css":
-        return ("../img/p2/cssicon.png");
+        return ("../img/P2/cssicon.png");
         break;
     case "html":
-        return ("../img/p2/htmlicon.png");
+        return ("../img/P2/htmlicon.png");
         break;
     case "md":
-        return ("../img/p2/mdicon.png");
+        return ("../img/P2/mdicon.png");
         break;
     case "png":
-        return ("../img/p2/imgicon.png");
+        return ("../img/P2/imgicon.png");
         break;
     case "jpg":
-        return ("../img/p2/imgicon.png");
+        return ("../img/P2/imgicon.png");
         break;
     default:
-        return ("../img/p2/foldericon.png");
+        return ("../img/P2/foldericon.png");
     }
 }
 
