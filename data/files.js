@@ -22,14 +22,12 @@ data = { "folder" :
                      { "name" : "prosjekt_ideer.html",
                        "description" : ""}},
                    { "file" :
-<<<<<<< HEAD
                      { "name" : "prosjekt_beliggenhet.html",
                        "description" : ""}},
                    { "file" :
                      { "name" : "paa_tegnebordet.html",
-=======
+                       "description" : ""}},
                      { "name" : "ideer.html",
->>>>>>> 9cd9c75... added script descriptions and minimum requirements
                        "description" : ""}},
                    { "file" :
                      { "name" : "om_oss.html",
