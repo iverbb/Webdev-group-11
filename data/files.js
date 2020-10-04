@@ -10,7 +10,19 @@ data = { "folder" :
                      { "name" : "hjem.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "prosjekter.html",
+                     { "name" : "enkeltprosjekt.html",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "prosjekt_prosjekttype.html",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "prosjekt_kronologisk.html",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "prosjekt_ideer.html",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "prosjekt_beliggenhet.html",
                        "description" : ""}},
                    { "file" :
                      { "name" : "paa_tegnebordet.html",
@@ -19,17 +31,11 @@ data = { "folder" :
                      { "name" : "om_oss.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "ideas.html",
-                       "description" : ""}},
-                   { "file" :
-                     { "name" : "beliggenhet.html",
-                       "description" : ""}},
-                   { "file" :
                      { "name" : "dypdykk.html",
                        "description" : ""}},
                    { "file" :
                      { "name" : "kontakt.html",
-                       "description" : ""}},
+                       "description" : ""}}
                  ]
                }
              },
