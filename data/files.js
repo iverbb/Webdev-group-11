@@ -73,6 +73,21 @@ data = { "folder" :
                        "description" : ""
                      }
                    },
+                   { "file" :
+                     { "name" : "galleri.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "kart.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "enkeltprosjekt.css",
+                       "description" : ""
+                     }
+                   }
                  ]
                }
              },
