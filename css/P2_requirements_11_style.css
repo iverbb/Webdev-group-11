@@ -37,7 +37,7 @@ ul {
 }
 
 h1 {
-    font-size: 300%; /* how to fill out the width where the title should be and felxible size to different screen sizes*/
+    font-size: 300%; /* how to fill out the width where the title should be and flexible size to different screen sizes*/
     text-transform: uppercase;
     text-align: right;
     line-height: 100%;
@@ -203,9 +203,12 @@ td + td {
 }
 
 #arbeidsfordeling>th,td {
-    border: 1px solid;
-    border-color: darkgray;
+    border: 1px solid darkgray;
     border-collapse: collapse;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+#undertittel {
+    font-size: 14px;
 }
