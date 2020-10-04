@@ -151,7 +151,6 @@ data = { "folder" :
                  "files" :
                  [ { "file" :
                      { "name" : "kart.js",
-<<<<<<< HEAD
                        "description" : ""}},
                    { "file" :
                      { "name" : "enkeltprosjekt.js",
@@ -161,7 +160,6 @@ data = { "folder" :
                        "description" : ""}},
                    { "file" :
                      { "name" : "tidslinje.js",
-=======
                        "description" : ""}},
                    { "file" :
                      { "name" : "enkeltprosjekt.js",
@@ -177,7 +175,6 @@ data = { "folder" :
                        "description" : ""}},
                    { "file" :
                      { "name" : "marg.js",
->>>>>>> 9cd9c75... added script descriptions and minimum requirements
                        "description" : ""}},
                    { "file" :
                      { "name" : "laster.js",
