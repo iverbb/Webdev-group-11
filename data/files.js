@@ -123,6 +123,9 @@ data = { "folder" :
                    { "file" :
                      { "name" : "navbar.js",
                        "description" : ""}},
+                   { "file" :
+                     { "name" : "enkeltprosjekt.js",
+                       "description" : ""}}
                  ]
                }
              },
