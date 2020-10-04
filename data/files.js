@@ -105,7 +105,7 @@ data =
           "description" : "images of various kinds",
           "files" :
           [ { "file" :
-              { "name" : "prosjekt1.png",
+              { "name" : "prosjektx.png",
                 "description" : ""}},
             { "file" :
               { "name" : "project2_1.png",
@@ -130,6 +130,9 @@ data =
                 "description" : ""}},
             { "file" :
               { "name" : "ansattx.png",
+                "description" : ""}},
+            { "file" :
+              { "name" : "laster.gif",
                 "description" : ""}},
             { "file" :
               { "name" : "readme.md",
@@ -161,6 +164,9 @@ data =
                 "description" : ""}},
             { "file" :
               { "name" : "gallerimeny.js",
+                "description" : ""}},
+            { "file" :
+              { "name" : "mobilmeny.js",
                 "description" : ""}},
             { "file" :
               { "name" : "marg.js",
