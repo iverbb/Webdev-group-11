@@ -22,16 +22,20 @@ data = { "folder" :
                      { "name" : "prosjekt_ideer.html",
                        "description" : ""}},
                    { "file" :
+<<<<<<< HEAD
                      { "name" : "prosjekt_beliggenhet.html",
                        "description" : ""}},
                    { "file" :
                      { "name" : "paa_tegnebordet.html",
+=======
+                     { "name" : "ideer.html",
+>>>>>>> 9cd9c75... added script descriptions and minimum requirements
                        "description" : ""}},
                    { "file" :
                      { "name" : "om_oss.html",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "dypdykk.html",
+                     { "name" : "enkeltprosjekt.html",
                        "description" : ""}},
                    { "file" :
                      { "name" : "kontakt.html",
@@ -54,17 +58,32 @@ data = { "folder" :
                        }
                    },
                    { "file" :
-                     { "name" : "prosjekt.css",
+                     { "name" : "prosjekter.css",
                        "description" : ""
                      }
                    },
                    { "file" :
-                     { "name" : "paategnebordet.css",
+                     { "name" : "paa_tegnebordet.css",
                        "description" : ""
                      }
                    },
                    { "file" :
                      { "name" : "om_oss.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "ideer.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "beliggenhet.css",
+                       "description" : ""
+                     }
+                   },
+                   { "file" :
+                     { "name" : "enkeltprosjekt.css",
                        "description" : ""
                      }
                    },
@@ -96,7 +115,7 @@ data = { "folder" :
                  "description" : "images of various kinds",
                  "files" :
                  [ { "file" :
-                     { "name" : "project1.png",
+                     { "name" : "prosjekt1.png",
                        "description" : ""}},
                    { "file" :
                      { "name" : "project2_1.png",
@@ -114,13 +133,13 @@ data = { "folder" :
                      { "name" : "forside.png",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "marker.png",
+                     { "name" : "markoer.png",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "map.png",
+                     { "name" : "kart.png",
                        "description" : ""}},
                    { "file" :
-                     { "name" : "staffn.png",
+                     { "name" : "ansattx.png",
                        "description" : ""}},
                    { "file" :
                      { "name" : "readme.md",
@@ -134,6 +153,7 @@ data = { "folder" :
                  "files" :
                  [ { "file" :
                      { "name" : "kart.js",
+<<<<<<< HEAD
                        "description" : ""}},
                    { "file" :
                      { "name" : "enkeltprosjekt.js",
@@ -143,6 +163,23 @@ data = { "folder" :
                        "description" : ""}},
                    { "file" :
                      { "name" : "tidslinje.js",
+=======
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "enkeltprosjekt.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "bildeviser.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "galleri.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "gallerimeny.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "marg.js",
+>>>>>>> 9cd9c75... added script descriptions and minimum requirements
                        "description" : ""}},
                    { "file" :
                      { "name" : "laster.js",
