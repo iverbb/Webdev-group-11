@@ -112,19 +112,25 @@ data = { "folder" :
                  "description" : "Scripts for interactive content",
                  "files" :
                  [ { "file" :
-                     { "name" : "map.js",
-                       "description" : ""}},
-                   { "file" :
-                     { "name" : "customview.js",
-                       "description" : ""}},
-                   { "file" :
-                     { "name" : "galleryfilter.js",
-                       "description" : ""}},
-                   { "file" :
-                     { "name" : "navbar.js",
+                     { "name" : "kart.js",
                        "description" : ""}},
                    { "file" :
                      { "name" : "enkeltprosjekt.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "marg.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "tidslinje.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "laster.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "galleri.js",
+                       "description" : ""}},
+                   { "file" :
+                     { "name" : "gallerimeny.js",
                        "description" : ""}}
                  ]
                }
