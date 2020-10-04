@@ -7,5 +7,5 @@
     Nora Kastellet
     Hedvig Bjørnsdatter Kvassheim
     Parisa Ebadat
-    Vilde sdfjkjsf
+    Vilde Aurora Halle Tvedten
 date:07/09/20
