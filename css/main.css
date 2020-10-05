@@ -42,3 +42,5 @@ h6{
     font-size: 16pt;
     font-style: book;
 }
+
+/* We should probably use divs and classes for some of these, instead of headers (different paragraph styles)*/
