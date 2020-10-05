@@ -1,1 +1,44 @@
-//Hedvig, Nora
+/* Hedvig, Nora */
+
+body{
+    background-color: #ffffff;
+}
+
+p, ol, ul, h1, h2, h3, h4, h5, h6{
+    font: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
+}
+
+p, ol, ul{                      
+    font-size: 20pt;
+    font-style: book;
+}
+
+h1{
+    font-size: 24pt;
+    font-style: book;
+}
+
+h2{
+    font-size: 36pt;
+    font-style: demi;
+}
+
+h3{
+    font-size: 18pt;
+    font-style: demi;
+}
+
+h4{
+    font-size: 20pt;
+    font-style: book;
+}
+
+h5{
+    font-size: 18pt;
+    font-style: book;
+}
+
+h6{
+    font-size: 16pt;
+    font-style: book;
+}
