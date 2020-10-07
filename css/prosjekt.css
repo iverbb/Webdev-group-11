@@ -3,27 +3,28 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    justify-content: space-between;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    flex: 30%;
+    max-width: 29.5%;
 }
 
 .column img {
-    margin-top: 8px;
+    margin-top: 18%;
     vertical-align: middle;
     width: 100%;
+    object-fit: cover;
+    height: 45%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
-        max-width: 50%;
+        max-width: 47%;
     }
 }
 
