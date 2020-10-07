@@ -4,46 +4,72 @@ header {
 
 }
 
-body{
+body {
     background-color: #ffffff;
     margin: 5%;
-    font: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
+    font-family: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
+    font-style: normal;
     color: #1c1c1c;
 }
 
-p, ol, ul{                      
-    font-size: 20pt;
-    font-style: book;
-}
-
-h1{
+.navbar {
     font-size: 24pt;
-    font-style: book;
+    color: lightgray;
 }
 
-h2{
-    font-size: 36pt;
-    font-style: demi;
+/* enten navbarline eller lysgrå/mørk*/
+.navbarLine > line {
+    color: #1c1c1c;
 }
 
-h3{
-    font-size: 18pt;
-    font-style: demi;
+.navbarHover {
+    color: #1c1c1c;
 }
 
-h4{
+.dropDown {
+    font-size: 24pt;
+    background-color: white;
+}
+
+.text {
     font-size: 20pt;
-    font-style: book;
 }
 
-h5{
+.textBold {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.textOblique {
+    font-size: 20pt;
+    font-style: oblique;
+}
+
+.textSmaller {
     font-size: 18pt;
-    font-style: book;
 }
 
-h6{
+.mail {
+    font-size: 18pt;
+    font-style: oblique;
+}
+
+.timeline {
     font-size: 16pt;
-    font-style: book;
 }
 
-/* We should probably use divs and classes for some of these, instead of headers (different paragraph styles)*/
+.timelineActive {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
