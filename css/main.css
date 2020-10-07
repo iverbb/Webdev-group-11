@@ -1,12 +1,14 @@
 /* Hedvig, Nora, Vilde */
 
-body{
-    background-color: #ffffff;
-    margin: 5.5%;
+header {
+
 }
 
-p, ol, ul, h1, h2, h3, h4, h5, h6{
+body{
+    background-color: #ffffff;
+    margin: 5%;
     font: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
+    color: #1c1c1c;
 }
 
 p, ol, ul{                      

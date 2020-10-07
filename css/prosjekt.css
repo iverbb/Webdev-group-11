@@ -1,37 +1,17 @@
-/* Hedvig */
 
-.row {
+
+.box-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row;
+    justify-content: flex-start;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 30%;
-    max-width: 29.5%;
+img {
+    width: 30vw;
+    margin-bottom: 0;
 }
 
-.column img {
-    margin-top: 18%;
-    vertical-align: middle;
-    width: 100%;
-    object-fit: cover;
-    height: 45%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 47%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+h2 {
+    align-self: flex-start;
+    width: 25vw;
 }
