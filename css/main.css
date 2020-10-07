@@ -54,6 +54,14 @@ body {
     font-style: oblique;
 }
 
+a:link {
+    color: darkblue;
+}
+
+a:hover {
+    color: hotpink;
+}
+
 .timeline {
     font-size: 16pt;
 }
@@ -72,4 +80,10 @@ h2 {
     font-size: 18pt;
     font-weight: bold;
 }
+
+.footer {
+    font-size: 18pt;
+    color: lightgray;
+}
+
 
