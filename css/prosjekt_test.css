@@ -25,9 +25,19 @@
     flex-direction: column;
     box-sizing: border-box;
     font-size: 18px;
+    margin-bottom: -27px;
+    margin-top: 1%;
+    padding: 0;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+figcaption {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
