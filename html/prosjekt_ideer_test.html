@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+   box-sizing: border-box;
+}
+
+h1 {
+    font-family: h;
+}
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+}
+.inner-grid {
+   flex: 25%;
+   max-width: 33%;
+   padding: 0 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+}
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+}
+</style>
+<body>
+    <h1>Hello</h1>
+    <div class="outer-grid">
+        <div class="inner-grid">
+            <img src="../img/ideer_nabolaget_01.jpg">
+            <img src="../img/ideer_nupark_01.jpg">
+            <img src="../img/ideer_nupark_01.jpg">
+        </div>
+        <div class="inner-grid">
+            <img src="../img/ideer_nabolaget_01.jpg">
+            <img src="../img/ideer_nupark_01.jpg">
+            <img src="../img/ideer_stasjonshallen_01.jpg">
+        </div>
+        <div class="inner-grid">
+            <img src="../img/ideer_nabolaget_01.jpg">
+            <img src="../img/ideer_stasjonshallen_01.jpg">
+            <img src="../img/ideer_nupark_01.jpg">
+        </div>
+    </div>
+</body>
+</html>
