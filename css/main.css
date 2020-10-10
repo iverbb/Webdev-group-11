@@ -12,6 +12,14 @@ body {
     color: #1c1c1c;
 }
 
+section {
+
+}
+
+img {
+    max-width: 100%;
+}
+
 .navbar {
     font-size: 24pt;
     color: lightgray;
