@@ -1,6 +1,6 @@
 //Vilde
 
-// When the user scrolls the page, execute myFunction
+/* When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
@@ -16,4 +16,22 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-}
+}*/
+
+<script>
+document.addEventListener(
+        "DOMContentLoaded", () => {
+            new Mmenu( "#my-menu", {
+                navbars: [{
+                    // first navbar options
+                }, {
+                    // second navbar options
+                }]
+            }, {
+                navbars: {
+                    // navbars configuration
+                }
+            });
+        }
+    );
+</script>

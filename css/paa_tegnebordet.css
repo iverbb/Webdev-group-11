@@ -11,7 +11,7 @@ img {
 }
 
 p {
-    max-width: 40%;
+    max-width: 50%;
     float: right;
     margin: 10px;
     margin-bottom: 100px;
@@ -20,9 +20,10 @@ p {
 .box2, .box3, .box4 {
     clear: right;
     clear: left;
-    max-width: 60%;
-    object-fit: fill;
     float: right;
+    object-fit: cover;
+    width: 70%;
+    height: 400px;
     margin-bottom: 100px;
 }
 
@@ -31,6 +32,16 @@ p.nextto {
     float: left;
     max-width: 20%;
     margin-bottom: 100px;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+  
+.hovertest:hover .nextto {
+    visibility: visible;
+    opacity: 1;
 }
 
 section {

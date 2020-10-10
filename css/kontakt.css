@@ -1,0 +1,36 @@
+
+/* Parisa*/
+
+
+
+
+h1{
+    font: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
+    font-size: 24pt;
+}
+p {
+    color: black;
+    font-family:"Futura PT" ;
+    font-size: 20pt;
+      
+}
+
+.vector {
+   
+   align-items: center;
+    
+
+}
+
+.img {
+   
+    float: right;
+    clear: right;
+    object-fit: none;
+    margin-bottom: 100px;
+    
+ 
+   
+}
+    
+
