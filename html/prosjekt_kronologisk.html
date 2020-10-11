@@ -15,8 +15,17 @@
         img{
             filter: grayscale(100%);
         }
-        img:hover {
+        .bolig{
+            display:none;
+        }
+
+        img:hover{
             filter:none;
+        }
+
+        img:hover + .bolig{
+            filter:none;
+            display: block;
             
         }
         h2{
@@ -24,14 +33,12 @@
             text-align: center;
             margin: 0 auto;
         }
-        p{
-            visibility: hidden;
-        }
+        
     </style>
     <h2>Kronologisk</h2>
     <div class="row">
         <div class="column">
-            <img alt="bolig grandkvartalet bilde 1" src="../img/bolig_grandkvartalet_01.jpg">
+            <img alt="bolig grandkvartalet bilde 1" src="../img/bolig_grandkvartalet_01.jpg" class="image">
             <div class="bolig">
                 <p>
                     tekst tekst tekst
