@@ -15,13 +15,13 @@ body html {
 }
 
 .box-single {
-    flex: 0 0 29.5%;
-    height: 50vh;
+    flex: 0 0 26%;
+    height: 60vh;
     position: relative;
     display: flex;
     align-items: flex-end;
     transition: .4s ease-out;
-    margin-top: 3.5%;
+    margin-top: 6%;
 }
 
 .box-img:hover {
