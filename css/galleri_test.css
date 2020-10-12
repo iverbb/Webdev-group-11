@@ -35,10 +35,9 @@ body html {
     opacity: 1;
 }
 
-.box-single img {
-    width: 100%;
+.box-img {
     height: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -46,13 +45,12 @@ body html {
 }
 
 .box-single .box-caption {
-    position: relative;
+    position: absolute;
     transform: translateY(75px);
     opacity: 0;
 }
 
 .box-single .box-caption-right {
-    position: relative;
     transform: translateY(-15px);
     opacity: 0;
 }
