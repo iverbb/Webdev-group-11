@@ -25,19 +25,17 @@ body html {
 
 .box-img:hover {
     filter: grayscale(0);
+    cursor: pointer;
 }
 
 .box-single:hover .box-caption {
     opacity: 1;
 }
 
-.box-single:hover .box-caption-right {
-    opacity: 1;
-}
-
-.box-img {
+.box-single img {
+    width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -45,15 +43,11 @@ body html {
 }
 
 .box-single .box-caption {
-    position: absolute;
-    transform: translateY(75px);
+    position: relative;
+    transform: translateY(40px);
     opacity: 0;
 }
 
-.box-single .box-caption-right {
-    transform: translateY(-15px);
-    opacity: 0;
-}
 
 /* Responsive layout - makes a two column-layout instead of three columns */
 @media screen and (max-width: 800px) {
