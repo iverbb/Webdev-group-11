@@ -95,6 +95,19 @@ const pages = [
   // Event trigger when the DOM is ready (newer browsers)
   window.onload = () => buildNavbar();
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
 /* When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
