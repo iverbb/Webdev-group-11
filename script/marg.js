@@ -8,7 +8,7 @@ const pages = [
     },
     {
       text: "Prosjekter",
-      endpoint: "prosjekter.html",
+      endpoint: "prosjekt_prosjekttype.html",
     },
     {
       text: "På tegnebordet",
@@ -106,7 +106,7 @@ const pages = [
 
 
 
-  
+
 
 /* When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
