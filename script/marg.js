@@ -36,17 +36,17 @@ document.addEventListener(
     );
 </script>*/
 
-$(function () {
+/*$(function () {
     var bar = '';
     bar += '<nav class="navbar navbar-default" role="navigation">';
     bar += '<div class="container-fluid">';
     bar += '<div>';
     bar += '<ul class="nav navbar-nav">';
-    bar += '<p id="hjem"><a href="hjem.html">Hjem</a></p>';
-    bar += '<p id="prosjekter"><a href="prosjekter.html">Prosjekter</a></p>';
-    bar += '<p id="paa_tegnebordet"><a href="paa_tegnebordet.html">På tegnebordet</a></p>';
-    bar += '<p id="om_oss"><a href="om_oss.html">Om oss</a></p>';
-    bar += '<p id="kontakt"><a href="kontakt.html">Kontakt</a></p>';
+    bar += '<li id="hjem"><a href="hjem.html">Hjem</a></li>';
+    bar += '<li id="prosjekter"><a href="prosjekter.html">Prosjekter</a></li>';
+    bar += '<li id="paa_tegnebordet"><a href="paa_tegnebordet.html">På tegnebordet</a></li';
+    bar += '<li id="om_oss"><a href="om_oss.html">Om oss</a></li>';
+    bar += '<li id="kontakt"><a href="kontakt.html">Kontakt</a></li>';
     bar += '</ul>';
     bar += '</div>';
     bar += '</div>';
@@ -72,4 +72,6 @@ function getValueByName(name) {
             }
         }
     }
-}
+}*/
+
+//Har funnet en ny og enklere løsning!!!!!!!!

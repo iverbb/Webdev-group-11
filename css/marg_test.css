@@ -1,7 +1,7 @@
 /* Style the navbar */
 #main-bar {
     overflow: hidden;
-    background-color: rgb(207, 38, 38);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -10,16 +10,16 @@
   
   /* Navbar links */
   #main-bar a {
-    float: left;
+    float: right;
     display: block;
-    color: #f2f2f2;
+    color: #050505;
     text-align: center;
     text-decoration: none;
   } 
   
   /* Page content */
   .content {
-    padding: 30px;
+    padding: 10px;
   }
   
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -32,4 +32,10 @@
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
   .sticky + .content {
     padding-top: 60px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
