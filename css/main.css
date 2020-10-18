@@ -20,7 +20,7 @@ img {
     max-width: 100%;
 }
 
-.navbar {
+#navbar {
     font-size: 24pt;
     color: lightgray;
 }
@@ -94,5 +94,6 @@ h2 {
 .footer {
     font-size: 18pt;
     color: lightgray;
+    position: absolute;
+    width: 100%;
 }
-

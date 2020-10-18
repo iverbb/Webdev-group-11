@@ -1,5 +1,7 @@
 //Vilde
 
+//navbar
+
 // pages added to navbar as links
 const pages = [
     {
@@ -36,7 +38,7 @@ const pages = [
   }
   
   /**
-   * Creates an anchor element of a given page with link and content.
+   * Creates an anchor element of a given page with link and content
    * @param {Object} page The page with text and endpoint properties
    * @returns {HTMLAnchorElement} The anchor element
    */
@@ -92,20 +94,55 @@ const pages = [
     pages.forEach((page) => addLinkToElement(page, items));
   }
   
-  // Event trigger when the DOM is ready (newer browsers)
-  window.onload = () => buildNavbar();
+  
 
 
 
 
+//footer
 
 
+//const footer = document.getElementById("footer");
 
+//console.log(footer);
 
+//const text = document.createTextNode("Kontakt oss")
 
+/**email
 
+*function addLinkToElement(email, element) {
+ *   const link = createLinkToPage(email);
+*    element.appendChild(link);
+  }*/
 
+function buildFooter() {
+    /**var x = document.createElement("theFooter");
+    x.setAttribute("id", "myFooter");
+    document.body.appendChild(x);
 
+    var y = document.createElement("P");
+    var kontakt = document.createTextNode("Kontakt");
+    y.appendChild(kontakt);
+
+    document.getElementById("footer").appendChild("y");*/
+    var node = document.getElementById("footer");
+
+    var kontakt = document.createElement("h4");
+    var adresse1 = document.createElement("p");
+    var adresse2 = document.createElement("p");
+
+    kontakt.appendChild(document.createTextNode("tekstitekst"));
+    adresse1.appendChild(document.createTextNode("Avaldsnesgata 95 c \n sadgfjhdsgf"));
+    adresse2.appendChild(document.createTextNode("4014 Stavanger"));
+    
+    node.appendChild(kontakt);
+    node.appendChild(adresse1);
+    node.appendChild(adresse2);
+
+}
+
+// Event trigger when the DOM is ready (newer browsers)
+window.onload = () => buildNavbar(), buildFooter();
 
 
 /* When the user scrolls the page, execute myFunction
@@ -143,43 +180,3 @@ document.addEventListener(
         }
     );
 </script>*/
-
-/*$(function () {
-    var bar = '';
-    bar += '<nav class="navbar navbar-default" role="navigation">';
-    bar += '<div class="container-fluid">';
-    bar += '<div>';
-    bar += '<ul class="nav navbar-nav">';
-    bar += '<li id="hjem"><a href="hjem.html">Hjem</a></li>';
-    bar += '<li id="prosjekter"><a href="prosjekter.html">Prosjekter</a></li>';
-    bar += '<li id="paa_tegnebordet"><a href="paa_tegnebordet.html">På tegnebordet</a></li';
-    bar += '<li id="om_oss"><a href="om_oss.html">Om oss</a></li>';
-    bar += '<li id="kontakt"><a href="kontakt.html">Kontakt</a></li>';
-    bar += '</ul>';
-    bar += '</div>';
-    bar += '</div>';
-    bar += '</nav>';
-
-    $("#main-bar").html(bar);
-
-    var id = getValueByName("id");
-    $("#" + id).addClass("active");
-});
-
-function getValueByName(name) {
-    var url = document.getElementById('nav-bar').getAttribute('src');
-    var param = new Array();
-    if (url.indexOf("?") != -1) {
-        var source = url.split("?")[1];
-        items = source.split("&");
-        for (var i = 0; i < items.length; i++) {
-            var item = items[i];
-            var parameters = item.split("=");
-            if (parameters[0] == "id") {
-                return parameters[1];
-            }
-        }
-    }
-}*/
-
-//Har funnet en ny og enklere løsning!!!!!!!!
