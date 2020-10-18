@@ -52,6 +52,7 @@ nav {
     }
 }*/
 
+/*
 
 .hambar {
     display: flex;
@@ -63,7 +64,7 @@ nav {
     overflow: hidden;
     background-color: #333;
     position: relative;*/
-  }
+  /*}
   
   .hambar #links {
     display: flex;
@@ -73,7 +74,7 @@ nav {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     display: block;
     flex-direction: column;
   }
@@ -99,3 +100,59 @@ nav {
   .div {
       padding-left: 16px;
   }
+
+*/
+
+
+
+ .hambar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.hambar #links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hambar a {
+    /*display: inline-block;*/
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.hambar a.icon {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hambar:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    .hambar #links {
+        display:none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hambar #links.show {
+        display:flex;
+    }
+
+    .hambar {
+        display: block;
+    }
+}
