@@ -2,7 +2,7 @@
 
 .vision {
     width: 80%;
-    font-size: 20px; /*lol husker ikke størrelsen eksakt*/
+    font-size: 20px; /*cant remember extact size*/
 }
 
 img {
@@ -31,10 +31,7 @@ hr{
     img{
         width: 80%;
     }
-    .contact_information{
-
-    }
-  }
+}
 
 footer {
     position: absolute;

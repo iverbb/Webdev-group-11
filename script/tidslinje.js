@@ -84,7 +84,7 @@ const projects = [
                 },
                 {
                     fileName: "naering_sok_camping.jpg",
-                    name: "Sokn camping";
+                    name: "Sokn camping",
                     year: "2017",
                 },
             ]
