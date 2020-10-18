@@ -10,6 +10,7 @@ img {
     margin-top: 50px;
     position: relative;
     float:left;
+    margin-bottom: 20px;
 }
 
 hr{
@@ -34,3 +35,10 @@ hr{
 
     }
   }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
