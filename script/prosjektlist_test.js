@@ -1,5 +1,4 @@
-
-data =
+let imageLibrary =
     {
         imagePath: "../img",
         year: "årstall",
@@ -21,3 +20,5 @@ data =
                 },
             ]
     }
+
+export {data};
