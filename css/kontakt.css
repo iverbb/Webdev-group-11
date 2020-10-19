@@ -1,0 +1,43 @@
+
+/* Parisa*/
+
+
+
+h1{
+    font: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
+    font-size: 24pt;
+    
+}
+p {
+    color: black;
+    font-family:"Book" ;
+    font-size: 20pt;
+    
+      
+}
+.vector {
+   
+   
+   width: 100%;
+   object-fit: fill;
+   clear: right;
+   clear: left;
+   
+    
+
+}
+
+.office-img {
+   
+    float: right;
+    object-fit: none;
+    margin-bottom: 100px; 
+    width: 50%;
+    height:400px;
+    object-fit: cover;
+    margin-left: 5%;
+    
+}
+    
+
+@media only screen and (max-width: 940px)
