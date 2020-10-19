@@ -1,1 +1,41 @@
 /* Vilde */
+
+.vision {
+    width: 80%;
+    font-size: 20px; /*cant remember extact size*/
+}
+
+img {
+    width: 50%;
+    margin-top: 50px;
+    position: relative;
+    float:left;
+    margin-bottom: 20px;
+}
+
+hr{
+    border: none;
+}
+
+.contact_information {
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.apply{
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1000px) {
+    img{
+        width: 80%;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

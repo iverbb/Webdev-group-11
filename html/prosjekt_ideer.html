@@ -7,67 +7,70 @@
     <meta charset="utf-8">
     <title>Ideer</title>
     <link href="../css/main.css" rel="stylesheet"/>
-    <link href="../css/prosjekt_test.css" rel="stylesheet"/>
+    <link href="../css/prosjekt_ideer.css" rel="stylesheet"/>
 </head>
 
 <body>
     <header>
-        <!-- modularity, use js for navbar-->
+      <nav id="navbar" onload="buildNavbar()"></nav>
     </header>
     <section>
-        <!-- strict grid for images-->
-
-        <div class="row">
-            <div class="column">
-                <img alt="bolig grandkvartalet bilde 1" src="../img/ideer_nabolaget_01.jpg">
-                <div class="bolig">
-                    <p>
-                        tekst tekst tekst
-                    </p>
-                </div>
-                <img alt="fritidsbolig bergtun" src="../img/ideer_nupark_01.jpg">
-                <div class="bolig">
-                    <p>
-                        tekst tekst tekst
-                    </p>
-                </div>
+        <div class="flex-container">
+            <div class="left">
+               <a href="nabolag">
+                  <img src="../img/ideer_nabolaget_01.jpg">
+               </a>
+               <p class="img_text">
+                  Nabolaget
+               </p>
             </div>
-            <div class="column">
-                <img alt="naering bjergsted" src="../img/ideer_seehus_01.jpg">
-                <div class="bolig">
-                    <p>
-                        tekst tekst tekst
-                    </p>
-                </div>
-                <img alt="mindre bygg brattaasveien" src="../img/ideer_pedersgata_01.jpg">
-                <div class="bolig">
-                    <p>
-                        tekst tekst tekst
-                    </p>
-                </div>
+            <div class="middle">
+               <a href="nupark">
+                  <img src="../img/ideer_nupark_01.jpg">
+               </a>
+               <p class="img_text">
+                  Nupark
+               </p>
             </div>
-            <div class="column">
-                <img alt="naering bjergsted" src="../img/ideer_sola_01.jpg">
-                <div class="bolig">
-                    <p>
-                        tekst tekst tekst
-                    </p>
-                </div>
-                <img alt="mindre bygg brattaasveien" src="../img/ideer_stasjonshallen_01.jpg">
-                <div class="bolig">
-                    <p>
-                        tekst tekst tekst
-                    </p>
-                </div>
+            <div class="right">
+               <a href="stasjonshall">
+                  <img src="../img/ideer_stasjonshallen_01.jpg">
+               </a>
+               <p class="img_text">
+                  Stasjonshallen
+               </p>
             </div>
-        </div>
+            <div class="left">
+               <a href="pedersgata">
+                  <img src="../img/ideer_pedersgata_01.jpg">
+               </a>
+               <p class="img_text">
+                  Pedersgata
+               </p>
+            </div>
+            <div class="middle">
+               <a href="sola">
+                  <img src="../img/ideer_sola_01.jpg">
+               </a>
+               <p class="img_text">
+                  Sola
+               </p>
+            </div>
+            <div class="right">
+               <a href="seehus">
+                  <img src="../img/ideer_seehus_01.jpg">
+               </a>
+               <p class="img_text">
+                  Seehus
+               </p>
+            </div>
         </div>
     </section>
-
     <footer>
         <!-- modularity, use js for footer-->
     </footer>
-</body>
 
+<script src="../script/marg.js" id="navbar"></script>
+</body>
 </html>
 

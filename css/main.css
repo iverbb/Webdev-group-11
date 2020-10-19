@@ -12,7 +12,15 @@ body {
     color: #1c1c1c;
 }
 
-.navbar {
+section {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+#navbar {
     font-size: 24pt;
     color: lightgray;
 }
@@ -78,12 +86,29 @@ h1 {
 
 h2 {
     font-size: 18pt;
-    font-weight: bold;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
 }
 
 .footer {
     font-size: 18pt;
     color: lightgray;
+    position: absolute;
+    width: 100%;
 }
 
-
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */ 
+}
+/* this has to be changed!!*/

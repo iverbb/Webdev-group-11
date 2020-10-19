@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style>
+<!--<style>
 * {
    box-sizing: border-box;
 }
@@ -54,6 +54,122 @@ h1 {
             <img src="../img/ideer_stasjonshallen_01.jpg">
             <img src="../img/ideer_nupark_01.jpg">
         </div>
+    </div>-->
+
+    <style>
+
+      body {
+         margin: 5%;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        background-color: white;
+      }
+      
+      .flex-container > div {
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .left {
+         flex: 30%;
+      }
+
+      .middle {
+         flex: 30%;
+      }
+
+      .right {
+         flex: 30%;
+      }
+
+      .flex-container a {
+         display: flex;
+         width: 100%;
+         height: 400px;
+      }
+
+      img {
+         object-fit: cover;
+         width: 100%
+      }
+
+      p {
+         font-weight: normal;
+      }
+
+      p.img_text {
+         font-family: "Futura PT";
+         font-size: 20px;
+         font-weight: normal;
+         line-height: 0%;
+      }
+
+      @media (max-width: 800px) {
+         .flex-container {
+      flex-direction: column;
+      }
+   }
+
+
+   </style>
+
+    <div class="flex-container">
+      <div class="left">
+         <a href="nabolag">
+            <img src="../img/ideer_nabolaget_01.jpg">
+         </a>
+         <p class="img_text">
+            Nabolaget
+         </p>
+      </div>
+      <div class="middle">
+         <a href="nupark">
+            <img src="../img/ideer_nupark_01.jpg">
+         </a>
+         <p class="img_text">
+            Nupark
+         </p>
+      </div>
+      <div class="right">
+         <a href="stasjonshall">
+            <img src="../img/ideer_stasjonshallen_01.jpg">
+         </a>
+         <p class="img_text">
+            Stasjonshallen
+         </p>
+      </div>
+      <div class="left">
+         <a href="pedersgata">
+            <img src="../img/ideer_pedersgata_01.jpg">
+         </a>
+         <p class="img_text">
+            Pedersgata
+         </p>
+      </div>
+      <div class="middle">
+         <a href="sola">
+            <img src="../img/ideer_sola_01.jpg">
+         </a>
+         <p class="img_text">
+            Sola
+         </p>
+      </div>
+      <div class="right">
+         <a href="seehus">
+            <img src="../img/ideer_seehus_01.jpg">
+         </a>
+         <p class="img_text">
+            Seehus
+         </p>
+      </div>
     </div>
+
 </body>
 </html>

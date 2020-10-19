@@ -3,18 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Prosjekttype</title>
-    <link href="../css/prosjekt.css" rel="stylesheet"/>
     <link href="../css/main.css" rel="stylesheet"/>
+    <link href="../css/prosjekt.css" rel="stylesheet"/>
+    <!--<script type="text/javascript">
+        function setNewImage() {
+            document.getElementById('test').src="../img/bolig_grandkvartalet_01.jpg";
+        }
+        function setOldImage() {
+            document.getElementById('test').src= "../img/bolig_grandkvartalet_BW_01.jpg";
+
+        }
+    </script>-->
 </head>
 <body>
+
+<header>
+    <nav id="navbar" onload="buildNavbar()"></nav>
+</header>
+
+<h2>Prosjekttype</h2>
 <div class="box-grid">
-    <div class="box-flex">
+    <div class="box-single">
+        <div>
+        <!--<img class="box-img" id="test" alt="bilde" onmouseover="setNewImage();" onmouseout="setOldImage();" src="../img/bolig_grandkvartalet_BW_01.jpg" />-->
+        <!--<img class="box-img" id="test" alt="bilde" onmouseover="setNewImage();" onmouseout="setOldImage();" src="../img/bolig_grandkvartalet_01.jpg" />-->
+        <img class="box-img" alt="bilde" src="../img/naering_mellombygget_01.jpg">
+        <div class="box-caption">
+            <p>
+                Næring
+            </p>
+            <p class="box-caption-right"> 1900</p>
+        </div>
+        </div>
+    </div>
+    <div class="box-single">
         <img class="box-img" alt="bilde" src="../img/bolig_grandkvartalet_01.jpg">
-        <h2 class="box-caption">
-            tekst tekst tekst
-        </h2>
+        <div class="box-caption">
+            <p>
+                Bolig
+            </p>
+        </div>
+    </div>
+    <div class="box-single">
+        <img class="box-img" alt="bilde" src="../img/enebolig_forusvaagen_01.jpg">
+        <div class="box-caption">
+            <p>
+                Enebolig
+            </p>
+        </div>
+    </div>
+    <div class="box-single">
+        <img class="box-img" alt="bilde" src="../img/fritidsbolig_bergtun_01.jpg">
+        <div class="box-caption">
+            <p>
+                Fritidsbolig
+            </p>
+        </div>
+    </div>
+    <div class="box-single">
+        <img class="box-img" alt="bilde" src="../img/mindrebygg_brattaasveien_01.jpg">
+        <div class="box-caption">
+            <p>
+                Mindre bygg
+            </p>
+        </div>
+    </div>
+    <div class="box-single">
+        <img class="box-img" alt="bilde" src="../img/ideer_pedersgata_01.jpg">
+        <div class="box-caption">
+            <p>
+                Ideer/Annet??
+            </p>
+        </div>
     </div>
 </div>
-
+<script type="text/javascript" src="../script/bildeviser.js"></script>
+<script type="text/javascript" src="../script/gallerimeny.js"></script>
+<script type="text/javascript" src="../script/galleri.js"></script>
+<script src="../script/marg.js" id="navbar"></script>
 </body>
 </html>
