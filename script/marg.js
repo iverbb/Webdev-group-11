@@ -134,14 +134,24 @@ function buildFooter() {
     var kontakt = document.createElement("h4");
     var adresse1 = document.createElement("p");
     var adresse2 = document.createElement("p");
+    var copyright = document.createElement("p");
 
-    kontakt.appendChild(document.createTextNode("tekstitekst"));
-    adresse1.appendChild(document.createTextNode("Avaldsnesgata 95 c \n sadgfjhdsgf"));
-    adresse2.appendChild(document.createTextNode("4014 Stavanger"));
+    kontakt.classList.add("tit");
+    copyright.classList.add("footer");
+    adresse1.classList.add("adresse1");
+    adresse2.classList.add("adresse2");
+
+
+    kontakt.appendChild(document.createTextNode("Kontakt oss"));
+    adresse1.appendChild(document.createTextNode("Avaldsnesgata 95 c \n 4014 Stavanger"));
+    adresse2.appendChild(document.createTextNode("4014 StavangerT:  51 56 78 30 \n E: firmapost@barkarkitekter.no"));
+    copyright.appendChild(document.createTextNode("© 2020 Group 11"));
     
     node.appendChild(kontakt);
     node.appendChild(adresse1);
     node.appendChild(adresse2);
+    node.appendChild(copyright);
+
 
 }
 

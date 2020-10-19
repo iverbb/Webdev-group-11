@@ -96,6 +96,7 @@ h2 {
     color: lightgray;
     position: absolute;
     width: 100%;
+    text-align: center;
 }
 
 #overlay {
@@ -112,3 +113,8 @@ h2 {
     cursor: pointer; /* Add a pointer on hover */ 
 }
 /* this has to be changed!!*/
+
+/*.adresse1, .adresse2 {
+    float: left;
+    width: 100px;
+}*/
