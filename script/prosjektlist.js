@@ -1,6 +1,6 @@
 // Hedvig
 
-data =
+imageLibrary =
     {
         projectName: "prosjektnavn",
         description: "beskrivelse",
