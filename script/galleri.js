@@ -19,23 +19,10 @@ let findObjectByKey = function(obj, key) {
     return null;
 };
 
-function filterBolig() {
-    let fileBoligList = [];
-    for (let key in imageLibrary.files) {
-        let file = imageLibrary.files[key];
-        if (file.type === "bolig") {
-            console.log(file);
-            fileBoligList.push(file);
-        }
-    }
-    return fileBoligList
-}
-
-function showBolig() {
-    let boligFilerList = filterBolig();
+function imageGrid(filerList) {
     let imageGrid = document.getElementsByClassName("box-grid");
-    for (let i in boligFilerList) {
-        let file = boligFilerList[i];
+    for (let i in filerList) {
+        let file = filerList[i];
         let boxSingle = document.createElement("div");
         boxSingle.setAttribute("class", "box-single");
         imageGrid[0].appendChild(boxSingle);
@@ -52,4 +39,107 @@ function showBolig() {
         boxCaptionP.innerHTML = file.projectName+" "+file.finishYear;
         boxCaption.appendChild(boxCaptionP);
     }
+
+}
+
+function filterBolig() {
+    let fileBoligList = [];
+    for (let key in imageLibrary.files) {
+        let file = imageLibrary.files[key];
+        if (file.type === "bolig") {
+            console.log(file);
+            fileBoligList.push(file);
+        }
+    }
+    return fileBoligList
+}
+
+function filterEnebolig() {
+    let fileEneboligList = [];
+    for (let key in imageLibrary.files) {
+        let file = imageLibrary.files[key];
+        if (file.type === "enebolig") {
+            console.log(file);
+            fileEneboligList.push(file);
+        }
+    }
+    return fileEneboligList
+}
+
+function filterFritidsbolig() {
+    let fileFritidsboligList = [];
+    for (let key in imageLibrary.files) {
+        let file = imageLibrary.files[key];
+        if (file.type === "fritidsbolig") {
+            console.log(file);
+            fileFritidsboligList.push(file);
+        }
+    }
+    return fileFritidsboligList
+}
+
+function filterIdeer() {
+    let fileIdeerList = [];
+    for (let key in imageLibrary.files) {
+        let file = imageLibrary.files[key];
+        if (file.type === "ideer") {
+            console.log(file);
+            fileIdeerList.push(file);
+        }
+    }
+    return fileIdeerList
+}
+
+function filterMindrebygg() {
+    let fileMindrebyggList = [];
+    for (let key in imageLibrary.files) {
+        let file = imageLibrary.files[key];
+        if (file.type === "mindre_bygg") {
+            console.log(file);
+            fileMindrebyggList.push(file);
+        }
+    }
+    return fileMindrebyggList
+}
+
+function filterNaering() {
+    let fileNaeringList = [];
+    for (let key in imageLibrary.files) {
+        let file = imageLibrary.files[key];
+        if (file.type === "naering") {
+            console.log(file);
+            fileNaeringList.push(file);
+        }
+    }
+    return fileNaeringList
+}
+
+function showBolig() {
+    let boligFilerList = filterBolig();
+    imageGrid(boligFilerList);
+}
+
+function showEnebolig() {
+    let eneboligFilerList = filterEnebolig();
+    imageGrid(eneboligFilerList);
+}
+
+function showFritidsbolig() {
+    let fritidsboligFilerList = filterFritidsbolig();
+    imageGrid(fritidsboligFilerList);
+}
+
+function showIdeer() {
+    let ideerFilerList = filterIdeer();
+    imageGrid(ideerFilerList);
+}
+
+function showMindrebygg() {
+    let mindrebyggFilerList = filterMindrebygg();
+    imageGrid(mindrebyggFilerList);
+}
+
+function showNaering() {
+    let naeringFilerList = filterNaering();
+    imageGrid(naeringFilerList);
 }

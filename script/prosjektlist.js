@@ -104,7 +104,7 @@ imageLibrary =
                 {
                     projectName: "Sirdal",
                     description: "Renovering og påbygg av eksisterende hytte. Gjenbruk av vinduer.",
-                    fileName: "fritidsbolig_sirdal",
+                    fileName: "fritidsbolig_sirdal.jpg",
                     startYear: "2009",
                     finishYear: "2011",
                     type: "fritidsbolig",
