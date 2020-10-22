@@ -442,7 +442,7 @@ imageLibrary =
                     ]
                 },
                 {
-                    projectName: '"Fransk barnehage',
+                    projectName: 'Fransk barnehage',
                     description: "Ny barnehage i Nedre Stokkavei for Stavanger kommune. Inneholder tre avdelinger for barn, personalavdeling, fellesareal og en takterrasse for lek og opphold.",
                     fileName: "naering_fransk_barnehage.jpg",
                     startYear: "2015",

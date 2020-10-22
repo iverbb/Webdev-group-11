@@ -39,10 +39,9 @@ function imageGrid(filerList) {
         boxCaptionP.innerHTML = file.projectName+" "+file.finishYear;
         boxCaption.appendChild(boxCaptionP);
     }
-
 }
 
-function filterKronologisk(arr) {
+function filterKronologiskByYear(arr) {
     let sortedYear = arr.sort( (a,b) => {
         if (a.finishYear < b.finishYear) {
             return 1
@@ -65,7 +64,7 @@ function filterBolig() {
             fileBoligList.push(file);
         }
     }
-    let sortedFileBoligList = filterKronologisk(fileBoligList);
+    let sortedFileBoligList = filterKronologiskByYear(fileBoligList);
     console.log("Sorted liste bolig: ", sortedFileBoligList);
     console.log("Liste bolig: ", fileBoligList);
     return sortedFileBoligList;
@@ -80,7 +79,7 @@ function filterEnebolig() {
             fileEneboligList.push(file);
         }
     }
-    let sortedFileEneboligList = filterKronologisk(fileEneboligList);
+    let sortedFileEneboligList = filterKronologiskByYear(fileEneboligList);
     return sortedFileEneboligList
 }
 
@@ -93,7 +92,7 @@ function filterFritidsbolig() {
             fileFritidsboligList.push(file);
         }
     }
-    let sortedFileFritidsboligList = filterKronologisk(fileFritidsboligList);
+    let sortedFileFritidsboligList = filterKronologiskByYear(fileFritidsboligList);
     return sortedFileFritidsboligList;
 }
 
@@ -106,7 +105,7 @@ function filterIdeer() {
             fileIdeerList.push(file);
         }
     }
-    let sortedFileIdeerList = filterKronologisk(fileIdeerList);
+    let sortedFileIdeerList = filterKronologiskByYear(fileIdeerList);
     return sortedFileIdeerList;
 }
 
@@ -119,7 +118,7 @@ function filterMindrebygg() {
             fileMindrebyggList.push(file);
         }
     }
-    let sortedFileMindreByggList = filterKronologisk(fileMindrebyggList);
+    let sortedFileMindreByggList = filterKronologiskByYear(fileMindrebyggList);
     return sortedFileMindreByggList
 }
 
@@ -132,7 +131,7 @@ function filterNaering() {
             fileNaeringList.push(file);
         }
     }
-    let sortedFileNaeringList = filterKronologisk(fileNaeringList);
+    let sortedFileNaeringList = filterKronologiskByYear(fileNaeringList);
     return sortedFileNaeringList
 }
 
@@ -164,4 +163,9 @@ function showMindrebygg() {
 function showNaering() {
     let naeringFilerList = filterNaering();
     imageGrid(naeringFilerList);
+}
+
+function showKronologisk() {
+    let kronologiskList = filterKronologiskByYear(imageLibrary.files);
+    imageGrid(kronologiskList);
 }

@@ -14,7 +14,7 @@ const pages = [
     },
     {
       text: "Prosjekter",
-      endpoint: "prosjekt_prosjekttype.html",
+      endpoint: "prosjekt_prosjekttype_test.html",
     },
     {
       text: "På tegnebordet",

@@ -14,7 +14,7 @@ data =
                   { "name" : "enkeltprosjekt.html",
                     "description" : ""}},
                 { "file" :
-                  { "name" : "prosjekt_prosjekttype.html",
+                  { "name" : "prosjekt_prosjekttype_test.html",
                     "description" : ""}},
                 { "file" :
                   { "name" : "prosjekt_kronologisk.html",
