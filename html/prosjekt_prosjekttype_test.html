@@ -4,48 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Prosjekttype</title>
-    <link href="../css/prosjekt_test.css" rel="stylesheet"/>
+    <link href="../css/prosjekt.css" rel="stylesheet"/>
     <link href="../css/main.css" rel="stylesheet"/>
 </head>
-<body>
+<body onload="showBolig()">
 
 <header>
-    <nav id="navbar" onload="buildNavbar()" ></nav>
+    <nav id="navbar" onload="buildNavbar()"></nav>
 </header>
 
-<div class="row">
-    <div class="column">
-        <img alt="bolig grandkvartalet bilde 1" src="../img/bolig_grandkvartalet_01.jpg">
-        <div class="bolig">
-            <p>
-                tekst tekst tekst
-            </p>
+<div class="box-grid">
+    <div class="box-single">
+        <img class="box-img" alt="bilde" src="../img/naering_mellombygget_01.jpg">
+        <div class="box-caption">
+            <p id="box-caption">hei på deg</p>
         </div>
-        <img alt="fritidsbolig bergtun" src="../img/fritidsbolig_bergtun_01.jpg">
-        <div class="bolig">
-            <p>
-                tekst tekst tekst
-            </p>
-        </div>
-    </div>
-    <div class="column">
-        <img alt="naering bjergsted" src="../img/naering_bjergsted_01.jpg">
-        <div class="bolig">
-            <p>
-                tekst tekst tekst
-            </p>
-        </div>
-        <img alt="mindre bygg brattaasveien" src="../img/mindrebygg_brattaasveien_01.jpg">
-        <div class="bolig">
-            <p>
-                tekst tekst tekst
-            </p>
-        </div>
-    </div>
-    <div class="column">
-        <img alt="enebolig forusvaagen" src="../img/enebolig_forusvaagen_01.jpg">
-        <img alt="annet ung" src="../img/annet_ung_01.jpg">
     </div>
 </div>
+<script src="../script/prosjektlist.js"></script>
+<script src="../script/galleri.js"></script>
 </body>
 </html>
