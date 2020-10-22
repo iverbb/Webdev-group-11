@@ -11,6 +11,8 @@ data =
         location: "beliggenhet",
         coordinate: "koordinat til bygning",
         address: "adresse",
+        projectImages: "bilder av prosjektet",
+        fileName: "hovedbilde av prosjektet",
         files:
             [
                 {
