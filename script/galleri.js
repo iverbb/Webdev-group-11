@@ -1,20 +1,4 @@
 // Hedvig
-/*
-function populate() {
-    const params = new URLSearchParams(window.location.search);
-    let fileName = params.get("fileName");
-    console.log(fileName);
-
-    let imageBox = document.getElementsByClassName("box-single");
-    let projImage = document.createElement("img");
-    projImage.src = "../img/" + fileName;
-    projImage.style.maxWidth = "80%";
-    //imageBox.appendChild(projImage);
-
-    let textBox = document.getElementById("box-caption");
-    textBox.innerText = data.files.filter(proj => proj.fileName === fileName)[0].type;
-}
-*/
 
 Object.size = function(obj) {
     let size = 0, key;
@@ -65,7 +49,7 @@ function showBolig() {
         boxSingle.appendChild(boxCaption);
         let boxCaptionP = document.createElement("p");
         boxCaptionP.setAttribute("id", "box-caption");
-        boxCaptionP.innerHTML = file.finishYear;
+        boxCaptionP.innerHTML = file.projectName+" "+file.finishYear;
         boxCaption.appendChild(boxCaptionP);
     }
 }

@@ -4,6 +4,7 @@ imageLibrary =
     {
         projectName: "prosjektnavn",
         description: "beskrivelse",
+        fileName: "hovedbilde av prosjektet",
         imagePath: "../img",
         startYear: "startår",
         finishYear: "år ferdigstilt",
@@ -12,7 +13,7 @@ imageLibrary =
         coordinate: "koordinat til bygning",
         address: "adresse",
         projectImages: "bilder av prosjektet",
-        fileName: "hovedbilde av prosjektet",
+
         files:
             [
                 {
