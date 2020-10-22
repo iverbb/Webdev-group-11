@@ -16,6 +16,7 @@
 <body>
     <header>
 
+        <!--
     <div class="mobile-container"></div>
     <div id="hambar">
         <button class="hamburger" id="hamburger">
@@ -28,6 +29,17 @@
             <a href="#prosjekt_ideer">Ideer</a>
         </div>
         <a href="javascript_void(0);" class="icon" onclick="myFunction()"></a>
+    </div>-->
+
+
+    <div class="dropdown" style="float:right;">
+        <button onclick="myFunction()" class="dropbtn">Sorter etter</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="prosjekt_prosjekttype.html">Prosjekttype</a>
+            <a href="prosjekt_kronologisk.html">Kronologisk</a>
+            <a href="prosjekt_beliggenhet.html">Beliggenhet</a>
+            <a href="prosjekt_ideer.html">Ideer</a>
+        </div>
     </div>
 
     <!--
@@ -100,6 +112,6 @@
         <footer>
             <!--modularity, use js for footer-->
         </footer>
-    <script src="../script/hamburger_test.js"></script>
+    <script src="../script/hambar_test.js"></script>
     </header>
 </body>

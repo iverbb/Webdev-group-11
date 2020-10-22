@@ -39,7 +39,7 @@ function createLinkToPage(page) {
   const text = document.createTextNode(page.text);
 
   if (isCurrentEndpoint(page.endpoint)) {
-    anchor.classList.add("navbar-current-item");
+    anchor.classList.add("hambar-current-item");
   }
 
   anchor.href = page.endpoint;
