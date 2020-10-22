@@ -42,6 +42,20 @@ function imageGrid(filerList) {
 
 }
 
+function filterKronologisk(arr) {
+    let sortedYear = arr.sort( (a,b) => {
+        if (a.finishYear < b.finishYear) {
+            return 1
+        } else if (b.finishYear < a.finishYear) {
+            return -1;
+        } else {
+            return 0;
+        }
+    });
+    console.log("Sorted Year: ",sortedYear);
+    return sortedYear
+}
+
 function filterBolig() {
     let fileBoligList = [];
     for (let key in imageLibrary.files) {
@@ -51,7 +65,10 @@ function filterBolig() {
             fileBoligList.push(file);
         }
     }
-    return fileBoligList
+    let sortedFileBoligList = filterKronologisk(fileBoligList);
+    console.log("Sorted liste bolig: ", sortedFileBoligList);
+    console.log("Liste bolig: ", fileBoligList);
+    return sortedFileBoligList;
 }
 
 function filterEnebolig() {
@@ -63,7 +80,8 @@ function filterEnebolig() {
             fileEneboligList.push(file);
         }
     }
-    return fileEneboligList
+    let sortedFileEneboligList = filterKronologisk(fileEneboligList);
+    return sortedFileEneboligList
 }
 
 function filterFritidsbolig() {
@@ -75,7 +93,8 @@ function filterFritidsbolig() {
             fileFritidsboligList.push(file);
         }
     }
-    return fileFritidsboligList
+    let sortedFileFritidsboligList = filterKronologisk(fileFritidsboligList);
+    return sortedFileFritidsboligList;
 }
 
 function filterIdeer() {
@@ -87,7 +106,8 @@ function filterIdeer() {
             fileIdeerList.push(file);
         }
     }
-    return fileIdeerList
+    let sortedFileIdeerList = filterKronologisk(fileIdeerList);
+    return sortedFileIdeerList;
 }
 
 function filterMindrebygg() {
@@ -99,7 +119,8 @@ function filterMindrebygg() {
             fileMindrebyggList.push(file);
         }
     }
-    return fileMindrebyggList
+    let sortedFileMindreByggList = filterKronologisk(fileMindrebyggList);
+    return sortedFileMindreByggList
 }
 
 function filterNaering() {
@@ -111,7 +132,8 @@ function filterNaering() {
             fileNaeringList.push(file);
         }
     }
-    return fileNaeringList
+    let sortedFileNaeringList = filterKronologisk(fileNaeringList);
+    return sortedFileNaeringList
 }
 
 function showBolig() {
