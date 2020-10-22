@@ -22,44 +22,20 @@ p {
     margin-bottom: 100px;
 }
 
- img {
+img {
     object-fit: cover;
     width: 100%
- }
+}
 
 p.nextto {
     float: left;
     max-width: 20%;
     margin-bottom: 100px;
-    /*visibility: hidden;
-    opacity: 0;
-
-    /* transition effect. not necessary */
-    /*transition: opacity .2s, visibility .2s;*/
-}
-  
-.hovertest:hover .nextto {
-    visibility: visible;
-    opacity: 1;
 }
 
 section {
     margin-bottom: 100px;
 }
-
-/*
-#paa_tegnebordet_01 {
-    float: left;
-    height: 75px;
-    width: 235px;
-    font-family: Veranda;
-}
-
-
-p {
-    float:right;
-}
-*/
 
 @media (max-width: 800px) {
     .nextto {
