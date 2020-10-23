@@ -29,14 +29,17 @@ function hide(imageId) {
 function drawPoint(point, imgPath, i) {
     let house = document.createElement("div");
     house.setAttribute("class", "marker");
-    house.style.left = point.x+85 + "px";
+    house.style.left = point.x+100 + "px";
     house.style.top = point.y-8 + "px";
 
     let pic = document.createElement("img");
+    pic.style.position = "absolute";
     pic.src = "../img/" + imgPath;
     pic.alt = "";
     let imgId = "house"  + i;
     pic.id = imgId;
+    pic.style.left = "-60px";
+    pic.style.top = "-40px";
     pic.className = "mapImg";
     pic.style.visibility = "hidden";
     house.appendChild(pic);

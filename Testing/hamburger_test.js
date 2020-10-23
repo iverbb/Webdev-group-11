@@ -31,7 +31,7 @@ function dropmenu() {
 const pages = [
   {
     text: "Prosjekttype",
-    endpoint: "prosjektmeny.html",
+    endpoint: "prosjekt_prosjekttype_test.html",
   },
   {
     text: "Kronologisk",
