@@ -48,7 +48,6 @@ function isCurrentEndpoint(endpoint) {
  */
 function createLinkToPage(page) {
     let anchor = document.createElement("a");
-    let content = document.createElement("div");
     if (page.text) {
         anchor.appendChild(document.createTextNode(page.text));
     } else {
