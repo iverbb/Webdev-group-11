@@ -1,5 +1,59 @@
+// create div dropdown
+let dropdown = document.createElement("div");
+dropdown.class = "dropdown";
+dropdown.style = "float:right";
+
+// create button   -- how to make the button say "sorter etter"??
+let button = document.createElement("button");
+button.title = "Sorter etter";
+button.onclick = "myFunction()";
+dropdown.class = "dropbtn";
+
+// create div2 dropdown content
+let myDropdown = document.createElement("div2");
+myDropdown.class = "dropdown-content";
+
+// create anchor elements 
+var a1 = document.createElement("a1");  
+var a2 = document.createElement("a2");  
+var a3 = document.createElement("a3");  
+
+// set the title and href property
+a1.title = "Prosjekttype";  
+a2.title = "Kronologisk"; 
+a3.title = "Beliggenhet"; 
+a1.href = "prosjekt_prosjekttype.html";  
+a2.href = "prosjekt_kronologisk.html";  
+a3.href = "prosjekt_beliggenhet.html";  
+  
+// append the anchor elements to div2 
+div2.appendChild(a1);
+div2.appendChild(a2);
+div2.appendChild(a3);
+
+// append div2 and button to dropdown
+dropdown.appendChild(button);
+dropdown.appendChild(child);
+
+// append everything to html
+document.header.appendChild(dropdown);
+
+
+
+
+/*
+div class="dropdown" style="float:right;">
+            <button onclick="myFunction()" class="dropbtn">Sorter etter</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../Testing/prosjekt_prosjekttype_test.html">Prosjekttype</a>
+                <a href="prosjekt_kronologisk.html">Kronologisk</a>
+                <a href="prosjekt_beliggenhet.html">Beliggenhet</a>
+            </div>*/
+
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -19,23 +73,3 @@ function myFunction() {
   }
 
 
-/*var select = document.createElement("select");
-for (var i=0; i < 4; i += 1) {
- var option = document.createElement("option"),
-     text = document.createTextNode("option" + i);
- option.appendChild(text);
- select.appendChild(option);
-}
-document.body.appendChild(select);
-
-var projecttype = document.createElement("Prosjekttype");
-var chronological = document.createElement("Kronologisk");
-var placement = document.createElement("Beliggenhet");
-var ideas = document.createElement("Ideer");
-
-type = document.createTextNode("projecttype");
-chrono = document.createTextNode("chronological");
-place = document.createTextNode("placement");
-idea = document.createTextNode("ideas");
-
-document.body.appendChild(type, chrono, place, idea);*/
