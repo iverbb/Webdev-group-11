@@ -35,7 +35,7 @@
 
 */
 
-
+/*
   .hambar {
     background-color: white;
     color: darkgrey;
@@ -58,8 +58,8 @@
     min-width: 160px;
     box-shadow: none;
     /*z-index: 1;*/
-  }
-  
+  /* }
+ 
   .hambar-pages a {
     color: black;
     padding: 12px 16px;
@@ -70,3 +70,6 @@
   .dropdown-content a:hover {background-color: #fafafa;}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {color: black;}
+
+
+  */
