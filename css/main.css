@@ -119,29 +119,27 @@ h2 {
     width: 100px;
 }*/
 
-@media screen and (max-width: 2500px) {
-    .column {
-        flex: 50%;
-        max-width: 47%;
-    }
-    .bolig p {
-        flex-direction: column;
+
+
+@media screen and (min-width: 2000px) {
+    .box-single {
+        flex: 28%;
+        flex-shrink: 0;
+        margin-right: 15%;
+        margin-left: 15%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .column {
+    .box-single {
         flex: 50%;
         max-width: 47%;
-    }
-    .bolig p {
-        flex-direction: column;
     }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
+    .box-single {
         flex: 100%;
         max-width: 100%;
     }

@@ -1,5 +1,6 @@
 // Hedvig
 
+//hva brukes denne til?
 Object.size = function(obj) {
     let size = 0, key;
     for (key in obj) {
