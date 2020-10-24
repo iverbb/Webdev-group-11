@@ -1,5 +1,7 @@
 /* Nora */
 
+/* CSS for Paa_tegnebordet */
+
 .boxTegnebordMainImg {
     max-width: 100%;
     object-fit: fill;
@@ -28,6 +30,18 @@ p.nexttoTegnebord {
     margin-bottom: 100px;
 }
 
+.boxTegnebordMainImg img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.boxTegnebordImg img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* CSS for contact */
+
 .boxContact {
     clear: right;
     clear: left;
@@ -44,16 +58,22 @@ p.nexttoContact {
     margin-bottom: 100px;
 }
 
-img {
+.boxContact img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* This should maybe not be common for all the pages? Only contact and paa tegnebordet" */
+/*img {
     object-fit: cover;
     width: 100%
-}
+}*/
 
-section {
-    margin-bottom: 100px;
-}
 
-@media (max-width: 800px) {
+
+/* Responsive paa_tegnebordet and contact */
+
+@media (max-width: 1000px) {
     /*.nextto {
         float: clear;
     }*/ /*ikke nødvendig?*/
@@ -68,8 +88,30 @@ section {
         margin-bottom: 10px;
     }
 
+    .boxContact {
+        margin-bottom: 60px;
+    }
+
     p.nexttoTegnebord, p.nexttoContact {
         max-width: 50%;
     }
 
+}
+
+
+section {
+    margin-bottom: 100px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.bold {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nexttoContact {
+    line-height: 80%;
 }
