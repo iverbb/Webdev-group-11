@@ -1,38 +1,40 @@
 
 
 
-function slideShowGrid(filerList) {
+function slideShowGrid(fileNameList) {
     let slideShowContainer = document.getElementsByClassName("slideshow-container");
-    for (let i in filerList) {
-        let file = filerList[i];
+    for (let i in fileNameList) {
+        let fileName = fileNameList[i];
         let mySlides = document.createElement("div");
-        mySlides.setAttribute("class", "mySlides");
+        mySlides.setAttribute("class", "mySlide");
         slideShowContainer[0].appendChild(mySlides);
         let mySlidesImage = document.createElement("img");
         mySlidesImage.setAttribute("class", "mySlides-img");
         mySlidesImage.setAttribute("alt","bilde");
-        mySlidesImage.setAttribute("src","../img/"+ file.fileName);
+        mySlidesImage.setAttribute("src","../img/"+ fileName);
         mySlides.appendChild(mySlidesImage);
     }
     console.log("SlideShowGrid: ",slideShowContainer);
 }
 
-function carousel(fileRandomList) {
-    let i;
-    let slideIndex = 0;
-    const fileClass = fileRandomList.className
-    let slideDisplay = document.getElementsByClassName(fileClass);
-    console.log("SlideDisplay", slideDisplay);
-    console.log("SlideDisplay length", slideDisplay.length);
-    for (i = 0; i < slideDisplay.length; i++) {
-        console.log("Slidedisplay this round: ", slideDisplay[i]);
-        slideDisplay[i].style.display = "none";
+let i;
+let slideIndex = 0;
+
+function carousel() {
+    let slides = document.getElementsByClassName("mySlide");
+    console.log("my slides web elements:",slides);
+    //let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slideDisplay.length) {slideIndex = 1}
-    slideDisplay[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 4000);
-    console.log("SlideDisplay: ", slideDisplay);
+    if (slideIndex > slides.length) {slideIndex = 1}
+    // for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    // }
+    slides[slideIndex-1].style.display = "block";
+    //dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
 
@@ -49,13 +51,24 @@ function filterOnBolig() {
 }
 
 function showSlides() {
-    console.log("Hei");
     let randomFilerList = filterOnBolig();
-    let randomCarousel = carousel(randomFilerList);
+    console.log("filter list", randomFilerList);
     /*let testFilerList = filterOnBolig();*/
-    slideShowGrid(randomCarousel);
+    slideShowGrid(randomFilerList);
+    carousel();
     /*slideShowGrid(testFilerList);*/
 }
+
+function onloadBarkMainPage() {
+    console.log("Onload Bark main page");
+    buildNavbar();
+    showSlides();
+    buildFooter();
+
+}
+
+
+
 
 function filterRandom() {
     let fileRandomList = [];
@@ -78,20 +91,20 @@ let findObjectByKeyRandomly = function(obj) {
 
 //News
 
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("box-grid");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-}
+// var slideIndex = 1;
+// showDivs(slideIndex);
+//
+// function plusDivs(n) {
+//     showDivs(slideIndex += n);
+// }
+//
+// function showDivs(n) {
+//     var i;
+//     var x = document.getElementsByClassName("box-grid");
+//     if (n > x.length) {slideIndex = 1}
+//     if (n < 1) {slideIndex = x.length} ;
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";
+//     }
+//     x[slideIndex-1].style.display = "block";
+// }
