@@ -9,24 +9,24 @@ const pages = [
       endpoint: "hjem.html",
   },
   {
+    text: "Kontakt",
+    endpoint: "kontakt.html",
+  },
+  {
+    text: "Om oss",
+    endpoint: "om_oss.html",
+  },
+  {
+    text: "På tegnebordet",
+    endpoint: "paa_tegnebordet.html",
+  },
+  {
+    text: "Prosjekter",
+    endpoint: "prosjekt_prosjekttype_test.html",
+  },
+  {
       text: "Hjem",
       endpoint: "hjem.html",
-  },
-  {
-      text: "Prosjekter",
-      endpoint: "prosjekt_prosjekttype_test.html",
-  },
-  {
-      text: "På tegnebordet",
-      endpoint: "paa_tegnebordet.html",
-  },
-  {
-      text: "Om oss",
-      endpoint: "om_oss.html",
-  },
-  {
-      text: "Kontakt",
-      endpoint: "kontakt.html",
   },
 ];
 
