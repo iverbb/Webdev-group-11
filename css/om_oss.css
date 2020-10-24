@@ -13,6 +13,8 @@ hr{
 
 img.om_oss_image {
     object-fit: contain;
+    float:left;
+    position: relative;
 }
 
 .box2 {
@@ -124,10 +126,6 @@ img.buildingImage{
         position: relative;
     }
 
-    .nextto {
-        float: clear;
-    }
-
     .box2{
         clear: right;
         clear: left;
@@ -136,5 +134,17 @@ img.buildingImage{
         width: 100%;
         height: 300px;
         margin-bottom: 10px;
+    }
+
+    img.buildingImage {
+        width: 40px;
+    }
+
+    .point {
+        font-size: 12px;
+    }
+    
+    .contentBox{
+        margin-bottom: 14px;
     }
 }
