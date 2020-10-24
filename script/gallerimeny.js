@@ -1,3 +1,0 @@
-// Nora
-
-//hamburger meny
