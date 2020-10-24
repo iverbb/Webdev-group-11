@@ -1,5 +1,33 @@
 // Vilde
 
+const data = [
+  { dateLabel: '2019', title: 'Gathering Information' },
+  { dateLabel: 'February 2017', title: 'Planning' },
+  { dateLabel: 'March 2017', title: 'Design' },
+  { dateLabel: 'April 2017', title: 'Content Writing and Assembly' },
+  { dateLabel: 'May 2017', title: 'Coding' },
+  { dateLabel: 'June 2017', title: 'Testing, Review & Launch' },
+  { dateLabel: 'July 2017', title: 'Maintenance' }
+];
+
+new Vue({
+  el: '#app', 
+  data: {
+    steps: data,
+  },
+  mounted() {
+    var swiper = new Swiper('.swiper-container', {
+      //pagination: '.swiper-pagination',
+      slidesPerView: 3,
+      paginationClickable: true,
+      grabCursor: true,
+      paginationClickable: true,
+      nextButton: '.next-slide',
+      prevButton: '.prev-slide',
+    });    
+  }
+})
+
 /*var img = new Image();
 img.src = "../p1 and p2/img/P1/logo_rett.png"
 img.onclick = function() {
@@ -7,7 +35,7 @@ img.onclick = function() {
 };
 document.body.appendChild(img);*/
 
-const projects = [
+/*const projects = [
     {
       text: "Hordatun",
       endpoint: "hjem.html",
@@ -28,9 +56,11 @@ const projects = [
       text: "Kontakt",
       endpoint: "kontakt.html",
     },
-  ];
+  ];*/ 
 
-  data =
+  // dette ^ kan gjøres med link i html tror jeg
+
+  /*data =
     {
         imagePath: "../img",
         name: "navn",
@@ -89,3 +119,70 @@ const projects = [
                 },
             ]
     }
+
+    const DATA = [
+        {
+          year: '2004',
+          title: 'This is a test title',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '2005',
+          title: 'This is a test title 2',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '1990',
+          title: 'This is a test title 3',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '2018',
+          title: 'This is a test title 4',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '2005',
+          title: 'This is a test title 2',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '1990',
+          title: 'This is a test title 3',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '2018',
+          title: 'This is a test title 4',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '2018',
+          title: 'This is a test title 4',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '2005',
+          title: 'This is a test title 2',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '1990',
+          title: 'This is a test title 3',
+          image: 'https://picsum.photos/600/400'
+        },
+        {
+          year: '2018',
+          title: 'This is a test title 4',
+          image: 'https://picsum.photos/600/400'
+        },
+  ];
+
+
+function buildTimeline() {
+    if(document.getElementById('timeline')) {
+    let timeline = new Timeline('timeline', DATA);
+    timeline.init();
+    }
+}*/
+
