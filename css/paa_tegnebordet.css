@@ -1,18 +1,18 @@
 /* Nora */
 
-.box1 {
+.boxTegnebordMainImg {
     max-width: 100%;
     object-fit: fill;
 }
 
-p {
+p.descriptionTegnebord {
     max-width: 50%;
     float: right;
     margin: 10px;
     margin-bottom: 100px;
 }
 
-.box2, .box3, .box4 {
+.boxTegnebordImg {
     clear: right;
     clear: left;
     float: right;
@@ -22,15 +22,31 @@ p {
     margin-bottom: 100px;
 }
 
-img {
-    object-fit: cover;
-    width: 100%
-}
-
-p.nextto {
+p.nexttoTegnebord {
     float: left;
     max-width: 20%;
     margin-bottom: 100px;
+}
+
+.boxContact {
+    clear: right;
+    clear: left;
+    float: right;
+    display: flex;
+    width: 60%;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+p.nexttoContact {
+    float: left;
+    max-width: 25%;
+    margin-bottom: 100px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%
 }
 
 section {
@@ -38,11 +54,11 @@ section {
 }
 
 @media (max-width: 800px) {
-    .nextto {
+    /*.nextto {
         float: clear;
-    }
+    }*/ /*ikke nødvendig?*/
 
-    .box2, .box3, .box4 {
+    .boxTegnebordImg, .boxContact {
         clear: right;
         clear: left;
         float: right;
@@ -52,7 +68,8 @@ section {
         margin-bottom: 10px;
     }
 
-    p.nextto {
+    p.nexttoTegnebord, p.nexttoContact {
         max-width: 50%;
     }
+
 }

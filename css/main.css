@@ -10,10 +10,7 @@ body {
     font-family: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
     font-style: normal;
     color: #1c1c1c;
-}
-
-section {
-
+    height:100%;
 }
 
 img {
