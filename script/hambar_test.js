@@ -10,7 +10,7 @@ button.onclick = "myFunction()";
 dropdown.class = "dropbtn";
 
 // create div2 dropdown content
-let myDropdown = document.createElement("div2");
+let myDropdown = document.createElement("div");
 myDropdown.class = "dropdown-content";
 
 // create anchor elements 
@@ -27,16 +27,17 @@ a2.href = "prosjekt_kronologisk.html";
 a3.href = "prosjekt_beliggenhet.html";  
   
 // append the anchor elements to div2 
-div2.appendChild(a1);
-div2.appendChild(a2);
-div2.appendChild(a3);
+myDropdown.appendChild(a1);
+myDropdown.appendChild(a2);
+myDropdown.appendChild(a3);
 
 // append div2 and button to dropdown
 dropdown.appendChild(button);
-dropdown.appendChild(child);
+dropdown.appendChild(myDropdown);
 
 // append everything to html
-document.header.appendChild(dropdown);
+document.getElementById("hambarheader").appendChild(dropdown);
+
 
 
 

@@ -1,5 +1,8 @@
 /* Nora */
 
+header {
+    margin-bottom: 50px;
+}
 /* CSS for paa_tegnebordet */
 
 .boxTegnebordMainImg {
@@ -54,7 +57,7 @@
 
 .nexttoContact {
     float: left;
-    max-width: 25%;
+    max-width: 35%;
     margin-bottom: 100px;
 }
 
@@ -87,7 +90,12 @@
     .nexttoTegnebord, .nexttoContact {
         max-width: 50%;
     }
+}
 
+@media (max-width: 600px) {
+    .nexttoContact {
+        max-width: 100%;
+    }
 }
 
 
@@ -102,12 +110,6 @@ p {
 p.bold {
     font-size: 18px;
     font-weight: 600;
+    margin-top: 0;   /*this is only for contact and tegnebordet maybe??*/
 }
 
-.nexttoContact {
-    line-height: 80%;
-}
-
-.nexttoContact p.bold{
-    line-height: 120%;
-}
