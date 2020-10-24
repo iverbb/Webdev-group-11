@@ -1,27 +1,35 @@
 // create div dropdown
 let dropdown = document.createElement("div");
-dropdown.class = "dropdown";
+dropdown.className = "dropdown";
 dropdown.style = "float:right";
 
 // create button   -- how to make the button say "sorter etter"??
 let button = document.createElement("button");
-button.title = "Sorter etter";
-button.onclick = "myFunction()";
-button.class = "dropbtn";
+button.innerText = "Sorter etter";
+button.setAttribute("id", "button");
+button.onclick = (() => myFunction());
+//button.onclick = myFunction;
+button.className = "dropbtn";
+
+//button.addEventListener("click", myFunction);
 
 // create div2 dropdown content
 let myDropdown = document.createElement("div");
-myDropdown.class = "dropdown-content";
+myDropdown.className = "dropdown-content";
+myDropdown.id = "myDropdown";
 
 // create anchor elements 
-var a1 = document.createElement("a1");  
-var a2 = document.createElement("a2");  
-var a3 = document.createElement("a3");  
+var a1 = document.createElement("a");  
+var a2 = document.createElement("a");  
+var a3 = document.createElement("a");  
 
 // set the title and href property
-a1.title = "Prosjekttype";  
+/*a1.title = "Prosjekttype";  
 a2.title = "Kronologisk"; 
-a3.title = "Beliggenhet"; 
+a3.title = "Beliggenhet";*/
+a1.innerText = "Prosjekttype";  
+a2.innerText = "Kronologisk"; 
+a3.innerText = "Beliggenhet"; 
 a1.href = "prosjekt_prosjekttype.html";  
 a2.href = "prosjekt_kronologisk.html";  
 a3.href = "prosjekt_beliggenhet.html"; 
@@ -61,13 +69,13 @@ function myFunction() {
   
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches(".dropbtn")) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
         }
       }
     }

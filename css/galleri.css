@@ -19,6 +19,7 @@ body html {
 .box-single {
     flex: 0 0 29.5%;
     height: 60vh;
+    width: 5vh;
     margin: 5.5% 0 0 0;
     position: relative;
     display: flex;

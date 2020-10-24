@@ -193,7 +193,7 @@ function buildFooter() {
 }
 
 // Event trigger when the DOM is ready (newer browsers)
-window.onload = () => buildNavbar(), buildFooter();
+//window.onload = () => buildNavbar(), buildFooter();
 
 
 /* When the user scrolls the page, execute myFunction
