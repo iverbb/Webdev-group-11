@@ -1,19 +1,21 @@
 // create div dropdown
 let dropdown = document.createElement("div");
-dropdown.class = "dropdown";
+dropdown.className = "dropdown";
 dropdown.style = "float:right";
 
 // create button   -- how to make the button say "sorter etter"??
 let button = document.createElement("button");
 button.innerText = "Sorter etter";
-button.class = "dropbtn";
+button.setAttribute("id", "button");
 button.onclick = function(){myFunction};
-button.onclick = function(){myFunction};
-button.addEventListener("click", myFunction);
+//button.onclick = myFunction;
+button.className = "dropbtn";
+
+//button.addEventListener("click", myFunction);
 
 // create div2 dropdown content
 let myDropdown = document.createElement("div");
-myDropdown.class = "dropdown-content";
+myDropdown.className = "dropdown-content";
 
 // create anchor elements 
 var a1 = document.createElement("a");  
@@ -66,13 +68,13 @@ function myFunction() {
   
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches(".dropbtn")) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
         }
       }
     }
