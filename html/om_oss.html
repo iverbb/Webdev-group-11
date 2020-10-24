@@ -1,4 +1,3 @@
-<!-- Vilde -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +5,14 @@
     <meta charset="utf-8">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/om_oss.css" rel="stylesheet">
-    <link href="../css/navbar.css" rel="stylesheet">
-    <title>kontakt</title>
-
+    <title>om oss</title>
 </head>
+
 <body>
-<div class="wrapper">
+
     <header>
         <nav id="navbar" onload="buildNavbar()"></nav>
     </header>
-    <div class="content">
 
     <section>
         <p class="box1">
@@ -23,10 +20,10 @@
             Bark har ikke én stil, men prosjektene våre kjennetegnes av gjennomarbeidede løsninger, kjærlighet for faget og godt samarbeid med byggherre og utførende.
         </p>
     </section>
-    <br>
+    
     <section>
         <div class="box2">
-            <img src="../img/om_oss_stasjonshallen.jpg" alt="stasjonshallen">
+            <img src="../img/om_oss_stasjonshallen.jpg" alt="stasjonshallen" class="om_oss_image">
         </div>
         <div class=nextto>
             <p>
@@ -65,81 +62,122 @@
             </p>
         </div>
     </section>
-    <br>
+    
     <section>     
         <p class="box3"> Vil du bli en del av Bark?</p>
     </section>
-    <br>
 
-    </div> <!--content-->
-</div> <!--wrapper-->
+    <section>
+        <div id="timeline">
+    
+            <div class="timeline-container">
+              <div class="timeline">
 
-<footer id="sf">
-      
-</footer>
+                <div class="point">
+                    <div class="contentBox"></div>
+                      <div class="established">
+                          <span>Est. 2006</span>
+                      </div>
+                    </div>
+                
+                <div class="point">
+                  <div class="timelineImage">
+                    <img src="../img/naering_hordatun.jpg" alt="Hordatun" class="buildingImage"> <!--lage til link-->
+                  </div>
+                  <div class="buildingName">
+                    <span>Hordatun</span>
+                  </div>
+                </div>
 
-<script src="../script/tidslinje.js" id="timeline"></script>
-<script src="../script/marg.js" id="navbar"></script>    
+                <div class="point">
+                  <div class="timelineImage">
+                    <img src="../img/bolig_grandkvartalet_01.jpg" alt="meto" class="buildingImage"> <!--lage til link, feil bilde-->
+                  </div>
+                  <div class="buildingName">
+                    <span>METO</span>
+                  </div>
+                </div>
+
+                <div class="point">
+                  <div class="timelineImage">
+                    <img src="../img/bolig_ryggstraen.jpg" alt="ryggstraen" class="buildingImage">  <!--lage til link-->
+                  </div>
+                  <div class="buildingName">
+                    <span>Ryggstraen</span>
+                  </div>
+                </div>
+
+                <div class="point">
+                  <div class="timelineImage">
+                    <img src="../img/ideer_pedersgata_01.jpg" alt="Tou camp" class="buildingImage"> <!--lage til link-->
+                  </div>
+                  <div class="buildingName">
+                    <span>Pedersgata</span>
+                  </div>
+                </div>
+
+                <div class="point">
+                    <div class="timelineImage">
+                      <img src="../img/naering_mellombygget_01.jpg" alt="mellombygget" class="buildingImage"> <!--lage til link-->
+                    </div>
+                    <div class="buildingName">
+                      <span>Mellombygget</span>
+                    </div>
+                  </div>
+
+                  <div class="point">
+                    <div class="timelineImage">
+                      <img src="../img/fritidsbolig_li.jpg" alt="Hytte Li" class="buildingImage"> <!--lage til link-->
+                    </div>
+                    <div class="buildingName">
+                      <span>Li</span>
+                    </div>
+                  </div>
+
+                  <div class="point">
+                    <div class="timelineImage">
+                      <img src="../img/naering_zetlitzveien.JPG" alt="Zetlitzveien" class="buildingImage"> <!--lage til link-->
+                    </div>
+                    <div class="buildingName">
+                      <span>Zetlitzveien</span>
+                    </div>
+                  </div>
+
+                  <div class="point">
+                    <div class="timelineImage">
+                      <img src="../img/naering_emmaus.JPG" alt="Dansesaler" class="buildingImage"> <!--lage til link, feil bilde-->
+                    </div>
+                    <div class="buildingName">
+                      <span>Dansesaler</span>
+                    </div>
+                  </div>
+
+                  <div class="point">
+                    <div class="timelineImage">
+                      <img src="../img/fritidsbolig_sele.jpg" alt="Sele" class="buildingImage"> <!--lage til link-->
+                    </div>
+                    <div class="buildingName">
+                      <span>Sele</span>
+                    </div>
+                  </div>
+
+                  <div class="point">
+                    <div class="timelineImage">
+                      <img src="../img/naering_tastarustaa.JPG" alt="Sokn camping" class="buildingImage"> <!--lage til link, feil bilde-->
+                    </div>
+                    <div class="buildingName">
+                      <span>Sokn camping</span>
+                    </div>
+                  </div>
+              
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="sf"></footer>
+
+    <script type="text/javascript" src="../script/marg.js"></script>
 </body>
 
-      
 </html>
-
-
-
-
-<!--<section>
-    <div class="vision">
-        <p>
-            <span style="font-weight:bolder">Bark arkitekter</span> holder til i den grønne boksen i Oransjeriet i Stavangers østre bydel.
-            Bark har ikke én stil, men prosjektene våre kjennetegnes av gjennomarbeidede løsninger, kjærlighet for faget og godt samarbeid med byggherre og utførende.
-        </p>
-    </div>
-</section>
-
-<section>
-    <div id="buldingimg">
-        <img src="../img/om_oss_stasjonshallen.jpg" alt="stasjonshallen">
-    </div>
-    <div class="contact_information">
-        <p>
-            <span style="font-weight: bolder;">Frode Brurberg</span><br>
-            Sivilarkitekt MNAL, partner, daglig leder<br>
-            Brighton<br>
-            <span style="font-style: italic;">frode@barkarkitekter.no</span><br>
-        </p>
-        <hr>
-        <p>
-            <span style="font-weight: bolder;">Elisabeth Tryland</span><br>
-            Sivilarkitekt MNAL<br>
-            Auckland<br>
-            <span style="font-style: italic;">elisabeth@barkarkitekter.no</span><br>
-        </p>
-        <hr>
-        <p>
-            <span style="font-weight: bolder;">Kjersti Førsund Heradstveit</span><br>
-            Sivilarkitekt MNAL, partner<br>
-            Bergen<br>
-            <span style="font-style: italic;">kjersti@barkarkitekter.no</span><br>
-        </p>
-        <hr>
-        <p>
-            <span style="font-weight: bolder;">Benedikte Landsnes</span><br>
-            Sivilarkitekt MNAL<br>
-            Trondheim<br>
-            <span style="font-style: italic;">benedikte@barkarkitekter.no</span><br>
-        </p>
-        <hr>
-        <p>
-            <span style="font-weight: bolder;">Katrine Grimnes</span><br>
-            Sivilarkitekt MNAL, partner<br>
-            Oslo<br>
-            <span style="font-style: italic;">katrine@barkarkitekter.no</span><br>
-        </p>
-    </div>
-    <div class="apply">
-        <p>Vil du bli en del av Bark?</p>
-    </div>
-</section>-->
-
-
