@@ -50,6 +50,7 @@ function createLinkToPage(page) {
   let anchor = document.createElement("a");
   if (page.text) {
       anchor.appendChild(document.createTextNode(page.text));
+      anchor.classList.add("navbarPages");
   } else {
       let image = document.createElement("img");
       image.src = page.img;

@@ -141,9 +141,21 @@ function showBolig() {
     imageGrid(boligFilerList);
 }
 
+function onloadShowBolig() {
+    buildNavbar();
+    showBolig();
+    //buildFooter();
+}
+
 function showEnebolig() {
     let eneboligFilerList = filterEnebolig();
     imageGrid(eneboligFilerList);
+}
+
+function onloadShowEnebolig() {
+    buildNavbar();
+    showEnebolig();
+    //buildFooter();
 }
 
 function showFritidsbolig() {
@@ -151,9 +163,21 @@ function showFritidsbolig() {
     imageGrid(fritidsboligFilerList);
 }
 
+function onloadShowFritidsbolig() {
+    buildNavbar();
+    showFritidsbolig();
+    //buildFooter();
+}
+
 function showIdeer() {
     let ideerFilerList = filterIdeer();
     imageGrid(ideerFilerList);
+}
+
+function onloadShowIdeer() {
+    buildNavbar();
+    showIdeer();
+    //buildFooter();
 }
 
 function showMindrebygg() {
@@ -161,12 +185,30 @@ function showMindrebygg() {
     imageGrid(mindrebyggFilerList);
 }
 
+function onloadShowMindrebygg() {
+    buildNavbar();
+    showMindrebygg();
+    //buildFooter();
+}
+
 function showNaering() {
     let naeringFilerList = filterNaering();
     imageGrid(naeringFilerList);
 }
 
+function onloadShowNaering() {
+    buildNavbar();
+    showNaering();
+    //buildFooter();
+}
+
 function showKronologisk() {
     let kronologiskList = filterKronologiskByYear(imageLibrary.files);
     imageGrid(kronologiskList);
+}
+
+function onloadShowKronologisk() {
+    buildNavbar();
+    showKronologisk();
+    //buildFooter();
 }
