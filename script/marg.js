@@ -53,13 +53,14 @@ function createLinkToPage(page) {
   } else {
       let image = document.createElement("img");
       image.src = page.img;
-      image.style.width = "100px";
+      image.style.width = "300px";
 
       anchor.appendChild(image);
+      anchor.classList.add("navbarLogo");
   }
 
   if (isCurrentEndpoint(page.endpoint)) {
-      anchor.classList.add("navbar-current-item");
+      anchor.classList.add("navbarCurrentItem");
   }
 
   anchor.href = page.endpoint;
@@ -95,17 +96,36 @@ function buildNavbar() {
 
   const navbar = document.getElementById("navbar");
   const content = document.createElement("div");
-  content.classList.add("content");
+  content.classList.add("navbarContent");
   navbar.appendChild(content);
 
   const items = document.createElement("div");
-  items.classList.add("navbar-items");
+  items.classList.add("navbarItems");
   content.appendChild(items);
 
   pages.forEach((page) => addLinkToElement(page, items));
 }
 
 
+//making the navbar stick to the top
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
 
 
@@ -139,25 +159,32 @@ function buildFooter() {
   var myNode = document.getElementById("sf");
 
   console.log(myNode.id);
-  var kontakt = document.createElement("h4");
-  var adresse1 = document.createElement("p");
-  var adresse2 = document.createElement("p");
-  var copyright = document.createElement("p");
+  var contact = document.createElement("h4");
+  var street = document.createElement("li");
+  var postcode = document.createElement("li");
+  var phone = document.createElement("li");
+  var email = document.createElement("li");
+  var copyright = document.createElement("li");
 
-  kontakt.classList.add("tit");
+  contact.classList.add("tit");
+  street.classList.add("adresse");
+  postcode.classList.add("postSpace"); //differrent class so i can add space 
+  phone.classList.add("adresse");
+  email.classList.add("adresse");
   copyright.classList.add("footer");
-  adresse1.classList.add("adresse1");
-  adresse2.classList.add("adresse2");
 
-
-  kontakt.appendChild(document.createTextNode("Kontakt oss"));
-  adresse1.appendChild(document.createTextNode("Avaldsnesgata 95 c \n 4014 Stavanger"));
-  adresse2.appendChild(document.createTextNode("4014 StavangerT:  51 56 78 30 \n E: firmapost@barkarkitekter.no"));
+  contact.appendChild(document.createTextNode("Kontakt oss"));
+  street.appendChild(document.createTextNode("Avaldsnesgata 95 c"));
+  postcode.appendChild(document.createTextNode("4014 Stavanger"));
+  phone.appendChild(document.createTextNode("T:  51 56 78 30"));
+  email.appendChild(document.createTextNode("E: firmapost@barkarkitekter.no"));
   copyright.appendChild(document.createTextNode("© 2020 Group 11"));
 
-  myNode.appendChild(kontakt);
-  myNode.appendChild(adresse1);
-  myNode.appendChild(adresse2);
+  myNode.appendChild(contact);
+  myNode.appendChild(street);
+  myNode.appendChild(postcode);
+  myNode.appendChild(phone);
+  myNode.appendChild(email);
   myNode.appendChild(copyright);
 
 

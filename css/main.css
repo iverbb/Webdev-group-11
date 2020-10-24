@@ -1,9 +1,5 @@
 /* Hedvig, Nora, Vilde */
 
-header {
-
-}
-
 body {
     background-color: #ffffff;
     margin:5%;
@@ -15,20 +11,6 @@ body {
 
 img {
     max-width: 100%;
-}
-
-#navbar {
-    font-size: 24pt;
-    color: lightgray;
-}
-
-/* enten navbarline eller lysgrå/mørk*/
-.navbarLine > line {
-    color: #1c1c1c;
-}
-
-.navbarHover {
-    color: #1c1c1c;
 }
 
 .dropDown {
@@ -115,6 +97,70 @@ h2 {
     float: left;
     width: 100px;
 }*/
+
+#navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #1c1c1c;
+    font-size: 20pt;
+    margin-bottom: 40px;
+    text-align: right;
+  }
+  
+/* Navbar links */
+#navbar a {
+    float: left;
+    display:block;
+    color: #1c1c1c;
+    text-align: right;
+    padding: 14px;
+}
+  
+.navbarContent{
+    align-items: normal;
+    border-bottom: 0px;
+}
+
+.navbarItems{
+    text-align: left;
+}
+
+.navbarCurrentItem {
+    border-bottom: 2px solid #1c1c1c; /*dont want it to underline bark-logo*/
+    text-decoration: underline;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.navbarLogo {
+    width: 250px;
+}
+
+/* enten navbarline eller lysgrå/mørk*/
+.navbarLine > line {
+    color: #1c1c1c;
+}
+
+.navbarHover {
+    color: #1c1c1c;
+}
+
+li {
+    list-style-type: none;
+}
+
+li.postSpace{
+    margin-bottom: 10px;
+}
 
 
 
