@@ -5,23 +5,28 @@ dropdown.style = "float:right";
 
 // create button   -- how to make the button say "sorter etter"??
 let button = document.createElement("button");
-button.title = "Sorter etter";
-button.onclick = "myFunction()";
+button.innerText = "Sorter etter";
 button.class = "dropbtn";
+button.onclick = function(){myFunction};
+button.onclick = function(){myFunction};
+button.addEventListener("click", myFunction);
 
 // create div2 dropdown content
 let myDropdown = document.createElement("div");
 myDropdown.class = "dropdown-content";
 
 // create anchor elements 
-var a1 = document.createElement("a1");  
-var a2 = document.createElement("a2");  
-var a3 = document.createElement("a3");  
+var a1 = document.createElement("a");  
+var a2 = document.createElement("a");  
+var a3 = document.createElement("a");  
 
 // set the title and href property
-a1.title = "Prosjekttype";  
+/*a1.title = "Prosjekttype";  
 a2.title = "Kronologisk"; 
-a3.title = "Beliggenhet"; 
+a3.title = "Beliggenhet";*/
+a1.innerText = "Prosjekttype";  
+a2.innerText = "Kronologisk"; 
+a3.innerText = "Beliggenhet"; 
 a1.href = "prosjekt_prosjekttype.html";  
 a2.href = "prosjekt_kronologisk.html";  
 a3.href = "prosjekt_beliggenhet.html"; 
