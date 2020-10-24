@@ -7,7 +7,7 @@ dropdown.style = "float:right";
 let button = document.createElement("button");
 button.innerText = "Sorter etter";
 button.setAttribute("id", "button");
-button.onclick = function(){myFunction};
+button.onclick = (() => myFunction());
 //button.onclick = myFunction;
 button.className = "dropbtn";
 
@@ -16,6 +16,7 @@ button.className = "dropbtn";
 // create div2 dropdown content
 let myDropdown = document.createElement("div");
 myDropdown.className = "dropdown-content";
+myDropdown.id = "myDropdown";
 
 // create anchor elements 
 var a1 = document.createElement("a");  
