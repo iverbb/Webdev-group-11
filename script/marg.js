@@ -171,7 +171,7 @@ function buildFooter() {
   postcode.classList.add("postSpace"); //differrent class so i can add space 
   phone.classList.add("adresse");
   email.classList.add("adresse");
-  copyright.classList.add("footer");
+  copyright.classList.add("copyright");
 
   contact.appendChild(document.createTextNode("Kontakt oss"));
   street.appendChild(document.createTextNode("Avaldsnesgata 95 c"));
