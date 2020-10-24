@@ -11,6 +11,10 @@ hr{
     font-size: 20px;
 }
 
+img.om_oss_image {
+    object-fit: contain;
+}
+
 .box2 {
     clear: right;
     float: left;
