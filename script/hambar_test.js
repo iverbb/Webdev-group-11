@@ -7,7 +7,7 @@ dropdown.style = "float:right";
 let button = document.createElement("button");
 button.title = "Sorter etter";
 button.onclick = "myFunction()";
-dropdown.class = "dropbtn";
+button.class = "dropbtn";
 
 // create div2 dropdown content
 let myDropdown = document.createElement("div");
@@ -24,7 +24,7 @@ a2.title = "Kronologisk";
 a3.title = "Beliggenhet"; 
 a1.href = "prosjekt_prosjekttype.html";  
 a2.href = "prosjekt_kronologisk.html";  
-a3.href = "prosjekt_beliggenhet.html";  
+a3.href = "prosjekt_beliggenhet.html"; 
   
 // append the anchor elements to div2 
 myDropdown.appendChild(a1);
