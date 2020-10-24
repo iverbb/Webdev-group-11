@@ -86,7 +86,6 @@ h2 {
     height: 20px;
 }
 
-
 .copyright{
     text-align: center;
     width: 100%;
@@ -114,40 +113,54 @@ h2 {
     width: 100px;
 }*/
 
+header {
+    max-width: 70%;
+}
+
 #navbar {
     overflow: hidden;
     background-color: #ffffff;
     color: #1c1c1c;
-    font-size: 20pt;
-    padding-bottom: 10px;
-    padding-top: 15px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-align: right;
     z-index: 1;
     margin-top: 0;
-    width: 100%;
+    max-height: 50px;
+    max-width: 92%;
+    margin-bottom: 40px;
   }
   
 /* Navbar links */
 #navbar a {
-    
     color: #1c1c1c;
-    /*text-align: right;*/
-    padding: 14px;
-    text-decoration: none;
+    /*text-align: right;
+    max-width: 100%;*/
 }
 
 .navbarPages {
-    text-align: right;
-    margin-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 24px;
+    text-decoration: none;
+    float: right;
+
+
 }
   
-.navbarContent{
+/*.navbarContent{
     align-items: normal;
     border-bottom: 0px;
-}
+}*/
 
-.navbarItems{
+/*.navbarItems{
     text-align: left;
+}*/
+
+.navbarLogo {
+    width: 220px;
+    float: left;
 }
 
 /*.navbarCurrentItem {
@@ -161,10 +174,6 @@ h2 {
     width: 100%;
 }
 
-
-.navbarLogo {
-    width: 250px;
-}
 
 /* enten navbarline eller lysgrå/mørk*/
 .navbarLine > line {
