@@ -129,6 +129,10 @@ function myFunction() {
 }
 
 
+function onloadMarg() {
+  buildNavbar();
+  buildFooter();
+}
 
 
 //footer
@@ -148,15 +152,7 @@ function myFunction() {
 }*/
 
 function buildFooter() {
-  /**var x = document.createElement("theFooter");
-   x.setAttribute("id", "myFooter");
-   document.body.appendChild(x);
-
-   var y = document.createElement("P");
-   var kontakt = document.createTextNode("Kontakt");
-   y.appendChild(kontakt);
-
-   document.getElementById("footer").appendChild("y");*/
+ 
   var myNode = document.getElementById("sf");
 
   console.log(myNode.id);
@@ -187,8 +183,6 @@ function buildFooter() {
   myNode.appendChild(phone);
   myNode.appendChild(email);
   myNode.appendChild(copyright);
-
-
 
 }
 
