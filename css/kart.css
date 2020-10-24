@@ -6,8 +6,10 @@
 }
 
 .mapImg {
+  z-index: 1;
   max-width: none;
-  width: 200px; /* Tentative styling for reasonable representation */
+  /*width: 200px; !* Tentative styling for reasonable representation *!*/
+  width: 500px;
 }
 
 
