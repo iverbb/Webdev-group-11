@@ -219,3 +219,13 @@ function onloadShowKronologisk() {
     showKronologisk();
     //buildFooter();
 }
+
+function onloadProsjekttype() {
+    buildNavbar();
+    buildSortprojects();
+}
+
+function onloadShowBeliggenhet() {
+    buildNavbar();
+    buildSortprojects();
+}

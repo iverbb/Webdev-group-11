@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <title>Prosjekt beliggenhet</title>
     <link href="../css/main.css" rel="stylesheet"/>
-    <link href="../css/prosjekttype.css" rel="stylesheet"/>
+    <!--<link href="../css/prosjekttype.css" rel="stylesheet"/>-->
+    <link href="../css/hamburger-test.css" rel="stylesheet"/>
+    <link href="../css/kart.css" rel="stylesheet" type="text/css"/>
 </head>
 
+<body onload="onloadShowBeliggenhet()">
 
-<body>
 <header>
-    <nav id="navbar" onload="buildNavbar()"></nav>
+    <nav id="navbar" ></nav>
+    <div id="hambarheader"></div>
 </header>
 
 <h2>Beliggenhet</h2>
 <!-- img of map -->
+<div id="mapContainer">
+    <img id="map" alt="Stavanger lul" src="../img/m3.jpg" usemap="#projectmap"/>
+    <map name="projectmap">
+        <area alt="" shape="circle" coords="120,230,10" href="google.com"/>
+        <area alt="" shape="circle" coords="250,480,10" href=""/>
+        <area alt="" shape="circle" coords="310,50,10" href=""/>
+    </map>
+</div>
 
-<script type="text/javascript" src="../script/gallerimeny.js"></script>
-<script src="../script/marg.js" id="navbar"></script>
+
+<script src="../script/kart.js"> </script>
+<script src="../script/marg.js"></script>
+<script src="../script/sortprojects.js"></script>
+<script src="../script/galleri.js"></script>
 </body>
 </html>
