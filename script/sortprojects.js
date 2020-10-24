@@ -39,7 +39,7 @@ function buildSortprojects() {
   dropdown.appendChild(myDropdown);
 
   // append everything to html
-  document.getElementById("hambarheader").appendChild(dropdown);
+  document.getElementById("sortingprojects").appendChild(dropdown);
 }
 
 
