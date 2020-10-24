@@ -61,6 +61,7 @@ function createLinkToPage(page) {
 
   if (isCurrentEndpoint(page.endpoint)) {
       anchor.classList.add("navbarCurrentItem");
+      anchor.style.textDecoration = "underline"; //underlining current page 
   }
 
   anchor.href = page.endpoint;

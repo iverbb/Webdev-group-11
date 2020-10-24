@@ -15,7 +15,6 @@ img.om_oss_image {
     object-fit: contain;
     float:left;
     position: relative;
-    z-index: 1;
 }
 
 .box2 {

@@ -1,8 +1,9 @@
 /* Hedvig, Nora, Vilde */
 
-html, body {
+body {
     background-color: #ffffff;
     margin:5%;
+    margin-top: 0;
     font-family: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
     font-style: normal;
     color: #1c1c1c;
@@ -119,6 +120,9 @@ h2 {
     font-size: 20pt;
     margin-bottom: 40px;
     text-align: right;
+    z-index: 1;
+    margin-top: 0;
+    width: 100%;
   }
   
 /* Navbar links */
@@ -128,6 +132,7 @@ h2 {
     color: #1c1c1c;
     text-align: right;
     padding: 14px;
+    text-decoration: none;
 }
   
 .navbarContent{
@@ -139,11 +144,10 @@ h2 {
     text-align: left;
 }
 
-.navbarCurrentItem {
-    border-bottom: 2px solid #1c1c1c; /*dont want it to underline bark-logo*/
-    text-decoration: underline;
-}
-  
+/*.navbarCurrentItem {
+    border-bottom: 2px solid #1c1c1c; /*dont want it to underline bark-logo
+}*/
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
@@ -151,9 +155,6 @@ h2 {
     width: 100%;
 }
 
-.sticky + .content {
-    padding-top: 60px;
-  }
 
 .navbarLogo {
     width: 250px;
