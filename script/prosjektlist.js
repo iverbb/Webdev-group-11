@@ -104,7 +104,7 @@ imageLibrary =
                 {
                     projectName: "Sirdal",
                     description: "Renovering og påbygg av eksisterende hytte. Gjenbruk av vinduer.",
-                    fileName: "fritidsbolig_sirdal",
+                    fileName: "fritidsbolig_sirdal.jpg",
                     startYear: "2009",
                     finishYear: "2011",
                     type: "fritidsbolig",
@@ -442,7 +442,7 @@ imageLibrary =
                     ]
                 },
                 {
-                    projectName: '"Fransk barnehage',
+                    projectName: 'Fransk barnehage',
                     description: "Ny barnehage i Nedre Stokkavei for Stavanger kommune. Inneholder tre avdelinger for barn, personalavdeling, fellesareal og en takterrasse for lek og opphold.",
                     fileName: "naering_fransk_barnehage.jpg",
                     startYear: "2015",

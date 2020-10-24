@@ -1,8 +1,37 @@
+
+function dropmenu() {
+  var dropdown = document.createElement("dropdown");
+  var button = document.createElement"dropbutton").onclick;
+  var dropcont = document.createElement("dropcont");
+
+  button.onclick = drop() {
+
+  }
+
+
+
+
+  <div class="dropdown" style="float:right;">
+      <button class="dropbtn">Sorter etter</button>
+      <div class="dropdown-content">
+          <a href="#prosjekter_prosjekttype">Prosjekttype</a>
+          <a href="#prosjekt_kronologisk">Kronologisk</a>
+          <a href="#prosjekt_beliggenhet">Beliggenhet</a>
+          <a href="#prosjekt_ideer">Ideer</a>
+      </div>
+  </div>
+}
+
+
+
+
+
+
 // pages added to navbar as links
 const pages = [
   {
     text: "Prosjekttype",
-    endpoint: "prosjekt_prosjekttype.html",
+    endpoint: "prosjekt_prosjekttype_test.html",
   },
   {
     text: "Kronologisk",
@@ -15,7 +44,7 @@ const pages = [
   {
     text: "Beliggenhet",
     endpoint: "prosjekt_beliggenhet.html",
-  }
+  },
 ];
 
 let currentEndpoint = "";

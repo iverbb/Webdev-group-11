@@ -13,24 +13,24 @@ const pages = [
       endpoint: "hjem.html",
     },*/
     {
-      text: "Hjem",
-      endpoint: "hjem.html",
+        text: "Hjem",
+        endpoint: "hjem.html",
     },
     {
-      text: "Prosjekter",
-      endpoint: "prosjekt_prosjekttype.html",
+        text: "Prosjekter",
+        endpoint: "prosjekt_prosjekttype_test.html",
     },
     {
-      text: "På tegnebordet",
-      endpoint: "paa_tegnebordet.html",
+        text: "På tegnebordet",
+        endpoint: "paa_tegnebordet.html",
     },
     {
-      text: "Om oss",
-      endpoint: "om_oss.html",
+        text: "Om oss",
+        endpoint: "om_oss.html",
     },
     {
-      text: "Kontakt",
-      endpoint: "kontakt.html",
+        text: "Kontakt",
+        endpoint: "kontakt.html",
     },
   ];
   
@@ -61,9 +61,9 @@ const pages = [
   
   
     if (isCurrentEndpoint(page.endpoint)) {
-      anchor.classList.add("navbar-current-item");
+        anchor.classList.add("navbar-current-item");
     }
-  
+
     anchor.href = page.endpoint;
     anchor.appendChild(content);
   
@@ -82,23 +82,23 @@ const pages = [
   //Returns the endpoint of the current page
   function getCurrentEndpoint() {
     const url = window.location.href;
-  
+    
     return url.split("/").pop();
   }
   
   // Builds the navigation bar by adding html elements to it.
   function buildNavbar() {
     currentEndpoint = getCurrentEndpoint();
-  
+    
     const navbar = document.getElementById("navbar");
     const content = document.createElement("div");
     content.classList.add("navbar-content");
     navbar.appendChild(content);
-  
+    
     const items = document.createElement("div");
     items.classList.add("navbar-items");
     content.appendChild(items);
-  
+    
     pages.forEach((page) => addLinkToElement(page, items));
   }
 

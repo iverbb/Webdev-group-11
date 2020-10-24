@@ -1,10 +1,21 @@
+<!-- MÅ ENDRES SLIK PROSJEKT-PROSJEKTTYPE_BOLIG SER UT-->
+
 <!DOCTYPE html>
 <html lang="no">
 <head>
     <meta charset="UTF-8">
     <title>Prosjekttype</title>
-    <link href="../css/prosjekttype.css" rel="stylesheet"/>
     <link href="../css/main.css" rel="stylesheet"/>
+    <link href="../css/prosjekttype.css" rel="stylesheet"/>
+    <!--<script type="text/javascript">
+        function setNewImage() {
+            document.getElementById('test').src="../img/bolig_grandkvartalet_01.jpg";
+        }
+        function setOldImage() {
+            document.getElementById('test').src= "../img/bolig_grandkvartalet_BW_01.jpg";
+
+        }
+    </script>-->
 </head>
 <body>
 
@@ -13,18 +24,17 @@
 </header>
 
 <h2>Prosjekttype</h2>
-
 <div class="box-grid">
     <div class="box-single">
         <div>
-            <!--<img class="box-img" id="test" alt="bilde" onmouseover="setNewImage();" onmouseout="setOldImage();" src="../img/bolig_grandkvartalet_BW_01.jpg" />-->
-            <!--<img class="box-img" id="test" alt="bilde" onmouseover="setNewImage();" onmouseout="setOldImage();" src="../img/bolig_grandkvartalet_01.jpg" />-->
-            <img class="box-img" alt="bilde" src="../img/naering_mellombygget_01.jpg">
-            <div class="box-caption">
-                <p>
-                    Næring
-                </p>
-            </div>
+        <!--<img class="box-img" id="test" alt="bilde" onmouseover="setNewImage();" onmouseout="setOldImage();" src="../img/bolig_grandkvartalet_BW_01.jpg" />-->
+        <!--<img class="box-img" id="test" alt="bilde" onmouseover="setNewImage();" onmouseout="setOldImage();" src="../img/bolig_grandkvartalet_01.jpg" />-->
+        <img class="box-img" alt="bilde" src="../img/naering_mellombygget_01.jpg">
+        <div class="box-caption">
+            <p>
+                Næring
+            </p>
+        </div>
         </div>
     </div>
     <div class="box-single">
@@ -68,10 +78,9 @@
         </div>
     </div>
 </div>
-
-</div>
-<script src="../script/prosjektlist.js"></script>
-<script src="../script/galleri.js"></script>
+<script type="text/javascript" src="../script/bildeviser.js"></script>
+<script type="text/javascript" src="../script/gallerimeny.js"></script>
+<script type="text/javascript" src="../script/galleri.js"></script>
 <script src="../script/marg.js" id="navbar"></script>
 </body>
 </html>

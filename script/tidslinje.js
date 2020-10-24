@@ -42,7 +42,7 @@ document.body.appendChild(img);*/
     },
     {
       text: "Meto",
-      endpoint: "prosjekt_prosjekttype.html",
+      endpoint: "prosjekt_prosjekttype_test.html",
     },
     {
       text: "Almerket",
