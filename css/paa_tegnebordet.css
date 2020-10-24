@@ -1,13 +1,13 @@
 /* Nora */
 
-/* CSS for Paa_tegnebordet */
+/* CSS for paa_tegnebordet */
 
 .boxTegnebordMainImg {
     max-width: 100%;
     object-fit: fill;
 }
 
-p.descriptionTegnebord {
+.descriptionTegnebord {
     max-width: 50%;
     float: right;
     margin: 10px;
@@ -24,7 +24,7 @@ p.descriptionTegnebord {
     margin-bottom: 100px;
 }
 
-p.nexttoTegnebord {
+.nexttoTegnebord {
     float: left;
     max-width: 20%;
     margin-bottom: 100px;
@@ -52,7 +52,7 @@ p.nexttoTegnebord {
     margin-bottom: 100px;
 }
 
-p.nexttoContact {
+.nexttoContact {
     float: left;
     max-width: 25%;
     margin-bottom: 100px;
@@ -62,14 +62,6 @@ p.nexttoContact {
     object-fit: cover;
     width: 100%;
 }
-
-/* This should maybe not be common for all the pages? Only contact and paa tegnebordet" */
-/*img {
-    object-fit: cover;
-    width: 100%
-}*/
-
-
 
 /* Responsive paa_tegnebordet and contact */
 
@@ -92,7 +84,7 @@ p.nexttoContact {
         margin-bottom: 60px;
     }
 
-    p.nexttoTegnebord, p.nexttoContact {
+    .nexttoTegnebord, .nexttoContact {
         max-width: 50%;
     }
 
@@ -114,4 +106,8 @@ p.bold {
 
 .nexttoContact {
     line-height: 80%;
+}
+
+.nexttoContact p.bold{
+    line-height: 120%;
 }
