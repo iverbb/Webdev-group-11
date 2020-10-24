@@ -48,6 +48,14 @@ document.getElementById("hambarheader").appendChild(dropdown);
 
 
 
+function onloadProjectpages() {
+  buildNavbar();
+  buildHambar();
+  buildFooter();
+
+}
+
+
 
 
 /*

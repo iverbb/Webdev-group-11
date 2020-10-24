@@ -14,7 +14,8 @@
 
 
 <body>
-    <header id="hambarheader">
+
+    <header>
         <!--<div class="dropdown" style="float:right;">
             <button onclick="myFunction()" class="dropbtn">Sorter etter</button>
             <div id="myDropdown" class="dropdown-content">
@@ -23,21 +24,28 @@
                 <a href="prosjekt_beliggenhet.html">Beliggenhet</a>
             </div>
         </div>-->
+        <nav id="navbar" onload="buildNavbar()"></nav>
     </header>
 
-        <section>
-            <div class="box1">
-                <img src="../img/paa_tegnebordet_01.png" alt="paa_tegnebordet_01">
-            </div>
-            <p>
-                Akkurat nå er det <span style="font-weight:bolder">Lervig skole- og sykehjemskvartal</span> som ligger på tegnebordet hos oss i Bark. 
-                I det historiske området på Storhaug skal det bygges barnehage, skole, idrettshall, kontorbygg og en dagligvarebutikk. 
-            </p>
-        </section>
+    <section id="hambarheader">
+    </section>
+    <br>
 
-        <footer>
-            <!--modularity, use js for footer-->
-        </footer>
+    <section>
+        <div class="box1">
+            <img src="../img/paa_tegnebordet_01.png" alt="paa_tegnebordet_01">
+        </div>
+        <p>
+            Akkurat nå er det <span style="font-weight:bolder">Lervig skole- og sykehjemskvartal</span> som ligger på tegnebordet hos oss i Bark. 
+            I det historiske området på Storhaug skal det bygges barnehage, skole, idrettshall, kontorbygg og en dagligvarebutikk. 
+        </p>
+    </section>
+
+    <footer>
+        <!--modularity, use js for footer-->
+    </footer>
+
     <script src="../script/hambar_test.js"></script>
+    <script src="../script/marg.js" id="navbar"></script>
 </body>
 </html>
