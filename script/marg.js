@@ -177,3 +177,4 @@ function onloadMarg() {
   buildNavbar();
   buildFooter();
 }
+onloadMarg();

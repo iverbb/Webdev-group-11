@@ -6,7 +6,7 @@ function buildSortprojects() {
 
   // create button   
   let button = document.createElement("button");
-  button.innerText = "Sorter etter";
+  button.innerText = "Sorter";
   button.setAttribute("id", "button");
   button.onclick = (() => myFunction());
   button.className = "dropbtn";
