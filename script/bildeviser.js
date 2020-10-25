@@ -1,9 +1,18 @@
 // Nora
+function find(fileName) {
+  let project = imageLibrary.files.filter(
+    (file) => (file.fileName === fileName))[0];
+  return project;
+}
 
 function on(img) {
+  let project = find(img);
   let overlay = document.getElementById("overlay");
   overlay.style.display = "block";
-  overlay.querySelector("img").src = img;
+  overlay.querySelector("img").src = "../img/" + project.fileName;
+  overlay.querySelector("#overlaydescription").innerText = project.description;
+  overlay.querySelector("#overlaydetails").innerHTML
+    = project.projectName.bold() + "</br>" + project.finishYear + "</br>" + project.location;
 }
   
 function off() {
@@ -26,11 +35,27 @@ function overlayImage() {
   projectImage.id = "overlayImage";
 
   let textFrame = document.createElement("div");
+  textFrame.id = "textFrame";
   textFrame.style.width = projectImage.style.width;
+  textFrame.style.height = "15%";
   textFrame.style.display = "block";
   textFrame.style.backgroundColor = "#eeeeee";
   textFrame.style.margin = "auto";
-  textFrame.innerText = "tested";
+
+  let description = document.createElement("div");
+  description.id = "overlaydescription";
+  description.style.width = "45%";
+  description.style.float = "right";
+
+  let details = document.createElement("div");
+  details.id = "overlaydetails";
+  details.style.width = "45%";
+  details.style.float = "left";
+
+  textFrame.appendChild(details);
+  textFrame.appendChild(description);
+
+
 
   let overlay = document.createElement("div");
   overlay.onclick = (() => off());
