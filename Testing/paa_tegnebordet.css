@@ -1,0 +1,123 @@
+/* Nora */
+
+/* Should this apply to all pages??*/
+
+header {
+    margin-bottom: 50px;
+}
+
+/* CSS for paa_tegnebordet */
+
+.boxTegnebordMainImg {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.descriptionTegnebord {
+    max-width: 50%;
+    float: right;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.boxTegnebordImg {
+    clear: right;
+    clear: left;
+    float: right;
+    display: flex;
+    width: 70%;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.nexttoTegnebord {
+    float: left;
+    max-width: 20%;
+    margin-bottom: 100px;
+}
+
+.boxTegnebordMainImg img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.boxTegnebordImg img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* CSS for contact */
+
+.boxContact {
+    clear: right;
+    clear: left;
+    float: right;
+    display: flex;
+    width: 60%;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.nexttoContact {
+    float: left;
+    max-width: 35%;
+    margin-bottom: 100px;
+}
+
+.boxContact img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Responsive paa_tegnebordet and contact */
+
+@media (max-width: 1000px) {
+    /*.nextto {
+        float: clear;
+    }*/ /*ikke nødvendig?*/
+
+    .boxTegnebordImg, .boxContact {
+        clear: right;
+        clear: left;
+        float: right;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .boxContact {
+        margin-bottom: 60px;
+    }
+
+    .nexttoTegnebord, .nexttoContact {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nexttoContact {
+        max-width: 100%;
+    }
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.bold {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;   /*this is only for contact and tegnebordet maybe??*/
+}
+
+.bottombox {
+    width: 100%;
+    height: 1600px;
+    display: block;
+
+}

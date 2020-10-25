@@ -1,0 +1,55 @@
+/* Nora */
+
+/* STYLING DROPDOWN MENU */
+
+/* Styling of dropdown menu. Should this styling both 
+apply for drop down on mobile and sorting projects */
+
+/* Dropdown button */
+.dropbtn {
+    background-color: white;
+    color: rgb(101, 101, 101);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  /* Dropdown button text on hover and focus */
+  .dropbtn:hover, .dropbtn:focus {
+    color: black;
+  }
+  
+  /* The div container - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 113px;   /*needs to be solved differently*/
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;   /* fix */
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(228, 228, 228)}
+  
+  /* Show the dropdown menu */
+  .show {display:block;}
+
+
+
