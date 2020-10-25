@@ -117,6 +117,10 @@ h2 {
     width: 100px;
 }*/
 
+header {
+    margin-bottom: 200px;
+}
+
 #navbar {
     background-color: #ffffff;
     z-index: 1;
