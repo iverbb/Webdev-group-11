@@ -2,7 +2,7 @@
 
 
 /* STYLING BODY ETC. */
-/* Applies to all pages if not else is specified */
+/* Applies to all pages if nothing else is specified */
 
 body {
     background-color: #ffffff;
@@ -11,7 +11,7 @@ body {
     font-family: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
     font-style: normal;
     color: #1c1c1c;
-    height:100%;
+    height: 100%;
 }
 
 section {
@@ -207,13 +207,37 @@ li.postSpace{
     background-color: none; /* making overlay see-through */
 }
 
+/* responsive overlay */
+
+@media screen and (max-width: 800px) {
+    #overlaydetails {
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    #overlaytext {
+        font-size: 16px;
+        margin-top: 100px;
+        width: 80%;
+    }
+
+    #displaybox {
+        max-width: 100%;
+    }
+
+    #overlaytitle {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
 /* END of styling overlay */
 
 
 /* STYLING IMAGE GRID */
 /* Responsive styling for different screensizes */
 
-@media screen and (max-width: 2500px) {
+@media screen and (max-width: 5000px) {
     .box-single {
         flex: 28%;
         max-width: 30%;
@@ -409,7 +433,7 @@ li.postSpace{
 
 /* Responsive paa_tegnebordet and contact */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     /*.nextto {
         float: clear;
     }*/ /*ikke nødvendig?*/
@@ -421,7 +445,7 @@ li.postSpace{
         display: flex;
         width: 100%;
         height: 300px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .boxContact {
@@ -496,7 +520,7 @@ img.omOssImage {
     text-align: center;
 }
 
-.timeline-container {
+.timelineContainer {
     width: 100%;
     height: 250px;
     overflow: hidden;
@@ -595,7 +619,24 @@ img.timelineBuildingImage{
     .timelineContentBox{
         margin-bottom: 14px;
     }
+
+    .timelineBuildingName, .established {
+        font-size: 12px;
+    }
+
 }
+
+@media (max-width: 1200px) {
+    .timelineBuildingName, .established {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+}
+
+
 
 /* END of styling om oss */
 
