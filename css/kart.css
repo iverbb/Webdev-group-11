@@ -8,7 +8,17 @@
 .mapImg {
   max-width: none;
   width: 200px; /* Tentative styling for reasonable representation */
+  /*animation: createBox .025s;*/
 }
+
+/*@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}*/
 
 
 .marker {
