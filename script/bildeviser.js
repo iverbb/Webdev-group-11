@@ -84,7 +84,7 @@ function overlayImage() {
   projectTitle.id = "overlaytitle";
   //projectTitle.style.marginTop = "40";
   projectText.id  = ("overlaytext");
-  projectText.style.marginTop = "20px"; //short description of project
+  //projectText.style.marginTop = "20px"; //short description of project
   description.appendChild(projectTitle);
   description.appendChild(projectText);
   description.id = "overlaydescription";
