@@ -628,23 +628,5 @@ imageLibrary =
                         "bilde4"
                     ]
                 },
-                // {
-                //     projectName: ,
-                //     description: ,
-                //     fileName: ,
-                //     startYear: ,
-                //     finishYear: ,
-                //     type: ,
-                //     location: ,
-                //     coordinate: ,
-                //     address: ,
-                //     projectImages: [
-                //         "bilde1",
-                //         "bilde2",
-                //         "bilde3",
-                //         "bilde4",
-                //     ]
-                // },
-
             ]
     }
