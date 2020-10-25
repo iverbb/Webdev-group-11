@@ -80,9 +80,10 @@ h2 {
 /* STYLING NAVBAR AND FOOTER */
 /* Navbar and footer on all pages */
 
-#sf {
-    bottom: 0;
+#stickyFooter {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .pageContent {
@@ -653,4 +654,3 @@ img.timelineBuildingImage{
 
 
 /* END of styling om oss */
-

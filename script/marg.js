@@ -134,19 +134,19 @@ function myFunction() {
 
 function buildFooter() {
  
-  var myNode = document.getElementById("sf");
+  let myNode = document.getElementById("stickyFooter");
 
-  console.log(myNode.id);
-  var contact = document.createElement("h4");
-  var street = document.createElement("li");
-  var postcode = document.createElement("li");
-  var phone = document.createElement("li");
-  var email = document.createElement("li");
-  var copyright = document.createElement("li");
+  console.log(myNode);
+  let contact = document.createElement("h4");
+  let street = document.createElement("li");
+  let postcode = document.createElement("li");
+  let phone = document.createElement("li");
+  let email = document.createElement("li");
+  let copyright = document.createElement("li");
 
   contact.classList.add("tit");
   street.classList.add("adresse");
-  postcode.classList.add("postSpace"); //differrent class so i can add space 
+  postcode.classList.add("postSpace"); //differrent class so i can add space
   phone.classList.add("adresse");
   email.classList.add("adresse");
   copyright.classList.add("copyright");
