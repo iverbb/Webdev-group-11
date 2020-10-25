@@ -89,12 +89,12 @@ function overlayImage() {
   description.appendChild(projectTitle);
   description.appendChild(projectText);
   description.id = "overlaydescription";
-  description.style.width = "45%";
+  description.style.width = "70%";
   description.style.float = "left";
 
   let details = document.createElement("div");
   details.id = "overlaydetails";
-  details.style.width = "45%";
+  details.style.width = "20%";
   details.style.float = "right";
   details.style.textAlign = "right";
   //details.style.marginTop = "20px";
