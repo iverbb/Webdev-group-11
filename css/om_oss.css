@@ -2,22 +2,21 @@ hr{
     border: none;
 }
 
-.box1 {
+.omOssVision {
     max-width: 70%;
     margin-top: 10px;
     margin-bottom: 60px;
     float: left;
     clear: both;
-    font-size: 20px;
 }
 
-img.om_oss_image {
+img.omOssImage {
     object-fit: contain;
     float:left;
     position: relative;
 }
 
-.box2 {
+.imageBoxOmOss {
     clear: right;
     float: left;
     display: flex;
@@ -26,15 +25,16 @@ img.om_oss_image {
     margin-bottom: 20px;
 }
 
-.nextto {
+.employeeInfo {
     float: right;
     max-width: 100%;
     margin-top: 0px;
     margin-bottom: 0;
     text-align: right;
+    font-size: 18px;
 }
 
-.box3{
+.omOssApply{
     clear: both;
     float: left;
     width: 100%;
@@ -57,7 +57,7 @@ img.om_oss_image {
     
 }
 
-img.buildingImage{
+img.timelineBuildingImage{
     object-fit: cover;
     width: 60px;
     height: 40px;
@@ -67,24 +67,26 @@ img.buildingImage{
 
 }
 
-.contentBox{
+.timelineContentBox{
     width: 60px;
     height: 40px;
     margin-bottom: 15px;
     position: relative;
 }
 
-.buildingImage:hover{
+.timelineBuildingImage:hover{
     filter: grayscale(0);
     cursor: pointer;
+    transform: translateY(-3px);
 }
 
-.buildingName {
+.timelineBuildingName {
     padding: 0px 20px;
     display: flex;
     justify-content: center;
     border-top: 1px solid #1c1c1c;
     position: relative;
+    font-size: 18px;
 }
 
 .established {
@@ -95,37 +97,37 @@ img.buildingImage{
     text-align: left;
 }
     
-.buildingName span, .established span {
+.timelineBuildingName span, .established span {
     padding-top: 10px;
 }
 
-.point {
+.timelinePoint {
     width: 200px;
     text-align: center;
     font-size: 18px;
 }
 
-.point:nth-child(n) { /*distance between every first*/
+.timelinePoint:nth-child(n) { /*distance between every first*/
     width: 10%;
 }
 
-.point:nth-child(2n) { /*distance between every second*/
+.timelinePoint:nth-child(2n) { /*distance between every second*/
     width: 10%;
 }
 
-.point:nth-child(3n) { /*distance between every third*/
+.timelinePoint:nth-child(3n) { /*distance between every third*/
     width: 10%;
 }
 
 @media (max-width: 1000px) {
-    img.om_oss_image {
+    img.omOssImage {
         width: 100%;
         height: 100%;
         object-fit: contain;
         position: relative;
     }
 
-    .box2{
+    .imageBoxOmOss{
         clear: right;
         clear: left;
         float: right;
@@ -135,15 +137,15 @@ img.buildingImage{
         margin-bottom: 10px;
     }
 
-    img.buildingImage {
+    img.timelineBuildingImage {
         width: 40px;
     }
 
-    .point {
+    .timelinePoint {
         font-size: 12px;
     }
     
-    .contentBox{
+    .timelineContentBox{
         margin-bottom: 14px;
     }
 }
