@@ -146,10 +146,9 @@ function showBolig() {
 }
 
 function onloadShowBolig() {
-    //buildNavbar();
     buildSortprojects();
     showBolig();
-    //buildFooter();
+    tilbakeKnapp();
 }
 
 function showEnebolig() {
@@ -158,10 +157,8 @@ function showEnebolig() {
 }
 
 function onloadShowEnebolig() {
-    buildNavbar();
     buildSortprojects();
     showEnebolig();
-    //buildFooter();
 }
 
 function showFritidsbolig() {
@@ -170,10 +167,8 @@ function showFritidsbolig() {
 }
 
 function onloadShowFritidsbolig() {
-    buildNavbar();
     buildSortprojects();
     showFritidsbolig();
-    //buildFooter();
 }
 
 function showIdeer() {
@@ -182,10 +177,8 @@ function showIdeer() {
 }
 
 function onloadShowIdeer() {
-    buildNavbar();
     buildSortprojects();
     showIdeer();
-    //buildFooter();
 }
 
 function showMindrebygg() {
@@ -194,10 +187,8 @@ function showMindrebygg() {
 }
 
 function onloadShowMindrebygg() {
-    buildNavbar();
     buildSortprojects();
     showMindrebygg();
-    //buildFooter();
 }
 
 function showNaering() {
@@ -206,10 +197,8 @@ function showNaering() {
 }
 
 function onloadShowNaering() {
-    buildNavbar();
     buildSortprojects();
     showNaering();
-    //buildFooter();
 }
 
 function showKronologisk() {
@@ -218,14 +207,11 @@ function showKronologisk() {
 }
 
 function onloadShowKronologisk() {
-    buildNavbar();
     buildSortprojects();
     showKronologisk();
-    //buildFooter();
 }
 
 function onloadProsjekttype() {
-    buildNavbar();
     buildSortprojects();
 }
 
