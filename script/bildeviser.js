@@ -66,7 +66,7 @@ function overlayImage() {
   projectImage.style.maxHeight = "80%";
   projectImage.style.display = "block";
   projectImage.style.margin = "auto";
-  projectImage.style.marginTop = "10vh"; //does it go for all images or only the top one?
+  projectImage.style.marginTop = "90px"; //make same height as navbar, does this only go for the top image?  
   projectImage.id = "overlayImage";
 
   let textFrame = document.createElement("div");
@@ -74,7 +74,7 @@ function overlayImage() {
   textFrame.style.width = projectImage.style.width;
   textFrame.style.height = "15%";
   textFrame.style.display = "block";
-  textFrame.style.backgroundColor = "none";
+  textFrame.style.backgroundColor = "none"; //making the overlay transparent 
   textFrame.style.margin = "auto";
   textFrame.style.marginTop = "0";
 

@@ -101,37 +101,6 @@ h2 {
     color: lightgray;
 }
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */ 
-}
-/* this has to be changed!!*/
-
-#overlaytitle {
-    font-size: 40px;
-    text-align: left;
-    margin-top: 40px;
-}
-
-#overlaydetails {
-    margin-top: 60px;
-    font-size: 20px;
-}
-
-
-#textFrame {
-    background-color: none;
-}
-
 /*.adresse1, .adresse2 {
     float: left;
     width: 100px;
@@ -169,27 +138,12 @@ header {
     padding-top: 24px;
     text-decoration: none;
     float: right;
-
-
 }
-  
-/*.navbarContent{
-    align-items: normal;
-    border-bottom: 0px;
-}*/
-
-/*.navbarItems{
-    text-align: left;
-}*/
 
 .navbarLogo {
     width: 220px;
     float: left;
 }
-
-/*.navbarCurrentItem {
-    border-bottom: 2px solid #1c1c1c; /*dont want it to underline bark-logo
-}*/
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -197,7 +151,6 @@ header {
     top: 0;
     width: 92%;
 }
-
 
 /* enten navbarline eller lysgrå/mørk*/
 .navbarLine > line {
@@ -217,6 +170,44 @@ li.postSpace{
 }
 
 /* END styling navbar */
+
+
+/* STYLING OVERLAY */
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */ 
+}
+
+#overlaytitle {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+#overlaydetails {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+#overlaydescription {
+    font-size: 18px;
+}
+
+#textFrame {
+    background-color: none; /* making overlay see-through */
+}
+
+/* END of styling overlay */
 
 
 /* STYLING IMAGE GRID */
