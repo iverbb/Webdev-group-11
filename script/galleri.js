@@ -24,6 +24,7 @@ function imageGrid(filerList) {
     let imageGrid = document.getElementsByClassName("box-grid");
     for (let i in filerList) {
         let file = filerList[i];
+        console.log("File: ",file)
         let boxSingle = document.createElement("div");
         boxSingle.setAttribute("class", "box-single");
         imageGrid[0].appendChild(boxSingle);
@@ -32,7 +33,10 @@ function imageGrid(filerList) {
         boxImage.setAttribute("alt","bilde");
         boxImage.setAttribute("src","../img/"+ file.fileName);
         boxSingle.appendChild(boxImage);
-        boxImage.onclick = (() => on(file.fileName));
+        console.log("BoxImage", boxImage);
+        console.log("BoxImage src", boxImage.src);
+        let boxImageOverlay = boxImage.onclick = (() => on(boxImage.src));
+        console.log("Overlay: ", boxImageOverlay)
         let boxCaption = document.createElement("div");
         boxCaption.setAttribute("class", "box-caption");
         boxSingle.appendChild(boxCaption);
@@ -143,7 +147,7 @@ function showBolig() {
 }
 
 function onloadShowBolig() {
-    buildNavbar();
+    //buildNavbar();
     buildSortprojects();
     showBolig();
     //buildFooter();
