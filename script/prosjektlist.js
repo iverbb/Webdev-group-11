@@ -628,6 +628,26 @@ imageLibrary =
                         "bilde4"
                     ]
                 },
+                {
+                    projectName: "Sverdrupsgate",
+                    description: "Ombygging av eksisterende lokaler til legesenter.",
+                    fileName: "naering_Legesentar_01.jpg",
+                    startYear: "",
+                    finishYear: "",
+                    type: "naering",
+                    location: "Stavanger",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "Legesentar1",
+                        "Legesentar2",
+                        "Legesentar3",
+                        "Legesentar4",
+                        "Legesentar5",
+                        "Legesentar6",
+                        "Legesentar1"
+                    ]
+                },
                 // {
                 //     projectName: ,
                 //     description: ,
