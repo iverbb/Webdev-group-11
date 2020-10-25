@@ -1,7 +1,7 @@
 // Nora
 function find(fileName) {
   let project = imageLibrary.files.filter(
-    (file) => (file.fileName === fileName))[0];
+    (file) => (("../img/" + file.fileName) === fileName))[0];
   return project;
 }
 
