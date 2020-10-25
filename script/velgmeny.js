@@ -11,7 +11,7 @@ function velgmeny() {
   console.log(viewwidth);
   if (viewwidth < 640) {
     console.log("small frame");
-    loadjs("../script/hambar_test.js");
+    loadjs("../script/mobilmeny.js");
 
   } else {
     console.log("big frame");
