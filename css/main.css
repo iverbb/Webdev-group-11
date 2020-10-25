@@ -352,6 +352,23 @@ li.postSpace{
 
 
 /* STYLING PROJECT-PAGES */
+.tilbake {
+    transform: translateY(40px);
+}
+
+.tilbake a {
+    background-color: white;
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+}
+
+.tilbake:hover, .tilbake:focus {
+    color: #1c1c1c;
+}
 
 /* add styling here */
 
