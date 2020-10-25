@@ -11,17 +11,34 @@ function off() {
 }
 
 function overlayImage() {
+  let projectDisplay = document.createElement("div");
+  projectDisplay.id = "displaybox";
+  projectDisplay.style.width = "75%";
+  projectDisplay.style.height = "100%";
+  projectDisplay.style.margin = "auto";
+
   let projectImage = document.createElement("img");
   projectImage.style.maxWidth = "75%";
+  projectImage.style.width = "inherit";
   projectImage.style.maxHeight = "75%";
-  projectImage.style.margin = "auto";
   projectImage.style.display = "block";
+  projectImage.style.margin = "auto";
   projectImage.id = "overlayImage";
+
+  let textFrame = document.createElement("div");
+  textFrame.style.width = projectImage.style.width;
+  textFrame.style.display = "block";
+  textFrame.style.backgroundColor = "#eeeeee";
+  textFrame.style.margin = "auto";
+  textFrame.innerText = "tested";
 
   let overlay = document.createElement("div");
   overlay.onclick = (() => off());
   overlay.id = "overlay";
-  overlay.appendChild(projectImage);
+
+  projectDisplay.appendChild(projectImage);
+  projectDisplay.appendChild(textFrame);
+  overlay.appendChild(projectDisplay);
   document.body.prepend(overlay);
 }
 
