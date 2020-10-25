@@ -114,7 +114,7 @@ h2 {
 }*/
 
 header {
-    max-width: 70%;
+    max-width: 100%;
 }
 
 #navbar {
@@ -128,7 +128,7 @@ header {
     z-index: 1;
     margin-top: 0;
     max-height: 50px;
-    max-width: 92%;
+    max-width: 100%;
     margin-bottom: 40px;
   }
   
@@ -171,7 +171,7 @@ header {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 92%;
 }
 
 
