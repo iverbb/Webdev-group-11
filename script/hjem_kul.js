@@ -26,9 +26,9 @@ function findImgForSlideshow(fileName) {
 }
 
 function showNewsSlideshow(img) {
-    let image= findImgForSlideshow(img);
-    console.log("Bildet fra find img: ", image)
-    manuelSlideshowGrid(image);
+  let image= findImgForSlideshow(img);
+  console.log("Bildet fra find img: ", image);
+  manuelSlideshowGrid(image);
 }
 
 showNewsSlideshow('../img/bolig_meto.jpg');
