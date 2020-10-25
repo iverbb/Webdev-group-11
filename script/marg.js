@@ -32,19 +32,17 @@ const pages = [
 
 let currentEndpoint = "";
 
-/**
-* Checks if a given endpoint is the current one
-* returns true if it is current, else false
-*/
+/* Checks if a given endpoint is the current one
+returns true if it is current, else false */
+
 function isCurrentEndpoint(endpoint) {
   return endpoint === currentEndpoint;
 }
 
-/**
-* Creates an anchor element of a given page with link and content
-* @param {Object} page The page with text and endpoint properties
-* @returns {HTMLAnchorElement} The anchor element
-*/
+/* Creates an anchor element of a given page with link and content
+page: text and endpoint properties
+returns anchor element */
+
 function createLinkToPage(page) {
   let anchor = document.createElement("a");
   if (page.text) {
@@ -69,29 +67,23 @@ function createLinkToPage(page) {
   return anchor;
 }
 
-/**
-* Adds a page to the navigation bar as a link.
-* @param {Object} page The page to link
-* @param {HTMLDivElement} element The element to hold the link
-*/
+/*Adds a page to the navigation bar as a link.*/
 function addLinkToElement(page, element) {
   const link = createLinkToPage(page);
   element.appendChild(link);
 }
 
-/**
-* Returns the endpoint of the current page
-* @returns {String} The current endpoint
-*/
+/*Returns the endpoint of the current page
+returns the current endpoint */
+
 function getCurrentEndpoint() {
   const url = window.location.href;
 
   return url.split("/").pop();
 }
 
-/**
-* Builds the navigation bar by adding html elements to it.
-*/
+// Builds the navigation bar by adding html elements to it.
+
 function buildNavbar() {
   currentEndpoint = getCurrentEndpoint();
 
@@ -108,7 +100,9 @@ function buildNavbar() {
 }
 
 
-//making the navbar stick to the top
+
+
+//Making a sticky navbar
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -122,15 +116,13 @@ var sticky = navbar.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
+    navbar.classList.add("stickyNavbar");
   } else {
-    navbar.classList.remove("sticky");
+    navbar.classList.remove("stickyNavbar");
   }
 }
 
-
-//footer
-
+//Footer
 
 function buildFooter() {
  
