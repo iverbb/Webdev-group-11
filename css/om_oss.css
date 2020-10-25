@@ -57,7 +57,7 @@ img.omOssImage {
     
 }
 
-img.buildingImage{
+img.timelineBuildingImage{
     object-fit: cover;
     width: 60px;
     height: 40px;
@@ -74,13 +74,13 @@ img.buildingImage{
     position: relative;
 }
 
-.buildingImage:hover{
+.timelineBuildingImage:hover{
     filter: grayscale(0);
     cursor: pointer;
     transform: translateY(-3px);
 }
 
-.buildingName {
+.timelineBuildingName {
     padding: 0px 20px;
     display: flex;
     justify-content: center;
@@ -97,7 +97,7 @@ img.buildingImage{
     text-align: left;
 }
     
-.buildingName span, .established span {
+.timelineBuildingName span, .established span {
     padding-top: 10px;
 }
 
@@ -137,7 +137,7 @@ img.buildingImage{
         margin-bottom: 10px;
     }
 
-    img.buildingImage {
+    img.timelineBuildingImage {
         width: 40px;
     }
 
