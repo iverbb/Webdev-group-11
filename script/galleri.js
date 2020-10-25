@@ -148,7 +148,6 @@ function showBolig() {
 function onloadShowBolig() {
     buildSortprojects();
     showBolig();
-    tilbakeKnapp();
 }
 
 function showEnebolig() {

@@ -274,40 +274,60 @@ li.postSpace{
 }
 
 #overlaydetails {
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 20px;
 }
 
 #overlaydescription {
     font-size: 18px;
+    width: 45%;
+    float: left;
 }
 
 #textFrame {
     background-color: none; /* making overlay see-through */
 }
 
+
+
 /* responsive overlay */
 
 @media screen and (max-width: 800px) {
     #overlaydetails {
         font-size: 16px;
-        margin-top: 60px;
+        margin-top: 40px;
+        /*width: 100%;
+        float: right;
+        clear: left;
+        display: flex;*/
     }
 
     #overlaytext {
         font-size: 16px;
-        margin-top: 100px;
         width: 80%;
-    }
-
-    #displaybox {
-        max-width: 100%;
+        /*text-align: left;
+        clear: left;
+        clear: right;
+        float: left;
+        display: flex;*/
     }
 
     #overlaytitle {
         font-size: 30px;
         margin-top: 20px;
+        width: 80%;
+        /*clear: left;
+        clear: right;
+        float: left;
+        display: flex;*/
+
     }
+
+    #overlaydescription {
+        width: 100%;
+    }
+
+
 }
 
 /* END of styling overlay */
@@ -382,6 +402,23 @@ li.postSpace{
 
 
 /* STYLING PROJECT-PAGES */
+.tilbake {
+    transform: translateY(40px);
+}
+
+.tilbake a {
+    background-color: white;
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+}
+
+.tilbake:hover, .tilbake:focus {
+    color: #1c1c1c;
+}
 
 /* add styling here */
 
