@@ -81,14 +81,23 @@ h2 {
 /* Navbar and footer on all pages */
 
 #stickyFooter {
+    bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
+    left: 0;
+}
+
+.containerFooter {
+    flex-grow: 1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .pageContent {
     min-height: 100%;
-    margin: 10% auto -100px;   
+    margin: 10% auto -100px;
 }
 
 .footerSize, .push{
