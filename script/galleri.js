@@ -24,19 +24,18 @@ function imageGrid(filerList) {
     let imageGrid = document.getElementsByClassName("box-grid");
     for (let i in filerList) {
         let file = filerList[i];
-        console.log("File: ",file)
+      console.log("File: ",file);
         let boxSingle = document.createElement("div");
         boxSingle.setAttribute("class", "box-single");
         imageGrid[0].appendChild(boxSingle);
         let boxImage = document.createElement("img");
+        let imageSrc = "../img/"+ file.fileName;
         boxImage.setAttribute("class", "box-img");
         boxImage.setAttribute("alt","bilde");
-        boxImage.setAttribute("src","../img/"+ file.fileName);
+        boxImage.setAttribute("src", imageSrc);
         boxSingle.appendChild(boxImage);
-        console.log("BoxImage", boxImage);
-        console.log("BoxImage src", boxImage.src);
-        let boxImageOverlay = boxImage.onclick = (() => on(boxImage.src));
-        console.log("Overlay: ", boxImageOverlay)
+        console.log(imageSrc);
+        boxImage.onclick = (() => on(imageSrc));
         let boxCaption = document.createElement("div");
         boxCaption.setAttribute("class", "box-caption");
         boxSingle.appendChild(boxCaption);
@@ -234,8 +233,3 @@ function onloadShowBeliggenhet() {
     buildNavbar();
     buildSortprojects();
 }
-
-
-//velgmeny
-//data
-//galleri

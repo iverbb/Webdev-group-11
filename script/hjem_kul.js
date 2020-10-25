@@ -1,113 +1,37 @@
 
-function imageGrid(filerList) {
+function manuelSlideshowGrid(img) {
+    let project = findImgForSlideshow(img);
     let manuelSlideshowContainer = document.getElementsByClassName("manuelSlideshowContainer");
-    for (let i in filerList) {
-        let file = filerList[i];
-        console.log("File: ",file)
-        let mySlides = document.createElement("div");
-        mySlides.setAttribute("class", "box-single");
-        manuelSlideshowContainer[0].appendChild(mySlides);
-        let boxImage = document.createElement("img");
-        boxImage.setAttribute("class", "box-img");
-        boxImage.setAttribute("alt","bilde");
-        boxImage.setAttribute("src","../img/"+ file.fileName);
-        mySlides.appendChild(boxImage);
-        console.log("BoxImage", boxImage);
-        console.log("BoxImage src", boxImage.src);
-        let boxImageOverlay = boxImage.onclick = (() => on(boxImage.src));
-        console.log("Overlay: ", boxImageOverlay)
-        let boxCaption = document.createElement("div");
-        boxCaption.setAttribute("class", "box-caption");
-        mySlides.appendChild(boxCaption);
-        let boxCaptionP = document.createElement("p");
-        boxCaptionP.setAttribute("id", "box-caption");
-        boxCaptionP.innerHTML = file.projectName+" "+file.finishYear;
-        boxCaption.appendChild(boxCaptionP);
-    }
-}
 
-var slideIndex = 1;
-showDivs(slideIndex);
+    let mySlides = document.createElement("div");
+    mySlides.setAttribute("class", "mySlide");
+    manuelSlideshowContainer[0].appendChild(mySlides);
+    let mySlidesImage = document.createElement("img");
+    mySlidesImage.setAttribute("class", "mySlides-img");
+    mySlidesImage.setAttribute("alt","bilde");
+    console.log("Manuel slideshow grid 1: ",manuelSlideshowContainer);
+    mySlidesImage.querySelector("img").src = "../img/" + project.fileName;
+    mySlides.appendChild(mySlidesImage);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-}
-
-function filterKronologiskByYear(arr) {
-    let sortedYear = arr.sort( (a,b) => {
-        if (a.finishYear < b.finishYear) {
-            return 1;
-        } else if (b.finishYear < a.finishYear) {
-            return -1;
-        } else {
-            return 0;
-        }
-    });
-    console.log("Sorted Year: ",sortedYear);
-    return sortedYear;
-}
-
-function showManuellSlideshow() {
-    let kronologiskList = filterKronologiskByYear(imageLibrary.files);
-    imageGrid(kronologiskList);
-
-}
-
-function onloadShowManuellSlideshow() {
-    //buildNavbar();
-    //buildSortprojects();
-    showManuellSlideshow();
-    //buildFooter();
+    console.log("Manuel slideshow grid 2: ",manuelSlideshowContainer);
 }
 
 
 
+function findImgForSlideshow(fileName) {
+    let project = imageLibrary.files.filter(
+        (file) => (("../img/" + file.fileName) === fileName))[0];
+    console.log("Return prosjekt", project);
+    return project;
+}
 
+function showNewsSlideshow(img) {
+    let image= findImgForSlideshow(img);
+    console.log("Bildet fra find img: ", image)
+    manuelSlideshowGrid(image);
+}
 
-// function manuelSlideshowGrid(img) {
-//     let project = findImgForSlideshow(img);
-//     let manuelSlideshowContainer = document.getElementsByClassName("manuelSlideshowContainer");
-//
-//     let mySlides = document.createElement("div");
-//     mySlides.setAttribute("class", "mySlide");
-//     manuelSlideshowContainer[0].appendChild(mySlides);
-//     let mySlidesImage = document.createElement("img");
-//     mySlidesImage.setAttribute("class", "mySlides-img");
-//     mySlidesImage.setAttribute("alt","bilde");
-//     console.log("Manuel slideshow grid 1: ",manuelSlideshowContainer);
-//     mySlidesImage.querySelector("img").src = "../img/" + project.fileName;
-//     mySlides.appendChild(mySlidesImage);
-//
-//     console.log("Manuel slideshow grid 2: ",manuelSlideshowContainer);
-// }
-//
-//
-//
-// function findImgForSlideshow(fileName) {
-//     let project = imageLibrary.files.filter(
-//         (file) => (("../img/" + file.fileName) === fileName))[0];
-//     console.log("Return prosjekt", project);
-//     return project;
-// }
-//
-// function showNewsSlideshow(img) {
-//     let image= findImgForSlideshow(img);
-//     console.log("Bildet fra find img: ", image)
-//     manuelSlideshowGrid(image);
-// }
-//
-// showNewsSlideshow('../img/bolig_meto.jpg');
+showNewsSlideshow('../img/bolig_meto.jpg');
 
 
 // // options
