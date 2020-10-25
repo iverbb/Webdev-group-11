@@ -5,14 +5,47 @@ function find(fileName) {
   return project;
 }
 
+function status(project) {
+  if (project.fileName.match("^ideer")) {return "ide";};
+  if (project.finishYear)               {return "Fullført";};
+  if (project.startYear)                {return "Pågående";};
+  return "Ide";
+}
+
+function prosjektFelt(navn, verdi) {
+  console.log(verdi);
+  return verdi ? navn + ": " + verdi + "</br>" : "";
+}
+
+function prosjektDato(project) {
+  return project.startDate + project.finishDate ? "-" + project.finishDate : "";
+}
+
+function projectDetails(project) {
+  let projectText = "";
+  [
+    {navn: "Status",  verdi: status(project)},
+    {navn: "Klient",  verdi: project.client},
+    {navn: "Type",    verdi: project.type},
+    {navn: "Program", verdi: project.program},
+    {navn: "Sted",    verdi: project.location},
+    {navn: "Team",    verdi: "Bark Arkitekter"},
+    {navn: "År",      verdi: prosjektDato(project)},
+  ].forEach((a) => {projectText += prosjektFelt(a.navn, a.verdi);});
+  return projectText;
+
+
+}
+
 function on(img) {
   let project = find(img);
   let overlay = document.getElementById("overlay");
   overlay.style.display = "block";
   overlay.querySelector("img").src = "../img/" + project.fileName;
-  overlay.querySelector("#overlaydescription").innerText = project.description;
+  overlay.querySelector("#overlaytext").innerText = project.description;
+  overlay.querySelector("#overlaytitle").innerText = project.projectName;
   overlay.querySelector("#overlaydetails").innerHTML
-    = project.projectName.bold() + "</br>" + project.finishYear + "</br>" + project.location;
+    = projectDetails(project);
 }
   
 function off() {
@@ -43,14 +76,22 @@ function overlayImage() {
   textFrame.style.margin = "auto";
 
   let description = document.createElement("div");
+  let projectTitle = document.createElement("h3");
+  let projectText = document.createElement("p");
+  projectTitle.id = "overlaytitle";
+  projectTitle.style.marginTop = "0";
+  projectText.id  = ("overlaytext");
+  description.appendChild(projectTitle);
+  description.appendChild(projectText);
   description.id = "overlaydescription";
   description.style.width = "45%";
-  description.style.float = "right";
+  description.style.float = "left";
 
   let details = document.createElement("div");
   details.id = "overlaydetails";
   details.style.width = "45%";
-  details.style.float = "left";
+  details.style.float = "right";
+  details.style.textAlign = "right";
 
   textFrame.appendChild(details);
   textFrame.appendChild(description);

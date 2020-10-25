@@ -176,5 +176,5 @@ function buildFooter() {
 
 // Event trigger when the DOM is ready (newer browsers)
 // window.onload = () => buildNavbar(), buildFooter();
-buildNavbar();
-buildFooter();
+//buildNavbar();
+//buildFooter();
