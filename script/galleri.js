@@ -45,15 +45,15 @@ function imageGrid(filerList) {
 function filterKronologiskByYear(arr) {
     let sortedYear = arr.sort( (a,b) => {
         if (a.finishYear < b.finishYear) {
-            return 1
+          return 1;
         } else if (b.finishYear < a.finishYear) {
-            return -1;
+          return -1;
         } else {
-            return 0;
+          return 0;
         }
     });
     console.log("Sorted Year: ",sortedYear);
-    return sortedYear
+  return sortedYear;
 }
 
 function filterBolig() {
@@ -81,7 +81,7 @@ function filterEnebolig() {
         }
     }
     let sortedFileEneboligList = filterKronologiskByYear(fileEneboligList);
-    return sortedFileEneboligList
+  return sortedFileEneboligList;
 }
 
 function filterFritidsbolig() {
@@ -120,7 +120,7 @@ function filterMindrebygg() {
         }
     }
     let sortedFileMindreByggList = filterKronologiskByYear(fileMindrebyggList);
-    return sortedFileMindreByggList
+  return sortedFileMindreByggList;
 }
 
 function filterNaering() {
@@ -133,7 +133,7 @@ function filterNaering() {
         }
     }
     let sortedFileNaeringList = filterKronologiskByYear(fileNaeringList);
-    return sortedFileNaeringList
+  return sortedFileNaeringList;
 }
 
 function showBolig() {
