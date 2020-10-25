@@ -725,8 +725,17 @@ img.timelineBuildingImage{
     }
 }
 
+@media (max-width: 1000px) {
+    .timelineBuildingName, .established {
+        font-size: 12px;
+    }
+}
+
+
 @media (max-width: 800px) {
-    
+    .timelineContainer {
+        display: none;
+    }
 }
 
 
