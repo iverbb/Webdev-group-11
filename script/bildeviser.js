@@ -55,16 +55,17 @@ function off() {
 function overlayImage() {
   let projectDisplay = document.createElement("div");
   projectDisplay.id = "displaybox";
-  projectDisplay.style.width = "75%";
+  projectDisplay.style.width = "80%";
   projectDisplay.style.height = "100%";
   projectDisplay.style.margin = "auto";
 
   let projectImage = document.createElement("img");
-  projectImage.style.maxWidth = "75%";
+  projectImage.style.maxWidth = "80%";
   projectImage.style.width = "inherit";
-  projectImage.style.maxHeight = "75%";
+  projectImage.style.maxHeight = "80%";
   projectImage.style.display = "block";
   projectImage.style.margin = "auto";
+  projectImage.style.marginTop = "10vh"; //does it go for all images or only the top one?
   projectImage.id = "overlayImage";
 
   let textFrame = document.createElement("div");
@@ -80,7 +81,7 @@ function overlayImage() {
   let projectTitle = document.createElement("h3");
   let projectText = document.createElement("p");
   projectTitle.id = "overlaytitle";
-  projectTitle.style.marginTop = "20px";
+  //projectTitle.style.marginTop = "40";
   projectText.id  = ("overlaytext");
   projectText.style.marginTop = "20px"; //short description of project
   description.appendChild(projectTitle);
@@ -94,7 +95,7 @@ function overlayImage() {
   details.style.width = "45%";
   details.style.float = "right";
   details.style.textAlign = "right";
-  details.style.marginTop = "20px";
+  //details.style.marginTop = "20px";
 
   textFrame.appendChild(details);
   textFrame.appendChild(description);

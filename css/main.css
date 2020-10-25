@@ -106,7 +106,7 @@ h2 {
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
-    top: 20px; /*make same height as navbar*/
+    top: 0; 
     left: 0;
     right: 0;
     bottom: 0;
@@ -115,6 +115,18 @@ h2 {
     cursor: pointer; /* Add a pointer on hover */ 
 }
 /* this has to be changed!!*/
+
+#overlaytitle {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+#overlaydetails {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
 
 #textFrame {
     background-color: none;
