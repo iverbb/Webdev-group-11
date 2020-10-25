@@ -72,15 +72,17 @@ function overlayImage() {
   textFrame.style.width = projectImage.style.width;
   textFrame.style.height = "15%";
   textFrame.style.display = "block";
-  textFrame.style.backgroundColor = "#eeeeee";
+  textFrame.style.backgroundColor = "none";
   textFrame.style.margin = "auto";
+  textFrame.style.marginTop = "0";
 
   let description = document.createElement("div");
   let projectTitle = document.createElement("h3");
   let projectText = document.createElement("p");
   projectTitle.id = "overlaytitle";
-  projectTitle.style.marginTop = "0";
+  projectTitle.style.marginTop = "20px";
   projectText.id  = ("overlaytext");
+  projectText.style.marginTop = "20px"; //short description of project
   description.appendChild(projectTitle);
   description.appendChild(projectText);
   description.id = "overlaydescription";
@@ -92,6 +94,7 @@ function overlayImage() {
   details.style.width = "45%";
   details.style.float = "right";
   details.style.textAlign = "right";
+  details.style.marginTop = "20px";
 
   textFrame.appendChild(details);
   textFrame.appendChild(description);
