@@ -5,7 +5,7 @@
 // pages added to navbar as links
 const pages = [
   {
-      img: "../p1 and p2/img/P1/logo_rett.png", //?? how do i put the picture of the logo here
+      img: "../p1, p2, p3, p4/img/P1/logo_rett.png", //?? how do i put the picture of the logo here
       endpoint: "hjem.html",
   },
   {
@@ -130,12 +130,6 @@ function myFunction() {
 }
 
 
-function onloadMarg() {
-  buildNavbar();
-  buildFooter();
-}
-
-
 //footer
 
 
@@ -178,3 +172,9 @@ function buildFooter() {
 // window.onload = () => buildNavbar(), buildFooter();
 //buildNavbar();
 //buildFooter();
+
+
+function onloadMarg() {
+  buildNavbar();
+  buildFooter();
+}
