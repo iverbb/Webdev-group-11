@@ -229,3 +229,8 @@ function onloadShowBeliggenhet() {
     buildNavbar();
     buildSortprojects();
 }
+
+
+//velgmeny
+//data
+//galleri
