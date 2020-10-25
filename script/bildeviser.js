@@ -63,6 +63,7 @@ function overlayImage() {
   let projectImage = document.createElement("img");
   projectImage.style.maxWidth = "80%";
   projectImage.style.width = "inherit";
+  projectImage.style.obejectFit = "contain";
   projectImage.style.maxHeight = "80%";
   projectImage.style.display = "block";
   projectImage.style.margin = "auto";

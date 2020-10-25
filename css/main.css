@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 img {
@@ -80,7 +80,17 @@ h2 {
 /* STYLING NAVBAR AND FOOTER */
 /* Navbar and footer on all pages */
 
-#sf {
+#stickyFooter {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+
+.containerFooter {
+    flex-grow: 1;
+    position: relative;
     bottom: 0;
     width: 100%;
     display: block;
@@ -88,7 +98,7 @@ h2 {
 
 .pageContent {
     min-height: 100%;
-    margin: 10% auto -100px;   
+    margin: 10% auto -100px;
 }
 
 .footerSize, .push{
@@ -497,7 +507,7 @@ li.postSpace{
 
 /* Responsive paa_tegnebordet and contact */
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     /*.nextto {
         float: clear;
     }*/ /*ikke nødvendig?*/
@@ -521,8 +531,22 @@ li.postSpace{
     }
 }
 
-@media (max-width: 600px) {
-    .nexttoContact {
+@media screen and (max-width: 960px) {
+    .boxTegnebordImg, .boxContact {
+        clear: right;
+        clear: left;
+        float: right;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .boxContact {
+        margin-bottom: 60px;
+    }
+    
+    .nexttoTegnebord, .nexttoContact, .descriptionTegnebord {
         max-width: 100%;
     }
 }
@@ -703,4 +727,3 @@ img.timelineBuildingImage{
 
 
 /* END of styling om oss */
-
