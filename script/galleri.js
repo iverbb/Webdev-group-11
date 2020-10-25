@@ -29,12 +29,13 @@ function imageGrid(filerList) {
         boxSingle.setAttribute("class", "box-single");
         imageGrid[0].appendChild(boxSingle);
         let boxImage = document.createElement("img");
+        let imageSrc = "../img/"+ file.fileName;
         boxImage.setAttribute("class", "box-img");
         boxImage.setAttribute("alt","bilde");
-        boxImage.setAttribute("src","../img/"+ file.fileName);
+        boxImage.setAttribute("src", imageSrc);
         boxSingle.appendChild(boxImage);
-      boxImage.onclick = (() => on());
-        let boxImageOverlay = boxImage.onclick = (() => on(boxImage.src));
+        console.log(imageSrc);
+        boxImage.onclick = (() => on(imageSrc));
         let boxCaption = document.createElement("div");
         boxCaption.setAttribute("class", "box-caption");
         boxSingle.appendChild(boxCaption);
