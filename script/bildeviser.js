@@ -18,7 +18,7 @@ function prosjektFelt(navn, verdi) {
 }
 
 function prosjektDato(project) {
-  return project.startDate + project.finishDate ? "-" + project.finishDate : "";
+  return project.startYear + (project.finishYear ? "-" + project.finishYear : "");
 }
 
 function projectDetails(project) {
