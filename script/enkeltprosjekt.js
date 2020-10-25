@@ -4,19 +4,28 @@
 
 function populate() {
 
-    const params = new URLSearchParams(window.location.search);
-    let project  = params.get("fileName");
+  const params = new URLSearchParams(window.location.search);
+  let project  = params.get("fileName");
 
-    let imageBox             = document.getElementById("projectImage");
-    let projImage            = document.createElement("img");
-    projImage.src            = "../img/" + project;
-    projImage.style.maxWidth = "80%";
-    imageBox.appendChild(projImage);
+  //console.log(imageLibrary.files);
+  let file          = imageLibrary.files.filter(proj => proj.projectName == project)[0];
+
+  let imageBox             = document.getElementById("projectImage");
+  let projImage            = document.createElement("img");
+
+  projImage.src            = "../img/" + file.fileName;
+  projImage.style.maxWidth = "80%";
+  imageBox.appendChild(projImage);
 
 
-    let textBox       = document.getElementById("projectText");
-    let projText      = data.files.filter(proj => proj.fileName == project)[0].year;
-    textBox.innerText = projText;
+  let textBox       = document.getElementById("projectText");
+  textBox.style.maxWidth = "80%";
+
+
+
+  let projText      = file.description;
+  let projYear      = file.year;
+  textBox.innerText = projText;
 }
 
 populate();
