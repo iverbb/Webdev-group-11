@@ -32,8 +32,7 @@ function imageGrid(filerList) {
         boxImage.setAttribute("alt","bilde");
         boxImage.setAttribute("src","../img/"+ file.fileName);
         boxSingle.appendChild(boxImage);
-        // let image = setAttribute("src","../img/"+ file.fileName);
-        // onclick(on(image))
+        boxImage.onclick = (() => on(file.fileName));
         let boxCaption = document.createElement("div");
         boxCaption.setAttribute("class", "box-caption");
         boxSingle.appendChild(boxCaption);
