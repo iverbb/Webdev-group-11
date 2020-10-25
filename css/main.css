@@ -162,20 +162,21 @@ header {
 
 .navbarContent {
     margin-right: 5%;
+    margin-left: 5%;
 }
 
 
 @media screen and (max-width: 5000px) {
     .navbarContent {
         margin-right: 15%;
-        margin-left: 10%;
+        margin-left: 15%;
     }
 }
 
 @media screen and (max-width: 1700px) {
     .navbarContent {
         margin-right: 10%;
-        margin-left: 5%;
+        margin-left: 10%;
     }
 }
 
