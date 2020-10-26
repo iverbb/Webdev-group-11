@@ -10,7 +10,7 @@ let points = [
 let images = [
     "bolig_grandkvartalet_01.jpg",
     "bolig_meto.jpg",
-    "bolig_myklebust_01.jpg"
+    "bolig_myklebust.jpg"
 ];
 
 // makes an image with the given id(or, well any object really) appear if hidden

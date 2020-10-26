@@ -38,7 +38,7 @@ data =
         files:
             [
                 {
-                    fileName: "naering_hordatun_01.jpg",
+                    fileName: "naering_hordatun.jpg",
                     name: "Hordatun",
                     year: "2010",
                 },
