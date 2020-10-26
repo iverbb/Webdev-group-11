@@ -22,7 +22,7 @@ const pages = [
   },
   {
     text: "Prosjekter",
-    endpoint: "prosjekt_prosjekttype_test.html",
+    endpoint: "prosjekt_prosjekttype.html",
   },
   {
       text: "Hjem",
