@@ -1,4 +1,4 @@
-function buildSortprojects() {
+//function buildSortprojects() {
   // create div dropdown
   let dropdown = document.createElement("div");
   dropdown.className = "dropdown";
@@ -40,8 +40,7 @@ function buildSortprojects() {
 
   // append everything to html
   document.getElementById("sortingprojects").appendChild(dropdown);
-}
-
+//}
 
 function onloadProjectpages() {
   buildNavbar();
