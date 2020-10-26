@@ -823,7 +823,7 @@ imageLibrary =
                     startYear: "",
                     finishYear: "",
                     type: "enbolig",
-                    location: "Oslo", //is it right?
+                    location: "Stavanger", //is it right?
                     coordinate: "",
                     address: "",
                     projectImages: [
