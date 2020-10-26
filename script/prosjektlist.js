@@ -602,7 +602,7 @@ imageLibrary =
                     finishYear: "2017",
                     type: "naering",
                     location: "Sentrum",
-                    coordinate: "",
+                    coordinate: "{x:58.967429, y:5.726546}",
                     address: "",
                     projectImages: [
                         "bilde1",
