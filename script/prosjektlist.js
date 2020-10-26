@@ -211,7 +211,7 @@ imageLibrary =
                     finishYear: "2013",
                     type: "naering",
                     location: "stavanger øst",
-                    coordinate: "",
+                    coordinate: "{x:58.969514, y:5.756308}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -330,7 +330,7 @@ imageLibrary =
                     finishYear: "2015",
                     type: "naering",
                     location: "Sentrum",
-                    coordinate: "",
+                    coordinate: "{x:58.976564, y:5.720586}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -347,7 +347,7 @@ imageLibrary =
                     finishYear: "2015", //mangler
                     type: "naering",
                     location: "",
-                    coordinate: "",
+                    coordinate: "{x:58.955642, y:5.702335}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -364,7 +364,7 @@ imageLibrary =
                     finishYear: "2015",
                     type: "naering",
                     location: "Mariero",
-                    coordinate: "",
+                    coordinate: "{x:58.938601, y:5.748428}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -432,7 +432,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Storhaug",
-                    coordinate: "",
+                    coordinate: "{x:58.961959, y:5.760958}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -449,7 +449,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Stokka",
-                    coordinate: "",
+                    coordinate: "{x:58.969189, y:5.706609}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -466,7 +466,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Tastarustå",
-                    coordinate: "",
+                    coordinate: "{x:58.984365, y:5.688994}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -636,7 +636,7 @@ imageLibrary =
                     finishYear: "",
                     type: "naering",
                     location: "Stavanger",
-                    coordinate: "",
+                    coordinate: "{x:58.973024, y:5.720167}",
                     address: "",
                     projectImages: [
                         "Legesentar1",
