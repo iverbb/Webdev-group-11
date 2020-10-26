@@ -32,17 +32,17 @@ const pages = [
 
 let currentEndpoint = "";
 
+
 /* Checks if a given endpoint is the current one
 returns true if it is current, else false */
-
 function isCurrentEndpoint(endpoint) {
   return endpoint === currentEndpoint;
 }
 
+
 /* Creates an anchor element of a given page with link and content
 page: text and endpoint properties
 returns anchor element */
-
 function createLinkToPage(page) {
   let anchor = document.createElement("a");
   if (page.text) {
@@ -54,12 +54,12 @@ function createLinkToPage(page) {
       image.style.width = "300px";
 
       anchor.appendChild(image);
-      anchor.classList.add("navbarLogo");
+      anchor.classList.add("navbarLogo"); //for styling logoimage
   }
 
   if (isCurrentEndpoint(page.endpoint)) {
       anchor.classList.add("navbarCurrentItem");
-      anchor.style.textDecoration = "underline"; //underlining current page 
+      anchor.style.textDecoration = "underline"; //underlining current page, and not logo
   }
 
   anchor.href = page.endpoint;
@@ -67,23 +67,24 @@ function createLinkToPage(page) {
   return anchor;
 }
 
+
 /*Adds a page to the navigation bar as a link.*/
 function addLinkToElement(page, element) {
   const link = createLinkToPage(page);
   element.appendChild(link);
 }
 
+
 /*Returns the endpoint of the current page
 returns the current endpoint */
-
 function getCurrentEndpoint() {
   const url = window.location.href;
 
   return url.split("/").pop();
 }
 
-// Builds the navigation bar by adding html elements to it.
 
+// Builds the navigation bar by adding html elements to it
 function buildNavbar() {
   currentEndpoint = getCurrentEndpoint();
 
@@ -99,6 +100,7 @@ function buildNavbar() {
   pages.forEach((page) => addLinkToElement(page, items));
 }
 
+//made with help from another webtek group
 
 
 
@@ -121,12 +123,34 @@ function myFunction() {
     navbar.classList.remove("stickyNavbar");
   }
 }
+//source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+
 
 //Footer
 
 function buildFooter() {
  
   let myNode = document.getElementById("stickyFooter");
+
+  /* I think I could have made this prettier, but don't know if it would mess things up:
+
+  const footerList = [
+    "Kontakt oss",
+    "Avaldsnesgata 95 c",
+    "4014 Stavanger",
+    "T:  51 56 78 30",
+    "E: firmapost@barkarkitekter.no",
+    "© 2020 Group 11"
+  ]
+
+  for (let i = 0; i < footerList.length; i++) {
+    var node = document.createElement("li");
+    var textnode = document.createTextNode(footerList[i]);
+    myNode.appendChild(textnode);
+  }
+
+  could maybe work idk
+  */
 
   console.log(myNode);
   let contact = document.createElement("h4");
@@ -158,6 +182,8 @@ function buildFooter() {
   myNode.appendChild(copyright);
 
 }
+
+
 
 // Event trigger when the DOM is ready (newer browsers)
 // window.onload = () => buildNavbar(), buildFooter();
