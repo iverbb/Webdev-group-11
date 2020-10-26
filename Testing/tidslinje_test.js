@@ -38,7 +38,7 @@ data =
         files:
             [
                 {
-                    fileName: "naering_hordatun.jpg",
+                    fileName: "naering_hordatun_01.jpg",
                     name: "Hordatun",
                     year: "2010",
                 },
@@ -48,7 +48,7 @@ data =
                     year: "2012",
                 },
                 {
-                    fileName: "bolig_ryggstraen.jpg",
+                    fileName: "bolig_ryggstraen_01.jpg",
                     name: "Ryggstraen",
                     year: "2012",
                 },

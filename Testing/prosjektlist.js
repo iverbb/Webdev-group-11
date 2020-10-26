@@ -36,7 +36,7 @@ imageLibrary =
                 {
                     projectName: "Hordatun gård",
                     description: "Hordatun hotell var BARKs første oppdrag. Det gamle hotellet var i dårlig forfatning og trengte store utbedringer. Løsningen ble å bygge et nytt hotell, prosjektert i massivtre og kledd med svartbeiset trekledning. For at alle leilighetene skulle få gode utsiktsforhold ut over Røldalsvatnet, ble bygningskroppen gitt den karakteristiske formen, som også får hotellet til å fremstå som en mer organsisk del av landskapet. Som en slalomkjører ned fjellsiden, eller veien som svinger seg oppover.",
-                    fileName: "naering_hordatun.jpg",
+                    fileName: "naering_hordatun_01.jpg",
                     startYear: "2006",
                     finishYear: "2010",
                     type: "naering",
@@ -53,7 +53,7 @@ imageLibrary =
                 {
                     projectName: "Østhusvik",
                     description: "Fritidsbolig med universell utforming.",
-                    fileName: "fritidsbolig_osthusvik.jpg",
+                    fileName: "fritidsbolig_osthusvik_01.jpg",
                     startYear: "2008",
                     finishYear: "2010",
                     type: "fritidsbolig",
@@ -70,7 +70,7 @@ imageLibrary =
                 {
                     projectName: "Myklebust",
                     description: "12 leiligheter i nytt boligområde ved Nordsjøen.",
-                    fileName: "bolig_myklebust.jpg",
+                    fileName: "bolig_myklebust_01.jpg",
                     startYear: "2009",
                     finishYear: "2011",
                     type: "bolig",
@@ -87,7 +87,7 @@ imageLibrary =
                 {
                     projectName: "Madlavollveien",
                     description: "Modernisert tilbakeføring samt påbygg av enebolig fra 60-tallet.",
-                    fileName: "enebolig_madlavollvegen.jpg",
+                    fileName: "enebolig_madlavollvegen_01.jpg",
                     startYear: "2010",
                     finishYear: "2011",
                     type: "enebolig",
@@ -104,7 +104,7 @@ imageLibrary =
                 {
                     projectName: "Sirdal",
                     description: "Renovering og påbygg av eksisterende hytte. Gjenbruk av vinduer.",
-                    fileName: "fritidsbolig_sirdal.jpg",
+                    fileName: "fritidsbolig_sirdal_01.jpg",
                     startYear: "2009",
                     finishYear: "2011",
                     type: "fritidsbolig",
@@ -121,7 +121,7 @@ imageLibrary =
                 {
                     projectName: "Ryggstraen",
                     description: "Omregulering av gartneritomt til boligområde, bestående av 38 leiligheter, 8 eneboliger i rekke og 2 eneboliger, samt en stor felleshage i midten.",
-                    fileName: "bolig_ryggstraen.jpg",
+                    fileName: "bolig_ryggstraen_01.jpg",
                     startYear: "2012",
                     finishYear: "2012", //har ikke sluttår
                     type: "bolig",

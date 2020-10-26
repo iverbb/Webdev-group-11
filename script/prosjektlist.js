@@ -19,7 +19,7 @@ imageLibrary =
                 {
                     projectName: "Meto",
                     description: "Et tidligere industriområde i Bryne sentrum ble omregulert til bolig og næring av BARK-partnerne mens de jobbet i Asplan Viak, og prosjektet ble derfor videreført av BARK. Det nye bykvartalet henvender seg mot Meierigata og sentrumskjernen i nord, og mot friområdet Geitehodna i sør. Bygningene omkranser et felles, beplantet atrium som åpner seg mot friområdet. Under kvartalet er det et parkeringsanlegg over to etasjer, hvorav den øverste er offentlig. Kvartalets fasader formidler overgangen mellom by (tegl) og park (tre), og nabolagets dimensjoner er videreført i de oppstykkede volumene. ",
-                    fileName: "bolig_Meto.jpg",
+                    fileName: "bolig_Meto_01.jpg",
                     startYear: "2006",
                     finishYear: "2012",
                     type: "bolig",
@@ -42,7 +42,7 @@ imageLibrary =
                 {
                     projectName: "Hordatun gård",
                     description: "Hordatun hotell var BARKs første oppdrag. Det gamle hotellet var i dårlig forfatning og trengte store utbedringer. Løsningen ble å bygge et nytt hotell, prosjektert i massivtre og kledd med svartbeiset trekledning. For at alle leilighetene skulle få gode utsiktsforhold ut over Røldalsvatnet, ble bygningskroppen gitt den karakteristiske formen, som også får hotellet til å fremstå som en mer organsisk del av landskapet. Som en slalomkjører ned fjellsiden, eller veien som svinger seg oppover.",
-                    fileName: "naering_Hordatun Gård_01.jpg",
+                    fileName: "naering_hordatun_01.jpg",
                     startYear: "2006",
                     finishYear: "2010",
                     type: "naering",
@@ -59,7 +59,7 @@ imageLibrary =
                 {
                     projectName: "Østhusvik",
                     description: "Fritidsbolig med universell utforming.",
-                    fileName: "Fritidsbolig_Østhusvik_01.jpg",
+                    fileName: "fritidsbolig_osthusvik_01.jpg",
                     startYear: "2008",
                     finishYear: "2010",
                     type: "fritidsbolig",
@@ -80,7 +80,7 @@ imageLibrary =
                 {
                     projectName: "Myklebust",
                     description: "12 leiligheter i nytt boligområde ved Nordsjøen.",
-                    fileName: "bolig_Myklebust_01.jpg",
+                    fileName: "bolig_myklebust_01.jpg",
                     startYear: "2009",
                     finishYear: "2011",
                     type: "bolig",
@@ -99,7 +99,7 @@ imageLibrary =
                 {
                     projectName: "Madlavollveien",
                     description: "Modernisert tilbakeføring samt påbygg av enebolig fra 60-tallet.",
-                    fileName: "enebolig_Madlavollveien_01.jpg",
+                    fileName: "enebolig_madlavollveien.jpg",
                     startYear: "2010",
                     finishYear: "2011",
                     type: "enebolig",
@@ -118,7 +118,7 @@ imageLibrary =
                 {
                     projectName: "Sirdal",
                     description: "Renovering og påbygg av eksisterende hytte. Gjenbruk av vinduer.",
-                    fileName: "Fritidsbolig_Sirdal_01.jpg",
+                    fileName: "fritidsbolig_sirdal_01.jpg",
                     startYear: "2009",
                     finishYear: "2011",
                     type: "fritidsbolig",
@@ -139,7 +139,7 @@ imageLibrary =
                 {
                     projectName: "Ryggstraen",
                     description: "Omregulering av gartneritomt til boligområde, bestående av 38 leiligheter, 8 eneboliger i rekke og 2 eneboliger, samt en stor felleshage i midten.",
-                    fileName: "bolig_Ryggstraen_01.jpg",
+                    fileName: "bolig_ryggstraen_01.jpg",
                     startYear: "2012",
                     finishYear: "2012", //har ikke sluttår
                     type: "bolig",
@@ -153,7 +153,7 @@ imageLibrary =
                         "Rygg4"
                     ]
                 },
-                {
+                { //finnes ikke
                     projectName: "Helleveien",
                     description: "To boliger i fint samspill på Sola.",
                     fileName: "enebolig_Hellevegen_01.JPG",
@@ -173,7 +173,7 @@ imageLibrary =
                 {
                     projectName: "Stadionveien",
                     description: "Enebolig over to plan.",
-                    fileName: "enebolig_Stadionveien_01.JPG",
+                    fileName: "enebolig_stadionveien_01.jpg",
                     startYear: "2008",
                     finishYear: "2012",
                     type: "enebolig",
@@ -190,7 +190,7 @@ imageLibrary =
                 {
                     projectName: "Bergtun",
                     description: "Erstatningshytte nær strandlinjen på Bergtun, delvis inntrukket i terreng og godt skjermet av vegetasjon.",
-                    fileName: "Fritidsbolig_Bergtun_01_01.jpg",
+                    fileName: "fritidsbolig_Bergtun_01.jpg",
                     startYear: "2010",
                     finishYear: "2012",
                     type: "fritidsbolig",
