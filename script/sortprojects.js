@@ -51,25 +51,17 @@ function onloadProjectpages() {
 onloadProjectpages();
 
 
-// When the user clicks on the button, toggle between hiding and showing the dropdown content
 
+// Close the dropdown menu if the user clicks outside of it
+//window.onclick = (() => document.getElementById("myDropdown").style.display = "none");
+
+// When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleMenu() {
-  document.getElementById("myDropdown").style.display = "block";
-  console.log("click!");
-  }
-  
-  // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
+  let displayStatus = document.getElementById("myDropdown").style.display;
+  if (displayStatus != "block") {displayStatus = "block";}
+  else {displayStatus = "none";}
+  document.getElementById("myDropdown").style.display = displayStatus;
 }
+
 
 
