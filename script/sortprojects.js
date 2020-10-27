@@ -53,7 +53,7 @@ onloadProjectpages();
 
 
 // Close the dropdown menu if the user clicks outside of it
-//window.onclick = (() => document.getElementById("myDropdown").style.display = "none");
+// window.onclick = (() => document.getElementById("myDropdown").style.display = "none");
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleMenu() {
