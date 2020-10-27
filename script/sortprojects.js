@@ -53,13 +53,18 @@ onloadProjectpages();
 
 
 // Close the dropdown menu if the user clicks outside of it
-// window.onclick = (() => document.getElementById("myDropdown").style.display = "none");
+window.onclick = (() =>
+  {
+    if (document.getElementById("myDropdown").style.display == "block"){
+      document.getElementById("myDropdown").style.display = "none";
+    }
+  });
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleMenu() {
   let displayStatus = document.getElementById("myDropdown").style.display;
-  if (displayStatus != "block") {displayStatus = "block";}
-  else {displayStatus = "none";}
+  if (displayStatus != "block") { displayStatus = "block"; }
+  else { displayStatus = "none"; }
   document.getElementById("myDropdown").style.display = displayStatus;
 }
 
