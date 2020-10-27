@@ -191,8 +191,8 @@ function buildFooter() {
 //buildFooter();
 
 
-function onloadMarg() {
-  buildNavbar();
-  buildFooter();
-}
-onloadMarg();
+// function onloadMarg() {
+//   buildNavbar();
+//   buildFooter();
+// }
+// onloadMarg();

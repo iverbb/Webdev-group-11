@@ -5,22 +5,43 @@
         <title>Hjem</title>
         <link href="../css/main.css" rel="stylesheet"/>
         <link href="../css/hjem.css" rel="stylesheet"/>
-        <link href="../css/hamburger-test.css" rel="stylesheet"/>
 
     </head>
 
-    <body>
+    <body onload="onloadBarkMainPage()">
 
         <header id="hambarheader">
             <nav id="navbar"></nav>
         </header>
 
-        <div class="slideshow-container">
-            <div class="mySlide">
-                <div class="numbertext">1 / 3</div>
-                <img src="../img/bolig_meto.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+        <section>
+            <div class="boxHjemMainImg">
+                <img alt="bilde av kontoret" src="../img/naering_mellombygget_01.jpg">
             </div>
+            <div class="boxHjemImgDescription">
+                <p class="textBig">
+                    <strong>Bark arkitekter</strong> holder til i den grønne boksen i Oransjeriet i Stavangers østre bydel.
+                    Bark har ikke én stil, men prosjektene våre kjennetegnes av gjennomarbeidede løsninger,
+                    kjærlighet for faget og godt samarbeid med byggherre og utførende.
+                </p>
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+<!--            <div class="mySlide">-->
+<!--                <div class="numbertext">1 / 3</div>-->
+<!--                <img src="../img/bolig_meto.jpg" style="width:100%">-->
+<!--                <div class="text">Caption Text</div>-->
+<!--            </div>-->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dot-container" style="text-align:center">
+<!--            <span class="dot" onclick="currentSlide(1)"></span>-->
+<!--            <span class="dot" onclick="currentSlide(2)"></span>-->
+<!--            <span class="dot" onclick="currentSlide(3)"></span>-->
         </div>
 
         <!--<div class="slidesDiv">
@@ -32,86 +53,80 @@
              <img class="mySlides" alt="kontoret" src="../img/ideer_pedersgata_01.jpg">
              </div>-->
 
-        <section>
-            <p class="text">
-                <strong>Bark arkitekter</strong> holder til i den grønne boksen i Oransjeriet i Stavangers østre bydel.
-                Bark har ikke én stil, men prosjektene våre kjennetegnes av gjennomarbeidede løsninger,
-                kjærlighet for faget og godt samarbeid med byggherre og utførende.
-            </p>
-        </section>
 
-        <section>
-            <h2>
-                Nyheter
-            </h2>
+
+<!--        <section>-->
+<!--            <h2>-->
+<!--                Nyheter-->
+<!--            </h2>-->
             <!-- flexbox her? -->
 
             <!--<script type="text/javascript" src="../script/marg.js"></script>-->
 
-            <div class="box-grid">
-                <div class="box-single">
-                    <img class="box-img" alt="bolig grandkvartalet bilde 1"
-                         src="../img/bolig_grandkvartalet_01.jpg"
-                         onclick="on('../img/bolig_grandkvartalet_01.jpg');">
-                    <div class="box-caption">
-                        <p>
-                            tekst tekst tekst
-                        </p>
-                    </div>
-                </div>
-                <div class="box-single">
-                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_grandkvartalet_01.jpg">
-                    <div class="box-caption">
-                        <p>
-                            tekst tekst tekst
-                        </p>
-                    </div>
-                </div>
-                <div class="box-single">
-                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_grandkvartalet_01.jpg">
-                    <div class="box-caption">
-                        <p>
-                            tekst tekst tekst
-                        </p>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="box-grid">-->
+<!--                <div class="box-single">-->
+<!--                    <img class="box-img" alt="bolig grandkvartalet bilde 1"-->
+<!--                         src="../img/bolig_grandkvartalet_01.jpg"-->
+<!--                         onclick="on('../img/bolig_grandkvartalet_01.jpg');">-->
+<!--                    <div class="box-caption">-->
+<!--                        <p>-->
+<!--                            tekst tekst tekst-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="box-single">-->
+<!--                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_grandkvartalet_01.jpg">-->
+<!--                    <div class="box-caption">-->
+<!--                        <p>-->
+<!--                            tekst tekst tekst-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="box-single">-->
+<!--                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_grandkvartalet_01.jpg">-->
+<!--                    <div class="box-caption">-->
+<!--                        <p>-->
+<!--                            tekst tekst tekst-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="box-grid">
-                <div class="box-single">
-                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_meto.jpg">
-                    <div class="box-caption">
-                        <p>
-                            tekst tekst tekst
-                        </p>
-                    </div>
-                </div>
-                <div class="box-single">
-                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_meto.jpg">
-                    <div class="box-caption">
-                        <p>
-                            tekst tekst tekst
-                        </p>
-                    </div>
-                </div>
-                <div class="box-single">
-                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_meto.jpg">
-                    <div class="box-caption">
-                        <p>
-                            tekst tekst tekst
-                        </p>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="box-grid">-->
+<!--                <div class="box-single">-->
+<!--                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_meto.jpg">-->
+<!--                    <div class="box-caption">-->
+<!--                        <p>-->
+<!--                            tekst tekst tekst-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="box-single">-->
+<!--                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_meto.jpg">-->
+<!--                    <div class="box-caption">-->
+<!--                        <p>-->
+<!--                            tekst tekst tekst-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="box-single">-->
+<!--                    <img class="box-img" alt="bolig grandkvartalet bilde 1" src="../img/bolig_meto.jpg">-->
+<!--                    <div class="box-caption">-->
+<!--                        <p>-->
+<!--                            tekst tekst tekst-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-        </section>
+<!--            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>-->
+<!--            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>-->
+<!--        </section>-->
 
 
-        <footer id="sf">
+<!--        <footer id="sf">-->
 
-        </footer>
+<!--        </footer>-->
         <script src="../script/prosjektlist.js"></script>
         <script src="../script/bildeviser.js"></script>
         <script type="text/javascript" src="../script/slideshow.js"></script>
