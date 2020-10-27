@@ -8,7 +8,7 @@ function buildSortprojects() {
   let button = document.createElement("button");
   button.innerText = "Sorter";
   button.setAttribute("id", "button");
-  button.onclick = (() => myFunction());
+  button.onclick = (() => toggleMenu());
   button.className = "dropbtn";
 
   // create div2 dropdown content
@@ -43,30 +43,33 @@ function buildSortprojects() {
 }
 
 function onloadProjectpages() {
-  buildNavbar();
+  //buildNavbar();
   buildSortprojects();
-  buildFooter();
+  //buildFooter();
 }
+
+onloadProjectpages();
 
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function toggleMenu() {
+  document.getElementById("myDropdown").style.display = "block";
+  console.log("click!");
   }
   
   // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
-        }
+window.onclick = function(event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
       }
     }
   }
+}
 
 
