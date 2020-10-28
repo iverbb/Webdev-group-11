@@ -8,7 +8,7 @@ function buildSortprojects() {
   let button = document.createElement("button");
   button.innerText = "Sorter";
   button.setAttribute("id", "button");
-  button.onclick = (() => toggleMenu());
+  button.onclick = ((e) => toggleMenu());
   button.className = "dropbtn";
 
   // create div2 dropdown content
@@ -53,7 +53,10 @@ function onloadProjectpages() {
 
 
 // Close the dropdown menu if the user clicks outside of it
-//window.onclick = (() =>
+window.onclick = ((e) =>
+  {
+    document.getElementById("myDropdown").style.display = "none";
+  });
 //  {
 //    if (document.getElementById("myDropdown").style.display == "block"){
 //      document.getElementById("myDropdown").style.display = "none";
@@ -61,7 +64,10 @@ function onloadProjectpages() {
 //  });
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
-function toggleMenu() {
+function toggleMenu(e) {
+  let event = e ? e : window.event;
+  event.stopPropagation();
+
   let displayStatus = document.getElementById("myDropdown").style.display;
   if (displayStatus != "block") { displayStatus = "block"; }
   else { displayStatus = "none"; }
