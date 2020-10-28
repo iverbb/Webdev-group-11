@@ -12,7 +12,7 @@ function buildSortprojects() {
   dropdown.className = "dropdown";
   dropdown.style = "float:right";
 
-  // create button   
+  // create button
   let button = document.createElement("button");
   button.innerText = "Sorter";
   button.setAttribute("id", "button");
@@ -31,24 +31,6 @@ function buildSortprojects() {
      a.href      = button.link;
      myDropdown.appendChild(a);
     });
-                   
-  // // create anchor elements 
-  // var a1 = document.createElement("a");  
-  // var a2 = document.createElement("a");  
-  // var a3 = document.createElement("a");  
-
-  // // set the text and href property
-  // a1.innerText = "Prosjekttype";  
-  // a2.innerText = "Kronologisk"; 
-  // a3.innerText = "Beliggenhet"; 
-  // a1.href = "prosjekt_prosjekttype.html";  
-  // a2.href = "prosjekt_kronologisk.html";  
-  // a3.href = "prosjekt_beliggenhet.html"; 
-
-  // // append the anchor elements to div2 
-  // myDropdown.appendChild(a1);
-  // myDropdown.appendChild(a2);
-  // myDropdown.appendChild(a3);
 
   // // append div2 and button to dropdown
   dropdown.appendChild(button);
