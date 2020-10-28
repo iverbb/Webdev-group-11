@@ -48,7 +48,7 @@ function carousel() {
         slides[i].style.display = "none";
     }
     console.log("Slideindex: ", slideIndex);
-    if (slideIndex > slides.length) {slideIndex = 1}
+    if (slideIndex > slides.length) {slideIndex = 1;}
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
