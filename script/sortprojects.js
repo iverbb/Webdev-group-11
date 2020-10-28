@@ -6,7 +6,7 @@ function buildSortprojects() {
     { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
     { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
   ];
-  console.log(buttons);
+
   // create div dropdown
   let dropdown = document.createElement("div");
   dropdown.className = "dropdown";
