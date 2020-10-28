@@ -48,17 +48,17 @@ function onloadProjectpages() {
   //buildFooter();
 }
 
-onloadProjectpages();
+//onloadProjectpages();
 
 
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = (() =>
-  {
-    if (document.getElementById("myDropdown").style.display == "block"){
-      document.getElementById("myDropdown").style.display = "none";
-    }
-  });
+//window.onclick = (() =>
+//  {
+//    if (document.getElementById("myDropdown").style.display == "block"){
+//      document.getElementById("myDropdown").style.display = "none";
+//    }
+//  });
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleMenu() {
