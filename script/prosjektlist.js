@@ -330,7 +330,7 @@ imageLibrary =
                     finishYear: "2015",
                     type: "naering",
                     location: "Sentrum",
-                    coordinate: "",
+                    coordinate: "{x:58.976564, y:5.720586}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -346,8 +346,8 @@ imageLibrary =
                     startYear: "2015",
                     finishYear: "2015", //mangler
                     type: "naering",
-                    location: "",
-                    coordinate: "",
+                    location: "Mosvannet",
+                    coordinate: "{x:58.955642, y:5.702335}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -364,7 +364,7 @@ imageLibrary =
                     finishYear: "2015",
                     type: "naering",
                     location: "Mariero",
-                    coordinate: "",
+                    coordinate: "{x:58.938601, y:5.748428}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -432,7 +432,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Storhaug",
-                    coordinate: "",
+                    coordinate: "{x:58.961959, y:5.760958}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -442,14 +442,14 @@ imageLibrary =
                     ]
                 },
                 {
-                    projectName: 'Fransk barnehage',
+                    projectName: "Fransk barnehage",
                     description: "Ny barnehage i Nedre Stokkavei for Stavanger kommune. Inneholder tre avdelinger for barn, personalavdeling, fellesareal og en takterrasse for lek og opphold.",
                     fileName: "naering_fransk_barnehage.jpg",
                     startYear: "2015",
                     finishYear: "2016",
                     type: "naering",
                     location: "Stokka",
-                    coordinate: "",
+                    coordinate: "{x:58.969189, y:5.706609}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -466,7 +466,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Tastarustå",
-                    coordinate: "",
+                    coordinate: "{x:58.984365, y:5.688994}",
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -602,7 +602,7 @@ imageLibrary =
                     finishYear: "2017",
                     type: "naering",
                     location: "Sentrum",
-                    coordinate: "",
+                    coordinate: "{x:58.967429, y:5.726546}",
                     address: "",
                     projectImages: [
                         "bilde1",
