@@ -1,4 +1,12 @@
+
 function buildSortprojects() {
+
+  let buttons = [
+    { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },
+    { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
+    { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
+  ];
+  console.log(buttons);
   // create div dropdown
   let dropdown = document.createElement("div");
   dropdown.className = "dropdown";
@@ -16,25 +24,33 @@ function buildSortprojects() {
   myDropdown.className = "dropdown-content";
   myDropdown.id = "myDropdown";
 
-  // create anchor elements 
-  var a1 = document.createElement("a");  
-  var a2 = document.createElement("a");  
-  var a3 = document.createElement("a");  
+  buttons.forEach
+  ( (button) =>
+    {let a = document.createElement("a");
+     a.innerText = button.name;
+     a.href      = button.link;
+     myDropdown.appendChild(a);
+    });
+                   
+  // // create anchor elements 
+  // var a1 = document.createElement("a");  
+  // var a2 = document.createElement("a");  
+  // var a3 = document.createElement("a");  
 
-  // set the text and href property
-  a1.innerText = "Prosjekttype";  
-  a2.innerText = "Kronologisk"; 
-  a3.innerText = "Beliggenhet"; 
-  a1.href = "prosjekt_prosjekttype.html";  
-  a2.href = "prosjekt_kronologisk.html";  
-  a3.href = "prosjekt_beliggenhet.html"; 
+  // // set the text and href property
+  // a1.innerText = "Prosjekttype";  
+  // a2.innerText = "Kronologisk"; 
+  // a3.innerText = "Beliggenhet"; 
+  // a1.href = "prosjekt_prosjekttype.html";  
+  // a2.href = "prosjekt_kronologisk.html";  
+  // a3.href = "prosjekt_beliggenhet.html"; 
 
-  // append the anchor elements to div2 
-  myDropdown.appendChild(a1);
-  myDropdown.appendChild(a2);
-  myDropdown.appendChild(a3);
+  // // append the anchor elements to div2 
+  // myDropdown.appendChild(a1);
+  // myDropdown.appendChild(a2);
+  // myDropdown.appendChild(a3);
 
-  // append div2 and button to dropdown
+  // // append div2 and button to dropdown
   dropdown.appendChild(button);
   dropdown.appendChild(myDropdown);
 
