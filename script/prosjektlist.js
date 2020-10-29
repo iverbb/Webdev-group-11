@@ -218,7 +218,7 @@ imageLibrary =
                         "bilde2",
                         "bilde3",
                         "bilde4"
-                    ]
+                    ],
                 },
                 {
                     projectName: "Friggsgate",
@@ -627,6 +627,125 @@ imageLibrary =
                         "bilde3",
                         "bilde4"
                     ]
+                },
+                {
+                    projectName: "SK 4",
+                    description: "Vi vant! Bark og studio hoh. Prosjektkonkurranser er vi gode på; denne gang har vi tegnet 6 smale eneboliger over tre plan for Bjerga Bygg as, og Sandnes Tomteselskap likte våre boliger best. Kleivane ligger solrikt og lunt til, like ved Melsheia i Sandnes, og boligene har god plass til både folk og livet deres. Salget av boligene starter vinteren 2019/2020.",
+                    fileName: "news_SK4_01.png",
+                    startYear: "",
+                    finishYear: "",
+                    type: "nyhet",
+                    location: "",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "bilde1",
+                        "bilde2",
+                        "bilde3",
+                        "bilde4"
+                    ],
+                },
+                {
+                    projectName: "Haver",
+                    description: "Ikke alle er så heldige at de får jobbe i omgivelser tegnet av Bark, men når Haver Advokatfirma nå flytter fra Forus til lokaler midt i Stavanger sentrum, kan både ansatte og besøkende nyte godt av lyse og rolige kontorlokaler i ask, oransje og industriell blå. Vi takker for samarbeidet, og håper vi slipper å besøke de i andre sammenhenger…",
+                    fileName: "news_Haver_01.png",
+                    startYear: "",
+                    finishYear: "",
+                    type: "nyhet",
+                    location: "",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "bilde1",
+                        "bilde2",
+                        "bilde3",
+                        "bilde4"
+                    ],
+                },
+                {
+                    projectName: "Benedikte er tilbake",
+                    description: "Bark sin første ansatte etter oppstarten, Benedikte, begynte hos oss i 2009, men pakket blyanten og dro til hovedstaden i 2016. Hun tok heldigvis til vett, og har nå kommet seg trygt tilbake til moderskipet! Reguleringsplanen som ble godkjent rett før hun dro, er blitt til en byggeplass hun kan følge opp, og til tross for noen nye erfaringer innen kino, kjøpesenter, hotell, omsorgsboliger og studentboliger, er det nesten som om hun aldri har vært borte.",
+                    fileName: "news_Benedikte_01.png",
+                    startYear: "",
+                    finishYear: "",
+                    type: "nyhet",
+                    location: "",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "bilde1",
+                        "bilde2",
+                        "bilde3",
+                        "bilde4"
+                    ],
+                },
+                {
+                    projectName: "Svenneprøve à la 1902",
+                    description: "Denne sveitservillaen fra 1902 blir flyttet, hevet og får mindre fasadeendringer etter tegninger fra Bark, og byggmester Jens Gerlach Sørensen lot lærlingen sin få en svenneprøveutfordring utenom det vanlige; et verandabygg i original sveitserstil. Han bestod med glans, og vi gratulerer!",
+                    fileName: "news_Svenneproeve_01.png",
+                    startYear: "",
+                    finishYear: "",
+                    type: "nyhet",
+                    location: "",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "bilde1",
+                        "bilde2",
+                        "bilde3",
+                        "bilde4"
+                    ],
+                },
+                {
+                    projectName: "BKS 15 – felt G, Myklebust, Tananger/Sola",
+                    description: "Vi vant! 7 rekkehus Bark har tegnet for førstegangsetablerere i Havmåkeveien på Myklebust skal oppføres av Bjerga Bygg AS etter en prosjektkonkurranse i regi av Sola Tomteselskap. Mye dagslys, praktisk planløsning og gode materialer er stikkord denne gang.",
+                    fileName: "news_BKS_15_01.png",
+                    startYear: "",
+                    finishYear: "",
+                    type: "nyhet",
+                    location: "",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "bilde1",
+                        "bilde2",
+                        "bilde3",
+                        "bilde4"
+                    ],
+                },
+                {
+                    projectName: "Studio hoh",
+                    description: "Bark og studio hoh as forener krefter! Hans-Olav Hansen tar med seg arkitekt- og plankontoret sitt og flytter inn til oss i Oransjeriet. Han har tidligere vært medeier og daglig leder i Ramp as og har også jobbet i Brandsberg-Dahls Arkitekter i Stavanger, samt Base Arkitekter og Niels Torp Arkitekter i Oslo. De siste årene har han ledet planarbeidet med byutviklingsprosjektet Byfjordparken nord for sentrumskjernen i Stavanger, og han står også bak det første nybygde, privateide kunstgalleriet i Norge, BGE Contemporary Art Gallery. Nå skal han tegne videre, både på egne prosjekter og samarbeidsprosjekter med Bark. Vi gleder oss til å utvide repertoaret, både på tegnebrettet og rundt lunsjbordet!",
+                    fileName: "news_hoh_01.jpg",
+                    startYear: "",
+                    finishYear: "",
+                    type: "nyhet",
+                    location: "",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "bilde1",
+                        "bilde2",
+                        "bilde3",
+                        "bilde4"
+                    ],
+                },
+                {
+                    projectName: "BKS 16 – felt G, Myklebust, Tanganger/Sola",
+                    description: "Vi vant! 7 rekkehus på delfelt BKS 16 på Myklebust tegnet av Bark oppføres av Hellvik Hus Stavanger etter en prosjektkonkurranse i regi av Sola Tomteselskap. Fleksibilitet, gjennomlys og god kontakt med hagen har vært viktig i utarbeidelsen av prosjektet.",
+                    fileName: "news_BKS_16_01.png",
+                    startYear: "",
+                    finishYear: "",
+                    type: "nyhet",
+                    location: "",
+                    coordinate: "",
+                    address: "",
+                    projectImages: [
+                        "bilde1",
+                        "bilde2",
+                        "bilde3",
+                        "bilde4"
+                    ],
                 },
             ]
     }

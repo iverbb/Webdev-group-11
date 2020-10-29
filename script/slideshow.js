@@ -1,13 +1,32 @@
 function createSlide(fileNameList, i, slideShowContainer) {
-    let fileName = fileNameList[i];
+    let fileName = fileNameList[0][i];
+    let fileDescription = fileNameList[1][i];
+    let fileHeader = fileNameList[2][i];
     let mySlides = document.createElement("div");
     mySlides.setAttribute("class", "mySlide");
     slideShowContainer[0].appendChild(mySlides);
+    let divImage = document.createElement("div");
+    divImage.setAttribute("class", "mySLides-divImage");
     let mySlidesImage = document.createElement("img");
     mySlidesImage.setAttribute("class", "mySlides-img");
     mySlidesImage.setAttribute("alt", "bilde");
     mySlidesImage.setAttribute("src", "../img/" + fileName);
-    mySlides.appendChild(mySlidesImage);
+    divImage.appendChild(mySlidesImage);
+    mySlides.appendChild(divImage);
+    let mySlidesCaption = document.createElement("div");
+    mySlidesCaption.setAttribute("class", "mySlides-caption")
+    let mySlidesHeader = document.createElement("h2");
+    mySlidesHeader.setAttribute("class", "mySlides-header");
+    mySlidesCaption.appendChild(mySlidesHeader);
+    let header = document.createTextNode(fileHeader);
+    mySlidesHeader.appendChild(header);
+    let mySlidesText = document.createElement("p");
+    mySlidesText.setAttribute("class", "mySlides-text");
+    mySlidesCaption.appendChild(mySlidesText);
+    let text = document.createTextNode(fileDescription);
+    mySlidesText.appendChild(text);
+    mySlides.appendChild(mySlidesCaption);
+    console.log("myslides med tekst: ", mySlides);
 }
 
 function createDot(i, dotContainer) {
@@ -21,12 +40,12 @@ function createDot(i, dotContainer) {
 
 function slideShowGrid(fileNameList) {
     let slideShowContainer = document.getElementsByClassName("slideshow-container");
-    for (let i in fileNameList) {
+    for (let i in fileNameList[0]) {
         createSlide(fileNameList, i, slideShowContainer);
     }
 
     let dotContainer = document.getElementsByClassName("dot-container")[0];
-    for (let i in fileNameList) {
+    for (let i in fileNameList[0]) {
         createDot(i, dotContainer);
     }
 }
@@ -43,6 +62,7 @@ let slideIndex = 0;
 function carousel() {
     let i;
     let slides = document.getElementsByClassName("mySlide");
+    console.log("Slides: ", slides)
     let dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -54,33 +74,34 @@ function carousel() {
     }
     slides[slideIndex].style.display = "block";
     dots[slideIndex].className += " active";
-    // setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
 
-function filterOnBolig() {
-    let fileBoligList = [];
+function filterOnNews() {
+    let fileNewsImageList = [];
+    let fileNewsDescriptionList = [];
+    let fileNewsHeaderList = [];
     for (let key in imageLibrary.files) {
         let file = imageLibrary.files[key];
-        if (file.type === "bolig") {
-            fileBoligList.push(file.fileName);
+        if (file.type === "nyhet") {
+            fileNewsImageList.push(file.fileName);
+            fileNewsDescriptionList.push(file.description);
+            fileNewsHeaderList.push(file.projectName);
         }
     }
-    console.log("Liste bolig: ", fileBoligList);
-    return fileBoligList;
+    let imageAndText = [fileNewsImageList,fileNewsDescriptionList,fileNewsHeaderList]
+    console.log("Image and text: ", imageAndText);
+    return imageAndText;
 }
 
 function showSlides() {
-    //let randomFilerList = filterOnBolig();
-    slideShowGrid(filterOnBolig());
+    slideShowGrid(filterOnNews());
     carousel();
 }
 
 function onloadBarkMainPage() {
     console.log("Onload Bark main page");
-    //buildNavbar();
     showSlides();
-    //buildFooter();
 }
 
 
