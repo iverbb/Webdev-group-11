@@ -24,7 +24,7 @@ function imageGrid(filerList) {
     let imageGrid = document.getElementsByClassName("box-grid");
     for (let i in filerList) {
         let file = filerList[i];
-      console.log("File: ",file);
+        //console.log("File: ",file);
         let boxSingle = document.createElement("div");
         boxSingle.setAttribute("class", "box-single");
         imageGrid[0].appendChild(boxSingle);
@@ -34,7 +34,7 @@ function imageGrid(filerList) {
         boxImage.setAttribute("alt","bilde");
         boxImage.setAttribute("src", imageSrc);
         boxSingle.appendChild(boxImage);
-        console.log(imageSrc);
+        //console.log(imageSrc);
         boxImage.onclick = (() => on(imageSrc));
         let boxCaption = document.createElement("div");
         boxCaption.setAttribute("class", "box-caption");

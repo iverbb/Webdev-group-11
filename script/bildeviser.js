@@ -48,7 +48,7 @@ function on(img) {
   overlay.querySelector("#overlaydetails").innerHTML
     = projectDetails(project);
 }
-  
+
 function off() {
     document.getElementById("overlay").style.display = "none";
 }
@@ -63,7 +63,7 @@ function overlayImage() {
   let projectImage = document.createElement("img");
   projectImage.style.maxWidth = "80%";
   projectImage.style.width = "inherit";
-  projectImage.style.obejectFit = "contain";
+  projectImage.style.objectFit = "contain";
   projectImage.style.maxHeight = "80%";
   projectImage.style.display = "block";
   projectImage.style.margin = "auto";

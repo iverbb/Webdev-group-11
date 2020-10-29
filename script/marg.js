@@ -136,7 +136,7 @@ function buildNavbar() {
 //Making a sticky navbar
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction();};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
@@ -221,7 +221,7 @@ function buildFooter() {
 
 //function for loading both 
 function onloadMarg() {
-  buildNavbar();
-  buildFooter();
-}
+   buildNavbar();
+   buildFooter();
+ }
 onloadMarg();

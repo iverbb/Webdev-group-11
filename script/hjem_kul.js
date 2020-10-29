@@ -74,7 +74,7 @@ function onloadShowManuellSlideshow() {
 
 
 
-
+//
 // function manuelSlideshowGrid(img) {
 //     let project = findImgForSlideshow(img);
 //     let manuelSlideshowContainer = document.getElementsByClassName("manuelSlideshowContainer");
@@ -108,6 +108,7 @@ function onloadShowManuellSlideshow() {
 // }
 //
 // showNewsSlideshow('../img/bolig_meto.jpg');
+
 
 
 // // options

@@ -1,40 +1,60 @@
+function createSlide(fileNameList, i, slideShowContainer) {
+    let fileName = fileNameList[i];
+    let mySlides = document.createElement("div");
+    mySlides.setAttribute("class", "mySlide");
+    slideShowContainer[0].appendChild(mySlides);
+    let mySlidesImage = document.createElement("img");
+    mySlidesImage.setAttribute("class", "mySlides-img");
+    mySlidesImage.setAttribute("alt", "bilde");
+    mySlidesImage.setAttribute("src", "../img/" + fileName);
+    mySlides.appendChild(mySlidesImage);
+}
 
-
+function createDot(i, dotContainer) {
+    let dotSpan = document.createElement("span");
+    dotSpan.setAttribute("class", "dot");
+    dotSpan.onclick = function () {
+        currentSlide(i);
+    };
+    dotContainer.appendChild(dotSpan);
+}
 
 function slideShowGrid(fileNameList) {
     let slideShowContainer = document.getElementsByClassName("slideshow-container");
     for (let i in fileNameList) {
-        let fileName = fileNameList[i];
-        let mySlides = document.createElement("div");
-        mySlides.setAttribute("class", "mySlide");
-        slideShowContainer[0].appendChild(mySlides);
-        let mySlidesImage = document.createElement("img");
-        mySlidesImage.setAttribute("class", "mySlides-img");
-        mySlidesImage.setAttribute("alt","bilde");
-        mySlidesImage.setAttribute("src","../img/"+ fileName);
-        mySlides.appendChild(mySlidesImage);
+        createSlide(fileNameList, i, slideShowContainer);
     }
-    console.log("SlideShowGrid: ",slideShowContainer);
+
+    let dotContainer = document.getElementsByClassName("dot-container")[0];
+    for (let i in fileNameList) {
+        createDot(i, dotContainer);
+    }
 }
 
-let i;
+function plusSlides(n) {
+    carousel(slideIndex += n);
+}
+
+function currentSlide(n) {
+    carousel(slideIndex = n);
+}
 let slideIndex = 0;
 
 function carousel() {
+    let i;
     let slides = document.getElementsByClassName("mySlide");
-    console.log("my slides web elements:",slides);
-    //let dots = document.getElementsByClassName("dot");
+    let dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    // for (i = 0; i < dots.length; i++) {
-    //     dots[i].className = dots[i].className.replace(" active", "");
-    // }
-    slides[slideIndex-1].style.display = "block";
-    //dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
+    console.log("Slideindex: ", slideIndex);
+    if (slideIndex > slides.length) {slideIndex = 1;}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex].style.display = "block";
+    dots[slideIndex].className += " active";
+    // setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
 
@@ -51,42 +71,38 @@ function filterOnBolig() {
 }
 
 function showSlides() {
-    let randomFilerList = filterOnBolig();
-    console.log("filter list", randomFilerList);
-    /*let testFilerList = filterOnBolig();*/
-    slideShowGrid(randomFilerList);
+    //let randomFilerList = filterOnBolig();
+    slideShowGrid(filterOnBolig());
     carousel();
-    /*slideShowGrid(testFilerList);*/
 }
 
 function onloadBarkMainPage() {
     console.log("Onload Bark main page");
-    buildNavbar();
+    //buildNavbar();
     showSlides();
-    buildFooter();
-
+    //buildFooter();
 }
 
 
 
 
-function filterRandom() {
-    let fileRandomList = [];
-    for (let key in imageLibrary.file) {
-        let file = imageLibrary.files;
-        let randomKey = findObjectByKeyRandomly(file);
-        fileRandomList.push(randomKey);
-        console.log("File: ", file);
-    }
-    console.log("Liste Random: ", fileRandomList);
-    return fileRandomList;
-}
-
-let findObjectByKeyRandomly = function(obj) {
-    let keys = Object.keys(obj);
-    console.log("keys: ", keys);
-    return obj[keys[keys.length * Math.random() << 0]];
-};
+// function filterRandom() {
+//     let fileRandomList = [];
+//     for (let key in imageLibrary.file) {
+//         let file = imageLibrary.files;
+//         let randomKey = findObjectByKeyRandomly(file);
+//         fileRandomList.push(randomKey);
+//         console.log("File: ", file);
+//     }
+//     console.log("Liste Random: ", fileRandomList);
+//     return fileRandomList;
+// }
+//
+// let findObjectByKeyRandomly = function(obj) {
+//     let keys = Object.keys(obj);
+//     console.log("keys: ", keys);
+//     return obj[keys[keys.length * Math.random() << 0]];
+// };
 
 
 //News
