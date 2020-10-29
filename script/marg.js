@@ -6,37 +6,55 @@
 const pages = [
   {
     img: "../p1 and p2/img/P1/logo_rett.png", //adding image instead of text
-    endpoint: "hjem.html",
+    endpoint: ["hjem.html"],
   },
   {
     text: "Kontakt",
-    endpoint: "kontakt.html",
+    endpoint: ["kontakt.html"],
   },
   {
     text: "Om oss",
-    endpoint: "om_oss.html",
+    endpoint: ["om_oss.html"],
   },
   {
     text: "På tegnebordet",
-    endpoint: "paa_tegnebordet.html",
+    endpoint: ["paa_tegnebordet.html"],
   },
   {
     text: "Prosjekter",
-    endpoint: "prosjekt_prosjekttype.html",
+    endpoint: ["prosjekt_prosjekttype.html", 
+              "prosjekt_kronologisk.html", 
+              "prosjekt_beliggenhet.html",
+              "prosjekt_prosjekttype_bolig.html",
+              "prosjekt_prosjekttype_enebolig.html",
+              "prosjekt_prosjekttype_fritidsbolig.html",
+              "prosjekt_prosjekttype_ideer.html",
+              "prosjekt_prosjekttype_mindrebygg.html",
+              "prosjekt_prosjekttype_naering.html"],
   },
   {
-      text: "Hjem",
-      endpoint: "hjem.html",
+    text: "Hjem",
+    endpoint: ["hjem.html"],
   },
 ];
 
 let currentEndpoint = "";
 
 
+/*Returns the endpoint of the current page
+returns the current endpoint */
+function getCurrentEndpoint() {
+  const url = window.location.href;
+
+  return url.split("/").pop();
+}
+
+
 /* Checks if a given endpoint is the current one
 returns true if it is current, else false */
 function isCurrentEndpoint(endpoint) {
-  return endpoint === currentEndpoint;
+  //return endpoint === currentEndpoint;
+  return endpoint.includes(currentEndpoint);
 }
 
 
@@ -46,23 +64,23 @@ returns anchor element */
 function createLinkToPage(page) {
   let anchor = document.createElement("a");
   if (page.text) {
-      anchor.appendChild(document.createTextNode(page.text));
-      anchor.classList.add("navbarPages");
+    anchor.appendChild(document.createTextNode(page.text));
+    anchor.classList.add("navbarPages");
   } else {
-      let image = document.createElement("img");
-      image.src = page.img;
-      image.style.width = "300px";
+    let image = document.createElement("img");
+    image.src = page.img;
+    image.style.width = "300px";
 
-      anchor.appendChild(image);
-      anchor.classList.add("navbarLogo"); //for styling logoimage
+    anchor.appendChild(image);
+    anchor.classList.add("navbarLogo"); //for styling logoimage
   }
 
   if (isCurrentEndpoint(page.endpoint)) {
-      anchor.classList.add("navbarCurrentItem");
-      anchor.style.textDecoration = "underline"; //underlining current page, and not logo
+    anchor.classList.add("navbarCurrentItem");
+    anchor.style.textDecoration = "underline"; //underlining current page, and not logo
   }
 
-  anchor.href = page.endpoint;
+  anchor.href = page.endpoint[0];
 
   return anchor;
 }
@@ -72,15 +90,6 @@ function createLinkToPage(page) {
 function addLinkToElement(page, element) {
   const link = createLinkToPage(page);
   element.appendChild(link);
-}
-
-
-/*Returns the endpoint of the current page
-returns the current endpoint */
-function getCurrentEndpoint() {
-  const url = window.location.href;
-
-  return url.split("/").pop();
 }
 
 
@@ -190,7 +199,7 @@ function buildFooter() {
 //buildNavbar();
 //buildFooter();
 
-
+//function for loading both 
 function onloadMarg() {
    buildNavbar();
    buildFooter();

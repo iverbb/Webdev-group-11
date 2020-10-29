@@ -77,40 +77,7 @@ h2 {
 }
 
 
-/* STYLING NAVBAR AND FOOTER */
-/* Navbar and footer on all pages */
-
-#stickyFooter {
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    left: 0;
-}
-
-.containerFooter {
-    flex-grow: 1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: block;
-}
-
-.pageContent {
-    min-height: 100%;
-    margin: 10% auto -100px;
-}
-
-.footerSize, .push{
-    height: 20px;
-}
-
-.copyright{
-    text-align: center;
-    width: 100%;
-    font-size: 18px;
-    color: lightgray;
-}
+/* STYLING NAVBAR */
 
 /* assuring that the navbar doesn't hide other elements */ 
 header {
@@ -154,6 +121,10 @@ header {
     color: #1c1c1c;
 }
 
+.navbarPages:hover{
+    text-decoration: underline;
+}
+
 /* setting size for logo image in navbar */
 .navbarLogo {
     width: 220px;
@@ -188,6 +159,38 @@ header {
 
 
 /* FOOTER STYLING */
+
+#stickyFooter {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+
+.containerFooter {
+    flex-grow: 1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.pageContent {
+    min-height: 100%;
+    margin: 10% auto -100px;
+}
+
+.footerSize, .push{
+    height: 20px;
+}
+
+.copyright{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    color: lightgray;
+}
 
 li {
     list-style-type: none;
