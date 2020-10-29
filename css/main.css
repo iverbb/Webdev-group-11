@@ -154,6 +154,10 @@ header {
     color: #1c1c1c;
 }
 
+.navbarPages:hover{
+    text-decoration: underline;
+}
+
 /* setting size for logo image in navbar */
 .navbarLogo {
     width: 220px;
