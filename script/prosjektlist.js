@@ -23,7 +23,7 @@ imageLibrary =
                     startYear: "2006",
                     finishYear: "2012",
                     type: "bolig",
-                    location: "bryne",
+                    location: "Bryne",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -40,7 +40,7 @@ imageLibrary =
                     startYear: "2006",
                     finishYear: "2010",
                     type: "naering",
-                    location: "røldal",
+                    location: "Røldal",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -57,7 +57,7 @@ imageLibrary =
                     startYear: "2008",
                     finishYear: "2010",
                     type: "fritidsbolig",
-                    location: "østhusvik",
+                    location: "Østhusvik",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -74,7 +74,7 @@ imageLibrary =
                     startYear: "2009",
                     finishYear: "2011",
                     type: "bolig",
-                    location: "nordsjøen",
+                    location: "Nordsjøen",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -91,7 +91,7 @@ imageLibrary =
                     startYear: "2010",
                     finishYear: "2011",
                     type: "enebolig",
-                    location: "madla",
+                    location: "Madla",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -108,7 +108,7 @@ imageLibrary =
                     startYear: "2009",
                     finishYear: "2011",
                     type: "fritidsbolig",
-                    location: "sirdal",
+                    location: "Sirdal",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -125,7 +125,7 @@ imageLibrary =
                     startYear: "2012",
                     finishYear: "2012", //har ikke sluttår
                     type: "bolig",
-                    location: "randaberg",
+                    location: "Randaberg",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -159,7 +159,7 @@ imageLibrary =
                     startYear: "2008",
                     finishYear: "2012",
                     type: "enebolig",
-                    location: "sandnes",
+                    location: "Sandnes",
                     coordinate: "",
                     address: "",
                     projectImages: [
@@ -210,7 +210,7 @@ imageLibrary =
                     startYear: "2010",
                     finishYear: "2013",
                     type: "naering",
-                    location: "stavanger øst",
+                    location: "Stavanger øst",
                     coordinate: "",
                     address: "",
                     projectImages: [
