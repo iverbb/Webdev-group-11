@@ -41,6 +41,15 @@ const pages = [
 let currentEndpoint = "";
 
 
+/*Returns the endpoint of the current page
+returns the current endpoint */
+function getCurrentEndpoint() {
+  const url = window.location.href;
+
+  return url.split("/").pop();
+}
+
+
 /* Checks if a given endpoint is the current one
 returns true if it is current, else false */
 function isCurrentEndpoint(endpoint) {
@@ -82,35 +91,6 @@ function addLinkToElement(page, element) {
   const link = createLinkToPage(page);
   element.appendChild(link);
 }
-
-
-/*Returns the endpoint of the current page
-returns the current endpoint */
-function getCurrentEndpoint() {
-  const url = window.location.href;
-
-  return url.split("/").pop();
-}
-
-/*function underlineProject(endpoint) {
-  var project = getCurrentEndpoint();
-  if (project.string.match("^prosjekt_")) {
-    page[4].style.textDecoration = "underline";
-  }
-}*/
-
-/*var projectPages = "http://example.com/products.html".split("/");
-  var 
-
-  if(lb[lb.length-1] == currentPage) {
-    pages[4].style.textDecoration = "underline";
- 
-  }*/
-
-  //kalle på underlinefunksjon her?  
-  //lage variabel som lagrer sidehtmlnavnet
-  //dele string split("_")
-  //sjekk om første ord er prosjekt
 
 
 // Builds the navigation bar by adding html elements to it
