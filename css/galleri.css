@@ -13,6 +13,7 @@ body html {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-content: start;
     justify-content: space-between;  /* Må justeres */
 }
 

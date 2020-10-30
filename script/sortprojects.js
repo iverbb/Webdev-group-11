@@ -17,7 +17,7 @@ function buildSortprojects() {
   let button = document.createElement("button");
   button.innerText = "Sorter";
   button.setAttribute("id", "button");
-  button.onclick = ((e) => toggleMenu());
+  button.onclick = ((e) => {toggleMenu(); console.log("click");});
   button.className = "dropbtn";
 
   // create div2 dropdown content
