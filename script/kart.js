@@ -2,61 +2,121 @@
 // points should definitely be defined in an appropriate
 // JSON at some point in the future
 let points = [
-    {x:120, y:230},
-    {x:250, y:480},
-    {x:310, y:50}
+  {x:120, y:230},
+  {x:250, y:480},
+  {x:310, y:50}
 ];
 
+function onMap(point) {
+  const y = point.north;
+  const x = point.east;
+  console.log("x: " + x);
+  console.log(edges.left, edges.right);
+  return ((y <= edges.top && y >= edges.bottom) &&
+          (x >= edges.left));
+}
+
+// There's no fucking way I'm hazarding a guess on estimating coordinates in the middle of the
+// goddamn ocean, so I'd rather estimate it based on ratios
+let edges = { bottom: 58.95144699,
+              top: 58.97505609,
+              left: 5.69731236,
+            };
+
+function guesstimateRightEdge(left, height, imgHeight, imgWidth) {
+  return left + height * (imgWidth / imgWidth);
+}
+
+
 let images = [
-    "bolig_grandkvartalet_01.jpg",
-    "bolig_meto.jpg",
-    "bolig_myklebust.jpg"
+  "bolig_grandkvartalet_01.jpg",
+  "bolig_meto.jpg",
+  "bolig_myklebust.jpg"
 ];
+
+function calcCoord(coordinate) {
+  // console.log(coordinate);
+  // console.log("in x: " + (coordinate.x));
+  let diffX     = edges.left - coordinate.east;
+  let diffY     = edges.top  - coordinate.north;
+
+  let map       = document.getElementById("map");
+  let mapWidth  = map.width;
+  let mapHeight = map.height;
+
+  let height    = edges.top - edges.bottom;
+  let right     = guesstimateRightEdge(edges.left, height, mapHeight, mapWidth);
+  let width     = edges.left - right;
+  console.log(coordinate.x);
+  //console.log(height);
+
+  let x         = diffX / width  * 100 + "%";
+  let y         = diffY / height * 100 + "%";
+  //console.log("x: " + x);
+  //console.log("y: " + y);
+
+  return {x: x, y: y};
+}
 
 // makes an image with the given id(or, well any object really) appear if hidden
 function show(imageId) {
-    document.querySelector("#" + imageId).style.visibility = "visible";
+  document.querySelector("#" + imageId).style.visibility = "visible";
 }
 
 // makes an image with the given id(or, well any object really) disappear
 function hide(imageId) {
-    document.querySelector("#" + imageId).style.visibility = "hidden";
+  document.querySelector("#" + imageId).style.visibility = "hidden";
 }
 
 // input: point, coordinate on format {x: ??, y: ??}
 //        path, path as a string
 // output: A div element styled as marker
-function drawPoint(point, imgPath, i) {
-    let house = document.createElement("div");
-    house.setAttribute("class", "marker");
-    house.style.left = point.x+100 + "px";
-    house.style.top = point.y-8 + "px";
+function drawPoint(project, i) {
+  //console.log(project.coordinate);
 
-    let pic = document.createElement("img");
-    pic.style.position = "absolute";
-    pic.src = "../img/" + imgPath;
-    pic.alt = "";
-    let imgId = "house"  + i;
-    pic.id = imgId;
-    pic.style.left = "-60px";
-    pic.style.top = "-40px";
-    pic.className = "mapImg";
-    pic.style.visibility = "hidden";
-    house.appendChild(pic);
-    house.addEventListener("mouseover", function(){
-        show(imgId);
-    });
-    house.addEventListener("mouseout", function(){
-        hide(imgId);
-    });
-    return house;
+  let coords = calcCoord(project.coordinate);
+  console.log(project.coordinate.east);
+  let house = document.createElement("div");
+
+  //console.log(coords);
+
+  house.setAttribute("class", "marker");
+  house.style.left = coords.x;
+  house.style.top = coords.y;
+
+  let pic = document.createElement("img");
+  pic.style.position = "absolute";
+  pic.src = "../img/" + project.fileName;
+  pic.alt = "";
+
+  let imgId = "house"  + i;
+  pic.id = imgId;
+  pic.style.left = "-60px";
+  pic.style.top = "-40px";
+  pic.className = "mapImg";
+  pic.style.visibility = "hidden";
+  pic.onclick = (() => on("../img/" + project.fileName));
+  house.appendChild(pic);
+  house.addEventListener("mouseover", function(){
+    show(imgId);
+  });
+  house.addEventListener("mouseout", function(){
+    hide(imgId);
+  });
+  return house;
 }
 
 // Create a document fragment to batch add children simultaneously
 // Supposedly increases efficiency
 let docFrag = document.createDocumentFragment();
-for (let i = 0; i < points.length; i++) {
-    docFrag.appendChild(drawPoint(points[i], images[i], i));
-}
+let counter = 0;
+imageLibrary.files.forEach((project) =>
+  { if (project.coordinate && onMap(project.coordinate))
+    {
+      docFrag.appendChild(drawPoint(project, counter));
+      counter++;
+    }
+  });
+
 let myContainer = document.querySelector("#mapContainer");
 myContainer.appendChild(docFrag);

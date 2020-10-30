@@ -139,7 +139,13 @@ function myFunction() {
 
 function buildFooter() {
  
-  let myNode = document.getElementById("stickyFooter");
+  let prevfooter = document.getElementById("stickyFooter");
+  let newfooter  = document.createElement("footer");
+  newfooter.id   = "stickyFooter";
+
+  let myNode     = prevfooter ? prevfooter : newfooter;
+
+  document.body.appendChild(myNode);
 
   /* I think I could have made this prettier, but don't know if it would mess things up:
 
@@ -162,11 +168,11 @@ function buildFooter() {
   */
 
   console.log(myNode);
-  let contact = document.createElement("h4");
-  let street = document.createElement("li");
-  let postcode = document.createElement("li");
-  let phone = document.createElement("li");
-  let email = document.createElement("li");
+  let contact   = document.createElement("h4");
+  let street    = document.createElement("li");
+  let postcode  = document.createElement("li");
+  let phone     = document.createElement("li");
+  let email     = document.createElement("li");
   let copyright = document.createElement("li");
 
   contact.classList.add("tit");
