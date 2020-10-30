@@ -412,12 +412,14 @@ li.postSpace{
     background-color: #ffffff;
     min-width: 113px;   /*needs to be solved differently*/
     z-index: 1;
+    text-align: center;
 }
   
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
+    /*padding-right: 0px; tried to right-align*/
     text-decoration: none;
     text-align: center;
     display: block;   /* fix */
