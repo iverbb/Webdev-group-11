@@ -167,33 +167,36 @@ function buildFooter() {
   could maybe work idk
   */
 
-  console.log(myNode);
-  let contact   = document.createElement("h4");
-  let street    = document.createElement("li");
-  let postcode  = document.createElement("li");
-  let phone     = document.createElement("li");
-  let email     = document.createElement("li");
+  if (!window.location.href.match(".*/kontakt.html$")) {
+    let contact   = document.createElement("h4");
+    let street    = document.createElement("li");
+    let postcode  = document.createElement("li");
+    let phone     = document.createElement("li");
+    let email     = document.createElement("li");
+
+    contact.classList.add("tit");
+    street.classList.add("adresse");
+    postcode.classList.add("postSpace"); //differrent class so i can add space
+    phone.classList.add("adresse");
+    email.classList.add("adresse");
+
+    contact.appendChild(document.createTextNode("Kontakt oss"));
+    street.appendChild(document.createTextNode("Avaldsnesgata 95 c"));
+    postcode.appendChild(document.createTextNode("4014 Stavanger"));
+    phone.appendChild(document.createTextNode("T:  51 56 78 30"));
+    email.appendChild(document.createTextNode("E: firmapost@barkarkitekter.no"));
+
+    myNode.appendChild(contact);
+    myNode.appendChild(street);
+    myNode.appendChild(postcode);
+    myNode.appendChild(phone);
+    myNode.appendChild(email);
+  }
+
   let copyright = document.createElement("li");
-
-  contact.classList.add("tit");
-  street.classList.add("adresse");
-  postcode.classList.add("postSpace"); //differrent class so i can add space
-  phone.classList.add("adresse");
-  email.classList.add("adresse");
   copyright.classList.add("copyright");
-
-  contact.appendChild(document.createTextNode("Kontakt oss"));
-  street.appendChild(document.createTextNode("Avaldsnesgata 95 c"));
-  postcode.appendChild(document.createTextNode("4014 Stavanger"));
-  phone.appendChild(document.createTextNode("T:  51 56 78 30"));
-  email.appendChild(document.createTextNode("E: firmapost@barkarkitekter.no"));
   copyright.appendChild(document.createTextNode("© 2020 Group 11"));
 
-  myNode.appendChild(contact);
-  myNode.appendChild(street);
-  myNode.appendChild(postcode);
-  myNode.appendChild(phone);
-  myNode.appendChild(email);
   myNode.appendChild(copyright);
 
 }
