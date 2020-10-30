@@ -410,20 +410,19 @@ li.postSpace{
 .dropdown-content {
     display: none;
     position: absolute;
+    right: 0;
     background-color: #ffffff;
-    min-width: 113px;   /*needs to be solved differently*/
+    min-width: 112px;   
     z-index: 1;
-    text-align: center;
 }
   
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    /*padding-right: 0px; tried to right-align*/
     text-decoration: none;
     text-align: center;
-    display: block;   /* fix */
+    display: block;   
 }
   
 /* Change color of dropdown links on hover */
