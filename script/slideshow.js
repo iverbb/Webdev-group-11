@@ -5,17 +5,18 @@ function createSlide(fileNameList, i, slideShowContainer) {
     let mySlides = document.createElement("div");
     mySlides.setAttribute("class", "mySlide");
     slideShowContainer[0].appendChild(mySlides);
-    let divImage = document.createElement("div");
-    divImage.setAttribute("class", "mySLides-divImage");
+    //let divImage = document.createElement("div");
+    //divImage.setAttribute("class", "mySLides-divImage");
     let mySlidesImage = document.createElement("img");
     mySlidesImage.setAttribute("class", "mySlides-img");
     mySlidesImage.setAttribute("alt", "bilde");
     mySlidesImage.setAttribute("src", "../img/" + fileName);
-    divImage.appendChild(mySlidesImage);
-    mySlides.appendChild(divImage);
+    //divImage.appendChild(mySlidesImage);
+    //mySlides.appendChild(divImage);
+    mySlides.appendChild(mySlidesImage)
     let mySlidesCaption = document.createElement("div");
     mySlidesCaption.setAttribute("class", "mySlides-caption")
-    let mySlidesHeader = document.createElement("h2");
+    let mySlidesHeader = document.createElement("h3");
     mySlidesHeader.setAttribute("class", "mySlides-header");
     mySlidesCaption.appendChild(mySlidesHeader);
     let header = document.createTextNode(fileHeader);
