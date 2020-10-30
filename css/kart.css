@@ -1,4 +1,7 @@
 /* Totally legit styling */
+#sortprojects {
+  display: block;
+}
 #mapContainer {
   position: relative;
   /*height: 1200px;
