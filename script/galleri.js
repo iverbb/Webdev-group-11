@@ -215,6 +215,5 @@ function onloadProsjekttype() {
 }
 
 function onloadShowBeliggenhet() {
-    buildNavbar();
     buildSortprojects();
 }

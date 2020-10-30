@@ -139,7 +139,13 @@ function myFunction() {
 
 function buildFooter() {
  
-  let myNode = document.getElementById("stickyFooter");
+  let prevfooter = document.getElementById("stickyFooter");
+  let newfooter = document.createElement("footer");
+  newfooter.id = "stickyFooter";
+
+  let myNode = prevfooter ? prevfooter : newfooter;
+
+  document.body.appendChild(myNode);
 
   /* I think I could have made this prettier, but don't know if it would mess things up:
 
