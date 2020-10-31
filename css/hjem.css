@@ -16,6 +16,7 @@ h3 {
 .mySlides-text {
     width: 45%;
     float: right;
+    font-size: 20px;
 }
 
 .mySlidesCaption {
@@ -24,12 +25,16 @@ h3 {
 
 }
 
+.dot-container {
+    margin-bottom: 10%;
+}
+
 
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 20px 4px 0 0;
     background-color: lightgrey;
     border-color: #1c1c1c;
     border-radius: 50%;
@@ -48,6 +53,14 @@ h3 {
     display: flex;
     float: left;
     margin-right: 0;
+}
+
+.slideshow-container .prev {
+    position: relative;
+    z-index: 3;
+    transform: translateY(100px);
+
+
 }
 
 .mySlides {
@@ -74,9 +87,9 @@ h3 {
 }
 
 
-h2 {
-    /*text-align: left;*/
-    margin-bottom: 0;
+h1 {
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 strong {
