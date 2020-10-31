@@ -5,7 +5,7 @@
 // pages added to navbar as links
 const pages = [
   {
-    img: "../p1 and p2/img/P1/logo_rett.png", //adding image instead of text
+    img: "../img/logo_correct.png", //adding image instead of text
     endpoint: ["hjem.html"],
   },
   {
