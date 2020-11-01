@@ -58,23 +58,32 @@ function plusSlides(n) {
 function currentSlide(n) {
     carousel(slideIndex = n);
 }
-let slideIndex = 0;
 
-function carousel() {
+let slideIndex = 1;
+
+function carousel(n) {
     let i;
     let slides = document.getElementsByClassName("mySlide");
     console.log("Slides: ", slides)
     let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     console.log("Slideindex: ", slideIndex);
-    if (slideIndex > slides.length) {slideIndex = 1;}
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex].style.display = "block";
-    dots[slideIndex].className += " active";
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 }
 
 
@@ -90,59 +99,17 @@ function filterOnNews() {
             fileNewsHeaderList.push(file.projectName);
         }
     }
-    let imageAndText = [fileNewsImageList,fileNewsDescriptionList,fileNewsHeaderList]
+    let imageAndText = [fileNewsImageList, fileNewsDescriptionList, fileNewsHeaderList]
     console.log("Image and text: ", imageAndText);
     return imageAndText;
 }
 
 function showSlides() {
     slideShowGrid(filterOnNews());
-    carousel();
+    carousel(slideIndex);
 }
 
 function onloadBarkMainPage() {
     console.log("Onload Bark main page");
     showSlides();
 }
-
-
-
-
-// function filterRandom() {
-//     let fileRandomList = [];
-//     for (let key in imageLibrary.file) {
-//         let file = imageLibrary.files;
-//         let randomKey = findObjectByKeyRandomly(file);
-//         fileRandomList.push(randomKey);
-//         console.log("File: ", file);
-//     }
-//     console.log("Liste Random: ", fileRandomList);
-//     return fileRandomList;
-// }
-//
-// let findObjectByKeyRandomly = function(obj) {
-//     let keys = Object.keys(obj);
-//     console.log("keys: ", keys);
-//     return obj[keys[keys.length * Math.random() << 0]];
-// };
-
-
-//News
-
-// var slideIndex = 1;
-// showDivs(slideIndex);
-//
-// function plusDivs(n) {
-//     showDivs(slideIndex += n);
-// }
-//
-// function showDivs(n) {
-//     var i;
-//     var x = document.getElementsByClassName("box-grid");
-//     if (n > x.length) {slideIndex = 1}
-//     if (n < 1) {slideIndex = x.length} ;
-//     for (i = 0; i < x.length; i++) {
-//         x[i].style.display = "none";
-//     }
-//     x[slideIndex-1].style.display = "block";
-// }
