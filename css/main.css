@@ -412,9 +412,9 @@ li.postSpace{
     position: absolute;
     right: 0;
     background-color: #ffffff;
-    min-width: 100px;   
+    min-width: 110px;   
     z-index: 1;
-    text-align: right;
+    text-align: center;
 }
   
 /* Links inside the dropdown */
@@ -422,7 +422,7 @@ li.postSpace{
     color: black;
     padding: 18px 4px;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     display: block;   
 }
   
