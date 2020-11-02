@@ -236,10 +236,10 @@ li.postSpace{
     float: left;
     margin-bottom: 20px;
 }
-
+/*
 #textFrame {
     background-color: none; /* making overlay see-through */
-}
+/*}*/
 
 
 /* responsive overlay */
