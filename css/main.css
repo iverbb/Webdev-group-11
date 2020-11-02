@@ -25,6 +25,7 @@ img {
 /* END styling body etc. */
 
 
+
 /* STYLING TEXT */
 /* Applies to all text on the webpage if not else is specified*/
 
@@ -43,7 +44,7 @@ img {
 .textBold {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 0;       /*this is only for contact and tegnebordet maybe??*/
+    margin-top: 0;       
 }
 
 .textOblique {
@@ -76,6 +77,9 @@ h2 {
     text-align: center;
 }
 
+/* END styling text */
+
+
 
 /* STYLING NAVBAR */
 
@@ -83,7 +87,6 @@ h2 {
 header {
     margin-bottom: 150px;
 }
-
 
 #navbar {
     z-index: 2;
@@ -157,7 +160,6 @@ header {
 
 
 
-
 /* FOOTER STYLING */
 
 #stickyFooter {
@@ -176,16 +178,11 @@ header {
     display: block;
 }
 
-.pageContent {
-    min-height: 100%;
-    margin: 10% auto -100px;
-}
-
-.footerSize, .push{
+.footerSize {
     height: 20px;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     width: 100%;
     font-size: 18px;
@@ -245,7 +242,6 @@ li.postSpace{
 }
 
 
-
 /* responsive overlay */
 
 @media screen and (max-width: 800px) {
@@ -287,6 +283,7 @@ li.postSpace{
 }
 
 /* END of styling overlay */
+
 
 
 /* STYLING IMAGE GRID */
@@ -358,6 +355,7 @@ li.postSpace{
 
 
 /* STYLING PROJECT-PAGES */
+
 .tilbake {
     transform: translateY(36px);
 }
@@ -377,7 +375,6 @@ li.postSpace{
 }
 
 /* add styling here */
-
 /* END of styling project-pages */
 
 
@@ -435,7 +432,6 @@ li.postSpace{
 .show {
     display:block;
 }
-
 
 /* END of styling dropdown menu */
 
@@ -732,7 +728,5 @@ img.timelineBuildingImage{
         display: none;
     }
 }
-
-
 
 /* END of styling om oss */
