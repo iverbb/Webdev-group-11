@@ -580,7 +580,7 @@ imageLibrary =
                 {
                     projectName: "Sokn camping",
                     description: "Oppgradering og utvidelse av eksisterende restaurant -og servicebygg på Sokn Camping & Marina. Tilbygget med store vindusflater mot utsikten i sør gir et nytt løft til den eksisterende restauranten. Innvendige overflater er i osp og eik.",
-                    fileName: "naering_sokn_camping.jpg",
+                    fileName: "naering_sokn_camping_01.jpg",
                     startYear: "2016",
                     finishYear: "2017",
                     type: "naering",

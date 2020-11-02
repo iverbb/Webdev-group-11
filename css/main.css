@@ -44,7 +44,7 @@ img {
 .textBold {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 0;       
+    margin-top: 0;
 }
 
 .textOblique {
@@ -83,7 +83,7 @@ h2 {
 
 /* STYLING NAVBAR */
 
-/* assuring that the navbar doesn't hide other elements */ 
+/* assuring that the navbar doesn't hide other elements */
 header {
     margin-bottom: 150px;
 }
@@ -103,7 +103,7 @@ header {
     font-size: 20px;
 }
 
-/* sticking the navbar to the top of the browser */ 
+/* sticking the navbar to the top of the browser */
 .stickyNavbar {
     position: fixed;
     top: 0;
@@ -143,7 +143,7 @@ header {
 /* making navbar width correspond with page width for large screens */
 @media screen and (max-width: 5000px) {
     .navbarContent {
-        margin-right: 15%; 
+        margin-right: 15%;
         margin-left: 15%;
     }
 }
@@ -209,13 +209,13 @@ li.postSpace{
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
-    top: 0; 
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
     z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */ 
+    cursor: pointer; /* Add a pointer on hover */
     overflow-y: scroll;
 }
 
@@ -340,6 +340,12 @@ li.postSpace{
         max-height: 60vh;
         margin-bottom: 10%;
     }
+    a>img {
+        flex: 100%;
+        max-width: 100%;
+        max-height: 60vh;
+        margin-bottom: 10%;
+    }
 }
 
 /* END styling image grid */
@@ -391,43 +397,43 @@ li.postSpace{
     cursor: pointer;
     text-align: right;
 }
-  
+
 /* Dropdown button text on hover and focus */
 .dropbtn:hover, .dropbtn:focus {
     color: #1c1c1c;
 }
-  
+
 /* The div container - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-  
+
 /* Dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: #ffffff;
-    min-width: 110px;   
+    min-width: 110px;
     z-index: 1;
     text-align: center;
 }
-  
+
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 18px 4px;
     text-decoration: none;
     text-align: center;
-    display: block;   
+    display: block;
 }
-  
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: rgb(228, 228, 228)
 }
-  
+
 /* Show the dropdown menu */
 .show {
     display:block;
@@ -542,7 +548,7 @@ li.postSpace{
     .boxContact {
         margin-bottom: 60px;
     }
-    
+
     .nexttoTegnebord, .nexttoContact, .descriptionTegnebord {
         max-width: 100%;
     }
@@ -609,7 +615,7 @@ img.omOssImage {
     width: 100%;
     overflow: hidden;
     padding: 150px 0px 30px 0px;
-    
+
 }
 
 img.timelineBuildingImage{
@@ -651,7 +657,7 @@ img.timelineBuildingImage{
     position: relative;
     text-align: left;
 }
-    
+
 .timelineBuildingName span, .established span {
     padding-top: 10px;
 }
@@ -699,7 +705,7 @@ img.timelineBuildingImage{
     .timelinePoint {
         font-size: 12px;
     }
-    
+
     .timelineContentBox{
         margin-bottom: 14px;
     }
