@@ -359,7 +359,7 @@ imageLibrary =
                 {
                     projectName: "Zetlitzveien",
                     description: "Omfattende om-, på- og tilbygging av et kontor- og forretningsbygg fra 1985. Eksisterende bygning var på to etasjer, med lager/verksted i en underetasje. Bygget ble totalrenovert og utvidet både i høyden og bredden. De to nye etasjene har en dobbel glassfasade som fører varme fra solsiden til skyggesiden. Øverste etasje har en formidabel utsikt i alle himmelretninger. Totalt areal er ca. 6 500 m2. ",
-                    fileName: "naering_zetlitzveien.JPG",
+                    fileName: "naering_zetlitzveien.jpg",
                     startYear: "2009",
                     finishYear: "2015",
                     type: "naering",
@@ -427,7 +427,7 @@ imageLibrary =
                 {
                     projectName: "Emmaus barnehage",
                     description: 'Ny barnehage på Storhaug for Stavanger kommune. Inneholder fem avdelinger hvorav en "naturbarnehage", samt personalavdeling, fellesareal og et spennende uteareal for lek og opphold.',
-                    fileName: "naering_emmaus.JPG",
+                    fileName: "naering_emmaus.jpg",
                     startYear: "2014",
                     finishYear: "2016",
                     type: "naering",
@@ -461,7 +461,7 @@ imageLibrary =
                 {
                     projectName: "Tastarustå barnehage",
                     description: "Ny privat barnehage på Tastarustå. Fem avdelinger og personalavdeling, store felles aktivitetsrom, egen gymsal, plaskebasseng og stor takterrasse med drivhus for dyrking av blomster og grønnsaker.",
-                    fileName: "naering_tastarustaa.JPG",
+                    fileName: "naering_tastarustaa.jpg",
                     startYear: "2015",
                     finishYear: "2016",
                     type: "naering",
