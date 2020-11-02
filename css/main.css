@@ -571,7 +571,7 @@ hr{
 }
 
 img.omOssImage {
-    object-fit: contain;
+    object-fit: cover;
     float:left;
     position: relative;
 }
@@ -580,7 +580,7 @@ img.omOssImage {
     clear: right;
     float: left;
     display: flex;
-    width: 70%;
+    width: 60%;
     height: 100%;
     margin-bottom: 20px;
 }
