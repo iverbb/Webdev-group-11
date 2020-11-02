@@ -7,6 +7,14 @@ let points = [
   {x:310, y:50}
 ];
 
+function setCoords(element, x, y) {
+  element.style.left = x;
+  console.log("set x to: " + element.style.left);
+
+  element.style.top  = y;
+  console.log("set y to: " + element.style.top);
+}
+
 function onMap(point) {
   const y = point.north;
   const x = point.east;
@@ -47,7 +55,7 @@ function calcCoord(coordinate) {
   let height    = edges.top - edges.bottom;
   let right     = guesstimateRightEdge(edges.left, height, mapHeight, mapWidth);
   let width     = edges.left - right;
-  console.log(coordinate.x);
+  // console.log(coordinate.x);
   //console.log(height);
 
   let x         = diffX / width  * 100 + "%";
@@ -75,14 +83,18 @@ function drawPoint(project, i) {
   //console.log(project.coordinate);
 
   let coords = calcCoord(project.coordinate);
-  console.log(project.coordinate.east);
+  // console.log(project.coordinate.east);
   let house = document.createElement("div");
 
   //console.log(coords);
 
   house.setAttribute("class", "marker");
-  house.style.left = coords.x;
-  house.style.top = coords.y;
+
+  setCoords(house, coords.x, coords.y);
+  // house.style.left = coords.x;
+  // console.log("set left");
+  // house.style.top = coords.y;
+  // console.log("set top");
 
   let pic = document.createElement("img");
   pic.style.position = "absolute";

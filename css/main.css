@@ -111,6 +111,12 @@ header {
     margin-bottom: 200px;
 }
 
+#stickyfooter {
+  position: sticky;
+  bottom: 20%;
+  padding-top: 20%;
+}
+
 #navbar a {
     color: #1c1c1c; /* assuring that the links don't change color on hover */
 }
