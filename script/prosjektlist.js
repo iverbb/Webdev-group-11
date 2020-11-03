@@ -153,12 +153,12 @@ imageLibrary =
                 //     ]
                 // },
                 {
-                    projectName: "Stadionveien",
-                    description: "Enebolig over to plan.",
-                    fileName: "enebolig_stadionveien.jpg",
-                    startYear: "2008",
+                    projectName: "Stasjonshallen",
+                    description: "Ideer for Stasjonshallen",
+                    fileName: "ideer_stasjonshallen_01.jpg",
+                    startYear: "2011",
                     finishYear: "2012",
-                    type: "enebolig",
+                    type: "ideer",
                     location: "Sandnes",
                     coordinate: "",
                     address: "",
