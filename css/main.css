@@ -346,6 +346,18 @@ li.postSpace{
         max-height: 60vh;
         margin-bottom: 10%;
     }
+
+    .mySlides-container {
+        position: relative;
+    }
+
+    .mySlides-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mySlides-caption {
+        width: 100%;
+    }
 }
 
 /* END styling image grid */
