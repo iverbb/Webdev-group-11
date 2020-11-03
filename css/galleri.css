@@ -1,6 +1,7 @@
 /* Nora */
 
 
+/*style the gallery with flexbox*/
 body html {
     display: flex;
     align-items: center;
@@ -9,6 +10,7 @@ body html {
     height: 100%;
 }
 
+/*style the gallery grid and how the images will be displayed with spaces and continue to the next row when a row is full*/
 .box-grid {
     display: flex;
     flex-wrap: wrap;
@@ -17,8 +19,9 @@ body html {
     justify-content: space-between;  /* Må justeres */
 }
 
+/*determine the height and width of the images, the space between the rows, */
 .box-single {
-    flex: 0 0 29.5%;
+    flex: 0 0 33.3%;
     height: 60vh;
     width: 5vh;
     margin: 0 0 5.5% 0;
@@ -27,15 +30,23 @@ body html {
     align-items: flex-end;
 }
 
+/*when hovering the images will turn back to its colors and make it more noticeable towards the user that it is possible to click on the image*/
 .box-img:hover {
     filter: grayscale(0);
     cursor: pointer;
 }
 
+/*within the page of each type of building the name and year will only be displayed when hovering*/
 .box-single:hover .box-caption {
     opacity: 1;
 }
 
+/*Prosjekttype will display the type of building at all times*/
+#stickyCaption > .box-single .box-caption{
+    opacity: 1;
+}
+
+/*positioning and framing the images such as it follows the css of box-single, does not get distorted, and make them B&W*/
 .box-single img {
     width: 100%;
     height: 100%;
@@ -46,25 +57,9 @@ body html {
     filter: grayscale(100%);
 }
 
+/*position the text underneath the image*/
 .box-single .box-caption {
     position: relative;
     transform: translateY(40px);
     opacity: 0;
 }
-
-
-/* Responsive layout - makes a two column-layout instead of three columns */
-/*@media screen and (max-width: 800px) {
-    .box-single {
-        flex: 50%;
-        max-width: 47%;
-    }
-}*/
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/*@media screen and (max-width: 600px) {
-    .box-single {
-        flex: 100%;
-        max-width: 100%;
-    }
-}*/
