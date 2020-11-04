@@ -10,11 +10,9 @@ function velgmeny() {
   let viewwidth = window.screen.width;
   console.log(viewwidth);
   if (viewwidth < 640) {
-    console.log("small frame");
     loadjs("../script/mobilmeny.js");
 
   } else {
-    console.log("big frame");
     loadjs("../script/marg.js");
   }
 }
