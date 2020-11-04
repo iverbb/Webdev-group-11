@@ -258,74 +258,6 @@ li.postSpace{
 
 
 /* STYLING IMAGE GRID */
-/* Responsive styling for different screensizes */
-
-@media screen and (max-width: 5000px) {
-    .box-single {
-        flex: 28%;
-        max-width: 30%;
-        max-height: 50vh;
-    }
-    body {
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-}
-
-@media screen and (max-width: 1700px) {
-    .box-single {
-        flex: 50%;
-        max-width: 30%;
-        max-height: 40vh;
-    }
-    body {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .box-single {
-        flex: 50%;
-        max-width: 30%;
-        max-height: 30vh;
-    }
-    body {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .box-single {
-        flex: 50%;
-        max-width: 47%;
-        max-height: 40vh;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .box-single {
-        flex: 100%;
-        max-width: 100%;
-        max-height: 60vh;
-        margin-bottom: 10%;
-    }
-    a > img {
-        flex: 100%;
-        max-width: 100%;
-        max-height: 60vh;
-        margin-bottom: 10%;
-    }
-
-    .mySlides-img {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .mySlides-caption {
-        width: 100%;
-    }
-}
 
 /* END styling image grid */
 
@@ -333,8 +265,101 @@ li.postSpace{
 
 /* STYLING HJEM */
 
-/* add styling here */
+/*main image on main page styling*/
+#frontImage {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+}
 
+/* slideshow container where each slideshow is located*/
+.slideshow-container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+/* Hide the images in slideshow by default */
+.mySlide {
+    display: none;
+}
+
+/*image inside each slide in slideshow*/
+.mySlides-img {
+    width: 50%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+/*includes mySlides-header and mySlides-caption, so all the text in each slide*/
+.mySlides-caption {
+    float: right;
+    width: 45%;
+}
+
+/*slides header*/
+h3 {
+    margin-top: 0;
+}
+
+/*the paragraph in each slide*/
+.mySlides-text {
+    font-size: 20px;
+}
+
+
+/*dot-container where the dots are located*/
+.dot-container {
+    margin-bottom: 10%;
+}
+
+
+/*styling of the dots*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 20px 4px 0 0;
+    background-color: lightgrey;
+    border-color: #1c1c1c;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* styling of the dots when hovering and when the user is on a specific slide connected to a specific dot (active)*/
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* styling of the previous and next button*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: lightpink;
+    opacity: 0.65;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/*position of next button*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*white background when hovering */
+.prev:hover, .next:hover {
+    background-color: rgba(255,255,255,0.8);
+    opacity: 1;
+}
 /* END of styling hjem */
 
 
@@ -435,8 +460,7 @@ li.postSpace{
 .descriptionTegnebord {
     max-width: 50%;
     float: right;
-    margin: 10px;
-    margin-bottom: 100px;
+    margin: 10px 10px 100px 10px;
 }
 
 .boxTegnebordImg {
@@ -711,7 +735,73 @@ img.timelineBuildingImage{
 
 /* END of styling om oss */
 
-/* STYLING of gallery*/
+/* Responsive styling for different screensizes */
 
-/* Nora */
+@media screen and (max-width: 5000px) {
+    .box-single {
+        flex: 28%;
+        max-width: 30%;
+        max-height: 50vh;
+    }
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .box-single {
+        flex: 50%;
+        max-width: 30%;
+        max-height: 40vh;
+    }
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .box-single {
+        flex: 50%;
+        max-width: 30%;
+        max-height: 30vh;
+    }
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .box-single {
+        flex: 50%;
+        max-width: 47%;
+        max-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .box-single {
+        flex: 100%;
+        max-width: 100%;
+        max-height: 60vh;
+        margin-bottom: 10%;
+    }
+    a > img {
+        flex: 100%;
+        max-width: 100%;
+        max-height: 60vh;
+        margin-bottom: 10%;
+    }
+
+    .mySlides-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mySlides-caption {
+        width: 100%;
+    }
+}
+
 
