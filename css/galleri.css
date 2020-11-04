@@ -16,7 +16,7 @@ body html {
     flex-wrap: wrap;
     width: 100%;
     align-content: start;
-    justify-content: space-between;  /* Må justeres */
+    justify-content: space-between;
 }
 
 /*determine the height and width of the images, the space between the rows, */

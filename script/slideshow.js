@@ -70,7 +70,7 @@ function currentSlide(n) {
   carousel(slideIndex = n);
 }
 
-// to keep track of which slide the user is on
+// to keep track of which slide the user is on the slideIndex is defined
 let slideIndex = 1;
 
 // makes the actual slideshow/carousel, by showing them in "slides" and "dots"

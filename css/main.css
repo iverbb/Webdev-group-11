@@ -6,8 +6,7 @@
 
 body {
     background-color: #ffffff;
-    margin:5%;
-    margin-top: 0;
+    margin:0 5% 5% 5%;
     font-family: "Futura PT", "Neue Haas Unica", Helvetica, sans-serif;
     font-style: normal;
     color: #1c1c1c;
@@ -110,12 +109,12 @@ header {
     margin-right: 5%;
     margin-bottom: 200px;
 }
-
+/*
 #stickyfooter {
   position: sticky;
   bottom: 20%;
   padding-top: 20%;
-}
+}*/
 
 #navbar a {
     color: #1c1c1c; /* assuring that the links don't change color on hover */
@@ -176,19 +175,6 @@ header {
     left: 0;
 }
 
-/*
-.containerFooter {
-    flex-grow: 1;
-    /*position: relative*//*
-    bottom: 0;
-    width: 100%;
-    display: block;
-}*/
-
-.footerSize {
-    height: 20px;
-}
-
 .copyright {
     text-align: center;
     width: 100%;
@@ -243,11 +229,6 @@ li.postSpace{
     float: left;
     margin-bottom: 20px;
 }
-/*
-#textFrame {
-    background-color: none; /* making overlay see-through */
-/*}*/
-
 
 /* responsive overlay */
 
@@ -255,31 +236,17 @@ li.postSpace{
     #overlaydetails {
         font-size: 16px;
         margin-top: 40px;
-        /*width: 100%;
-        float: right;
-        clear: left;
-        display: flex;*/
     }
 
     #overlaytext {
         font-size: 16px;
         width: 80%;
-        /*text-align: left;
-        clear: left;
-        clear: right;
-        float: left;
-        display: flex;*/
     }
 
     #overlaytitle {
         font-size: 30px;
         margin-top: 20px;
         width: 80%;
-        /*clear: left;
-        clear: right;
-        float: left;
-        display: flex;*/
-
     }
 
     #overlaydescription {
@@ -347,15 +314,11 @@ li.postSpace{
         max-height: 60vh;
         margin-bottom: 10%;
     }
-    a>img {
+    a > img {
         flex: 100%;
         max-width: 100%;
         max-height: 60vh;
         margin-bottom: 10%;
-    }
-
-    .mySlides-container {
-        position: relative;
     }
 
     .mySlides-img {
@@ -399,7 +362,68 @@ li.postSpace{
     color: #1c1c1c;
 }
 
-/* add styling here */
+/*style the gallery with flexbox*/
+body html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*style the gallery grid and how the images will be displayed with spaces and continue to the next row when a row is full*/
+.box-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: start;
+    justify-content: space-between;
+}
+
+/*determine the height and width of the images, the space between the rows, */
+.box-single {
+    flex: 0 0 33.3%;
+    height: 60vh;
+    width: 5vh;
+    margin: 0 0 5.5% 0;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*when hovering the images will turn back to its colors and make it more noticeable towards the user that it is possible to click on the image*/
+.box-img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/*within the page of each type of building the name and year will only be displayed when hovering*/
+.box-single:hover .box-caption {
+    opacity: 1;
+}
+
+/*Prosjekttype will display the type of building at all times*/
+#stickyCaption > .box-single .box-caption{
+    opacity: 1;
+}
+
+/*positioning and framing the images such as it follows the css of box-single, does not get distorted, and make them B&W*/
+.box-single img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+/*position the text underneath the image*/
+.box-single .box-caption {
+    position: relative;
+    transform: translateY(40px);
+    opacity: 0;
+}
 /* END of styling project-pages */
 
 
@@ -479,8 +503,7 @@ li.postSpace{
 }
 
 .boxTegnebordImg {
-    clear: right;
-    clear: left;
+    clear: both;
     float: right;
     display: flex;
     width: 70%;
@@ -507,8 +530,7 @@ li.postSpace{
 /* CSS for contact */
 
 .boxContact {
-    clear: right;
-    clear: left;
+    clear: both;
     float: right;
     display: flex;
     width: 60%;
@@ -530,13 +552,8 @@ li.postSpace{
 /* Responsive paa_tegnebordet and contact */
 
 @media screen and (max-width: 1200px) {
-    /*.nextto {
-        float: clear;
-    }*/ /*ikke nødvendig?*/
-
     .boxTegnebordImg, .boxContact {
-        clear: right;
-        clear: left;
+        clear: both;
         float: right;
         display: flex;
         width: 100%;
@@ -555,8 +572,7 @@ li.postSpace{
 
 @media screen and (max-width: 960px) {
     .boxTegnebordImg, .boxContact {
-        clear: right;
-        clear: left;
+        clear: both;
         float: right;
         display: flex;
         width: 100%;
@@ -594,7 +610,6 @@ hr{
 img.omOssImage {
     object-fit: cover;
     float:left;
-    position: relative;
 }
 
 .imageBoxOmOss {
@@ -609,7 +624,7 @@ img.omOssImage {
 .employeeInfo {
     float: right;
     max-width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 0;
     text-align: right;
     font-size: 18px;
@@ -619,7 +634,6 @@ img.omOssImage {
     clear: both;
     float: left;
     width: 100%;
-    clear: initial;
     font-style: italic;
 }
 
@@ -633,7 +647,7 @@ img.omOssImage {
 .timelineContainer {
     width: 100%;
     overflow: hidden;
-    padding: 150px 0px 30px 0px;
+    padding: 150px 0 30px 0;
 
 }
 
@@ -643,15 +657,12 @@ img.timelineBuildingImage{
     height: 40px;
     margin-bottom: 10px;
     filter: grayscale(100%);
-    position: relative;
-
 }
 
 .timelineContentBox{
     width: 60px;
     height: 40px;
     margin-bottom: 15px;
-    position: relative;
 }
 
 .timelineBuildingImage:hover{
@@ -661,11 +672,10 @@ img.timelineBuildingImage{
 }
 
 .timelineBuildingName {
-    padding: 0px 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
     border-top: 1px solid #1c1c1c;
-    position: relative;
     font-size: 18px;
 }
 
@@ -673,7 +683,6 @@ img.timelineBuildingImage{
     display: flex;
     justify-content: left;
     border-top: 1px solid #1c1c1c;
-    position: relative;
     text-align: left;
 }
 
@@ -704,12 +713,10 @@ img.timelineBuildingImage{
         width: 100%;
         height: 100%;
         object-fit: contain;
-        position: relative;
     }
 
     .imageBoxOmOss{
-        clear: right;
-        clear: left;
+        clear: both;
         float: right;
         display: flex;
         width: 100%;
@@ -755,3 +762,8 @@ img.timelineBuildingImage{
 }
 
 /* END of styling om oss */
+
+/* STYLING of gallery*/
+
+/* Nora */
+
