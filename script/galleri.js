@@ -1,5 +1,3 @@
-// Hedvig
-
 // structures the image grid and the necessary number of div depending on how many images there are in the list
 // by taken in the parameter of a list specified on which filter option is needed.
 // It also displays the name of project and finish year of each element in the list

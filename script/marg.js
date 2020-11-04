@@ -1,5 +1,3 @@
-//Vilde
-
 //navbar
 
 // pages added to navbar as links
