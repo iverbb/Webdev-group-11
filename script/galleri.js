@@ -53,8 +53,7 @@ let buildSortprojects =
 function onloadShow(type) {
   buildSortprojects();
   if
-    ( type === "prosjekttype"
-      || type === "beliggenhet"
+    ( type === "beliggenhet"
       || type  === "kronologisk") {
       type = "";
     }
