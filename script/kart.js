@@ -49,21 +49,23 @@ function calcCoord(coordinate) {
   let diffY     = edges.top  - coordinate.north;
 
   let map       = document.getElementById("map");
+  while (!map.src) {
+    console.log("map ", map);
+    map = document.getElementById("map");
+  }
   let mapWidth  = map.width;
   let mapHeight = map.height;
 
   let height    = edges.top - edges.bottom;
   let right     = guesstimateRightEdge(edges.left, height, mapHeight, mapWidth);
   let width     = edges.left - right;
-  // console.log(coordinate.x);
-  //console.log(height);
 
-  let x         = diffX / width  * 100 + "%";
-  let y         = diffY / height * 100 + "%";
-  //console.log("x: " + x);
-  //console.log("y: " + y);
+  let x         = diffX / width  * 100;
+  let y         = diffY / height * 100;
 
-  return {x: x, y: y};
+  if ((x > 100) || (y > 100) || (x == "")) { return ""; }
+
+  return {x: x + "%", y: y + "%"};
 }
 
 // makes an image with the given id(or, well any object really) appear if hidden
@@ -83,6 +85,7 @@ function drawPoint(project, i) {
   //console.log(project.coordinate);
 
   let coords = calcCoord(project.coordinate);
+  if (!coords) {return "";}
   // console.log(project.coordinate.east);
   let house = document.createElement("div");
 
@@ -125,8 +128,11 @@ let counter = 0;
 imageLibrary.files.forEach((project) =>
   { if (project.coordinate && onMap(project.coordinate))
     {
-      docFrag.appendChild(drawPoint(project, counter));
-      counter++;
+      let house = drawPoint(project, counter);
+      if (house) {
+        docFrag.appendChild(house);
+        counter++;
+      }
     }
   });
 

@@ -176,13 +176,14 @@ header {
     left: 0;
 }
 
+/*
 .containerFooter {
     flex-grow: 1;
-    position: relative;
+    /*position: relative*//*
     bottom: 0;
     width: 100%;
     display: block;
-}
+}*/
 
 .footerSize {
     height: 20px;

@@ -1,6 +1,6 @@
 // Nora
 
-function buildHambar(destination, tags, name) {
+function buildHambar(destination, tags, name, mobile) {
 
   // create div dropdown
   let dropdown = document.createElement("div");
@@ -33,7 +33,14 @@ function buildHambar(destination, tags, name) {
   dropdown.appendChild(myDropdown);
 
   // append everything to html
-  document.getElementById(destination).appendChild(dropdown);
+  let target = document.getElementById(destination);
+  if (mobile) {
+    //target.removeChild("navbar");
+    document.getElementById("navbar").style.display = "none";
+    target.prepend(dropdown);
+  } else {
+    target.appendChild(dropdown);
+  }
 }
 
 function onloadProjectpages(tags) {
