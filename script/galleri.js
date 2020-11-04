@@ -1,5 +1,8 @@
 // Hedvig
 
+// structures the image grid and the necessary number of div depending on how many images there are in the list
+// by taken in the parameter of a list specified on which filter option is needed.
+// It also displays the name of project and finish year of each element in the list
 function imageGrid(filerList) {
   let imageGrid = document.getElementsByClassName("box-grid");
   for (let i in filerList) {
@@ -29,7 +32,8 @@ function imageGrid(filerList) {
   }
 }
 
-function filterKronologiskByYear(arr) {
+// sorts by year
+function sortChronologicallyByYear(arr) {
   let sortedYear = arr.sort((a, b) => {
     if (a.finishYear < b.finishYear) {return 1;}
     if (b.finishYear < a.finishYear) {return -1;}
@@ -39,17 +43,21 @@ function filterKronologiskByYear(arr) {
   return sortedYear;
 }
 
+// filter by which type of building it is by taken a string in with the preferred name of building and finds it in imageLibrary.
+// Then it is sorted chronologically
 function filterByType(prosjektType) {
   let fileTypeList = imageLibrary.files;
   if (prosjektType) {
     fileTypeList = fileTypeList.filter((file) => file.type === prosjektType);
   }
-  return filterKronologiskByYear(fileTypeList);
+  return sortChronologicallyByYear(fileTypeList);
 }
 
+// include a sorting option the user can navigate between the filters
 let buildSortprojects =
     (() => buildHambar("sortingprojects", hambarOptions.buttons, "Sorter", false));
 
+//onloads it all
 function onloadShow(type) {
   buildSortprojects();
   if
@@ -92,7 +100,7 @@ function onloadShowNaering() {
 
 function onloadShowKronologisk() {
   buildSortprojects();
-  imageGrid(filterKronologiskByYear(imageLibrary.files));
+  imageGrid(sortChronologicallyByYear(imageLibrary.files));
 }
 
 function onloadProsjekttype() {
