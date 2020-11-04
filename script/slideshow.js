@@ -1,51 +1,60 @@
 
-// makes as many slides as there are news following this structure,
-// by using the parameter fileNameList where all the news elements are,
-//!! i is the current slide the user is on
-// slideShowContainer is a div in the html where the slides are being shown
+// Makes as many slides as there are elements in fileNameList
+// The parameter i is the file index
+// SlideShowContainer contains all the slides
 function createSlide(fileNameList, i, slideShowContainer) {
   let fileName = fileNameList[0][i];
   let fileDescription = fileNameList[1][i];
   let fileHeader = fileNameList[2][i];
+
+  // Creates slide div
   let mySlides = document.createElement("div");
   mySlides.setAttribute("class", "mySlide");
   slideShowContainer[0].appendChild(mySlides);
+
+  // Creates image element within mySlides
   let mySlidesImage = document.createElement("img");
   mySlidesImage.setAttribute("class", "mySlides-img");
   mySlidesImage.setAttribute("alt", "bilde");
   mySlidesImage.setAttribute("src", "../img/" + fileName);
   mySlides.appendChild(mySlidesImage);
+
+  // Creates a div element for text an title on each slide
   let mySlidesCaption = document.createElement("div");
   mySlidesCaption.setAttribute("class", "mySlides-caption");
+
+  // Creates a header element within mySlideCaption
   let mySlidesHeader = document.createElement("h3");
   mySlidesHeader.setAttribute("class", "mySlides-header");
   mySlidesCaption.appendChild(mySlidesHeader);
+
+  // Defines the title of the header for each slide
   let header = document.createTextNode(fileHeader);
   mySlidesHeader.appendChild(header);
+
+  // Creates a paragraph element within mySlideCaption
   let mySlidesText = document.createElement("p");
   mySlidesText.setAttribute("class", "mySlides-text");
   mySlidesCaption.appendChild(mySlidesText);
+
+  // Defines the text in the paragraph on each slide
   let text = document.createTextNode(fileDescription);
   mySlidesText.appendChild(text);
   mySlides.appendChild(mySlidesCaption);
   console.log("myslides med tekst: ", mySlides);
 }
 
-//!! the dot underneath each news is created with the parameter of which news the user is on (i)
-// and where the dot is located (dotContainer)
+// This function creates a dot for each slide and the dot is located in dotContainer
 function createDot(i, dotContainer) {
   let dotSpan = document.createElement("span");
   dotSpan.setAttribute("class", "dot");
   dotSpan.onclick = function () {
-    currentSlide(i);
+    switchSlide(i);
   };
   dotContainer.appendChild(dotSpan);
 }
 
-// Loops through all the elements in the news list (parameter fileNameList),
-// and creates a slide for each element by using the parameter i and where is shown (slideShowContainer).
-// The same is done with the dots by loop through the list and create the same number of dots as there are news.
-// and show it in dotContainer
+// Creates a slideshow for all the files in the fileNameList and each slide has a dot
 function slideShowContainer(fileNameList) {
   let slideShowContainer = document.getElementsByClassName("slideshow-container");
   for (let i in fileNameList[0]) {
@@ -58,27 +67,25 @@ function slideShowContainer(fileNameList) {
   }
 }
 
-// every time the user switch slides (previous or next button) the carousel function is taken in a parameter
-// which is either +1 (next) or -1 (previous)
+// Every time the user switch slides (previous or next button) the slideIndex is either +1 or -1
 function plusSlides(n) {
   carousel(slideIndex += n);
 }
 
-//!! a dot is connected to a news slide, so when a dot is clicked the slidesshow will go to the connected news
-// and the carousel will take in the right number by which the dot is connected to
-function currentSlide(n) {
+// When a dot is clicked the slide is switched
+function switchSlide(n) {
   carousel(slideIndex = n);
 }
 
-// to keep track of which slide the user is on the slideIndex is defined
+// To keep track of which slide the user will see
 let slideIndex = 1;
 
-// makes the actual slideshow/carousel, by showing them in "slides" and "dots"
-// if you get to the end the slideshow will start over
-// if you go previous from the first slide, you will come to the end of the slideshow
-// loops through the length of the dots (dotSpan in createDot()) and replaces the dots that is not current to none ("")
-// the slides are styled as taken up the full width available and on a new line
-// the dot is active when the user is on that specific news connected to the dot
+// Makes the actual slideshow/carousel.
+// If you get to the end the slideshow will start over.
+// If you go previous from the first slide, you will come to the end of the slideshow.
+
+// The slides are styled as taken up the full width available and on a new line.
+// The dot is active when the user has selected it
 function carousel(n) {
   let i;
   let slides = document.getElementsByClassName("mySlide");
@@ -94,10 +101,6 @@ function carousel(n) {
     slides[i].style.display = "none";
   }
   console.log("Slideindex: ", slideIndex);
-  //er ikke denne lik som noe av det over??
-  /*if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }*/
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
@@ -105,9 +108,8 @@ function carousel(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-// filter on the type "news" in the object imageLibrary and appends the name of the news and description to two
+// Filter on the type "news" in the object imageLibrary and appends the name of the news and description to two
 // separate lists. These lists are then put into one list - lists within a list, called imageAndText.
-// imageAndText is used in slideShowContainer so it then again can be iterated and structured in createSlide
 function filterOnNews() {
   let fileNewsImageList = [];
   let fileNewsDescriptionList = [];
@@ -125,17 +127,16 @@ function filterOnNews() {
   return imageAndText;
 }
 
-// calls on the specificed function so that everything is running
 function showSlides() {
   slideShowContainer(filterOnNews());
   carousel(slideIndex);
 }
 
-// function that is used in html to unload the whole javascript
+// Function that is used in html to unload the whole javascript
 function onloadBarkMainPage() {
   console.log("Onload Bark main page");
   showSlides();
 }
 
 
-// sourced used to make slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp
+// Sourced used to make slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp
