@@ -9,7 +9,7 @@ function loadjs(file) {
 function velgmeny() {
   let viewwidth = window.screen.width;
   console.log(viewwidth);
-  if (viewwidth < 640) {
+  if (viewwidth < 900) {
     loadjs("../script/mobilmeny.js");
 
   } else {
