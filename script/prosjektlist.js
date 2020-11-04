@@ -1,4 +1,10 @@
 // Hedvig
+hambarOptions =
+  { buttons : [
+    { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },
+    { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
+    { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
+  ]};
 
 imageLibrary =
     {

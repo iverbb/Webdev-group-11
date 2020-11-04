@@ -1,11 +1,5 @@
 // Nora
 
-let buttons = [
-  { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },
-  { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
-  { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
-];
-
 function buildHambar(destination, tags) {
 
   // create div dropdown

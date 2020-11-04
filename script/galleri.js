@@ -47,8 +47,10 @@ function filterByType(prosjektType) {
   return filterKronologiskByYear(fileTypeList);
 }
 
+let buildSortprojects = (() => buildHambar("sortingprojects", hambarOptions.buttons));
+
 function onloadShow(type) {
-  buildSortprojects(buttons);
+  buildSortprojects();
   if
     ( type === "prosjekttype"
       || type === "beliggenhet"
@@ -57,8 +59,6 @@ function onloadShow(type) {
     }
   imageGrid(filterByType(type));
 }
-
-let buildSortprojects = (() => buildHambar("sortingprojects", buttons));
 
 function onloadShowBolig() {
   buildSortprojects(tags);
