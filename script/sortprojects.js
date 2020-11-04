@@ -58,11 +58,6 @@ window.onclick = ((e) =>
   {
     document.getElementById("myDropdown").style.display = "none";
   });
-//  {
-//    if (document.getElementById("myDropdown").style.display == "block"){
-//      document.getElementById("myDropdown").style.display = "none";
-//    }
-//  });
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleMenu(e) {
