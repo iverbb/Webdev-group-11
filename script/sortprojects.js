@@ -9,14 +9,14 @@ function buildHambar(destination, tags, name, mobile) {
   // create button
   let button = document.createElement("button");
   button.innerText = name;
-  button.setAttribute("id", "button");
-  button.onclick = ((e) => {toggleMenu(); console.log("click");});
+  button.id = destination + "button";
+  button.onclick = ((e) => {toggleMenu(e, destination); console.log("click");});
   button.className = "dropbtn";
 
   // create div2 dropdown content
   let myDropdown = document.createElement("div");
   myDropdown.className = "dropdown-content";
-  myDropdown.id = "myDropdown";
+  myDropdown.id = destination + "_dropdown";
 
   tags.forEach
   ( (button) =>
@@ -58,14 +58,14 @@ window.onclick = ((e) =>
   });
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
-function toggleMenu(e) {
+function toggleMenu(e, destination) {
   let event = e ? e : window.event;
   event.stopPropagation();
 
-  let displayStatus = document.getElementById("myDropdown").style.display;
+  let displayStatus = document.getElementById(destination + "_dropdown").style.display;
   if (displayStatus != "block") { displayStatus = "block"; }
   else { displayStatus = "none"; }
-  document.getElementById("myDropdown").style.display = displayStatus;
+  document.getElementById(destination + "_dropdown").style.display = displayStatus;
 }
 
 
