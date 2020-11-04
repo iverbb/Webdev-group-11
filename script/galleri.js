@@ -26,47 +26,52 @@ function imageGrid(filerList) {
 
 function filterKronologiskByYear(arr) {
     let sortedYear = arr.sort((a, b) => {
-        if (a.finishYear < b.finishYear) {
-            return 1;
-        } else if (b.finishYear < a.finishYear) {
-            return -1;
-        } else {
-            return 0;
-        }
+      if (a.finishYear < b.finishYear) {return 1;}
+      if (b.finishYear < a.finishYear) {return -1;}
+      return 0;
     });
     console.log("Sorted Year: ", sortedYear);
     return sortedYear;
 }
 
-function filterByType(prosjekttype) {
-    let fileTypeList = [];
-    for (let key in imageLibrary.files) {
-        let file = imageLibrary.files[key];
-        if (file.type === prosjekttype) {
-            fileTypeList.push(file);
-        }
-    }
-    return filterKronologiskByYear(fileTypeList);
+function filterByType(prosjektType) {
+  let fileTypeList = imageLibrary.files;
+  if (prosjektType) {
+    fileTypeList = fileTypeList.filter((file) => file.type === prosjektType);
+  }
+  console.log(fileTypeList);
+  return filterKronologiskByYear(fileTypeList);
+}
 
+function onloadShow(type) {
+  console.log("type ", type);
+  buildSortprojects(buttons);
+  if
+    ( type === "prosjekttype"
+      || type === "beliggenhet"
+      || type  === "kronologisk") {
+      type = "";
+  }
+  imageGrid(filterByType(type));
 }
 
 function onloadShowBolig() {
-    buildSortprojects();
-    imageGrid(filterByType("bolig"));
+  buildSortprojects(tags);
+  imageGrid(filterByType("bolig"));
 }
 
 function onloadShowEnebolig() {
-    buildSortprojects();
-    imageGrid(filterByType("enebolig"));
+  buildSortprojects(tags);
+  imageGrid(filterByType("enebolig"));
 }
 
-function onloadShowFritidsbolig() {
-    buildSortprojects();
-    imageGrid(filterByType("fritidsbolig"))
+function onloadShowFritidsbolig(tags) {
+  buildSortprojects(tags);
+  imageGrid(filterByType("fritidsbolig"));
 }
 
 function onloadShowIdeer() {
-    buildSortprojects();
+    buildSortprojects(tags);
     imageGrid(filterByType("ideer"));
 }
 
@@ -86,7 +91,7 @@ function onloadShowKronologisk() {
 }
 
 function onloadProsjekttype() {
-    buildSortprojects();
+    buildSortprojects(buttons);
 }
 
 function onloadShowBeliggenhet() {

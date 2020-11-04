@@ -1,18 +1,20 @@
 // Nora
 
-function buildSortprojects() {
+let buttons = [
+  { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },
+  { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
+  { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
+];
 
-  let buttons = [
-    { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },
-    { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
-    { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
-  ];
+function buildSortprojects(tags) {
+
 
   // create div dropdown
   let dropdown = document.createElement("div");
   dropdown.className = "dropdown";
   dropdown.style = "float:right";
 
+  console.log("tags: ", tags);
   // create button
   let button = document.createElement("button");
   button.innerText = "Sorter";
@@ -25,7 +27,7 @@ function buildSortprojects() {
   myDropdown.className = "dropdown-content";
   myDropdown.id = "myDropdown";
 
-  buttons.forEach
+  tags.forEach
   ( (button) =>
     {let a = document.createElement("a");
      a.innerText = button.name;
@@ -41,9 +43,9 @@ function buildSortprojects() {
   document.getElementById("sortingprojects").appendChild(dropdown);
 }
 
-function onloadProjectpages() {
+function onloadProjectpages(tags) {
   //buildNavbar();
-  buildSortprojects();
+  buildSortprojects(tags);
   //buildFooter();
 }
 
