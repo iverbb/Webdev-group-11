@@ -536,6 +536,7 @@ hr{
     border: none;
 }
 
+/* Barks vision styling. Floating 80% of the viewport*/
 .omOssVision {
     max-width: 80%;
     margin-top: 10px;
@@ -544,11 +545,13 @@ hr{
     clear: both;
 }
 
+/* office image floating left and covering image box */
 img.omOssImage {
     object-fit: cover;
     float:left;
 }
 
+/* image box sizing and placement */
 .imageBoxOmOss {
     clear: right;
     float: left;
@@ -558,6 +561,7 @@ img.omOssImage {
     margin-bottom: 20px;
 }
 
+/* names of employees styling and placement */
 .employeeInfo {
     float: right;
     max-width: 100%;
@@ -567,6 +571,7 @@ img.omOssImage {
     font-size: 18px;
 }
 
+/* "vil du bli en del av Bark?" styling and placement */
 .omOssApply{
     clear: both;
     float: left;
@@ -574,19 +579,21 @@ img.omOssImage {
     font-style: italic;
 }
 
+/* making timeline be on a line and having everything in center */
 .timeline {
     margin: auto;
     display: flex;
     text-align: center;
 }
 
+/* padding and width of timeline */
 .timelineContainer {
     width: 100%;
     overflow: hidden;
     padding: 150px 0 30px 0;
-
 }
 
+/* sizing and styling images in timeline */
 img.timelineBuildingImage{
     object-fit: cover;
     width: 60px;
@@ -595,18 +602,21 @@ img.timelineBuildingImage{
     filter: grayscale(100%);
 }
 
+/* white box for "Est. 2006" to be in line with the rest of the timeline*/
 .timelineContentBox{
     width: 60px;
     height: 40px;
     margin-bottom: 15px;
 }
 
+/* styling images on hover */
 .timelineBuildingImage:hover{
     filter: grayscale(0);
     cursor: pointer;
     transform: translateY(-3px);
 }
 
+/* building the line in the timeline and styling text */
 .timelineBuildingName {
     padding: 0 20px;
     display: flex;
@@ -615,6 +625,7 @@ img.timelineBuildingImage{
     font-size: 18px;
 }
 
+/* building the line for "Est. 2006" in the timeline and styling text */
 .established {
     display: flex;
     justify-content: left;
@@ -622,16 +633,17 @@ img.timelineBuildingImage{
     text-align: left;
 }
 
+/* adding whitespace between name of building and the timeline */
 .timelineBuildingName span, .established span {
     padding-top: 10px;
 }
 
+/* sizing the timeline points */
 .timelinePoint {
     width: 200px;
-    text-align: center;
-    font-size: 18px;
 }
 
+/* making the distancing between the timeline points responsive to veiwport size */
 .timelinePoint:nth-child(n) { /*distance between every first*/
     width: 10%;
 }
