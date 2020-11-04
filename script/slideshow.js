@@ -136,3 +136,6 @@ function onloadBarkMainPage() {
   console.log("Onload Bark main page");
   showSlides();
 }
+
+
+// sourced used to make slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp

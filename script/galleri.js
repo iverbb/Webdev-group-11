@@ -7,7 +7,6 @@ function imageGrid(filerList) {
     let file = filerList[i];
 
     let boxSingle = document.createElement("div");
-    //boxSingle.setAttribute("class", "box-single");
     boxSingle.className = "box-single";
     imageGrid[0].appendChild(boxSingle);
 
