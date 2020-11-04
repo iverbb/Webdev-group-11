@@ -1,4 +1,3 @@
-// Hedvig
 hambarOptions =
   { buttons : [
     { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },

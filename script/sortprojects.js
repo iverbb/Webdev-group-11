@@ -1,5 +1,3 @@
-// Nora
-
 function buildHambar(destination, tags, name, mobile) {
 
   // create div dropdown
