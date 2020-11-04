@@ -39,12 +39,10 @@ function filterByType(prosjektType) {
   if (prosjektType) {
     fileTypeList = fileTypeList.filter((file) => file.type === prosjektType);
   }
-  console.log(fileTypeList);
   return filterKronologiskByYear(fileTypeList);
 }
 
 function onloadShow(type) {
-  console.log("type ", type);
   buildSortprojects(buttons);
   if
     ( type === "prosjekttype"
