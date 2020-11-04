@@ -1,32 +1,28 @@
 <!doctype html>
 <html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>Kronologisk</title>
+  <link href="../css/galleri.css" rel="stylesheet"/>
+  <link href="../css/main.css" rel="stylesheet"/>
+</head>
 
-  <head>
-    <meta charset="utf-8">
-    <title>Kronologisk</title>
-    <link href="../css/galleri.css" rel="stylesheet"/>
-    <link href="../css/main.css" rel="stylesheet"/>
-  </head>
+<body onload="onloadShow('kronologisk')">
+  <header id="hambarheader">
+    <nav id="navbar" onload="buildNavbar()"></nav>
+  </header>
 
-  <body onload="onloadShow('kronologisk')">
+  <h2>Kronologisk</h2>
 
-    <header id="hambarheader">
-      <nav id="navbar" onload="buildNavbar()"></nav>
-    </header>
+  <div id="sortingprojects"></div>
 
-    <h2>Kronologisk</h2>
+  <div class="box-grid"></div>
 
-    <div id="sortingprojects"></div>
-
-    <div class="box-grid">
-
-    </div>
-
-    <script src="../script/prosjektlist.js"></script>
-    <script src="../script/velgmeny.js"></script>
-    <script src="../script/galleri.js"></script>
-    <script src="../script/sortprojects.js"></script>
-    <script src="../script/bildeviser.js"></script>
-    <script src="../script/favicon.js"></script>
-  </body>
+  <script src="../script/prosjektlist.js"></script>
+  <script src="../script/velgmeny.js"></script>
+  <script src="../script/galleri.js"></script>
+  <script src="../script/sortprojects.js"></script>
+  <script src="../script/bildeviser.js"></script>
+  <script src="../script/favicon.js"></script>
+</body>
 </html>
