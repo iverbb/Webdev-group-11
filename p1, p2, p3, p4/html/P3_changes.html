@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
     <meta charset="utf-8"/>
-    <title>P1</title>
+    <title>P3</title>
     <link href="../css/P1_requirements_11_style.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -14,20 +14,20 @@
         <img id="logo" src="../img/P1/logo_rett.png" alt="Logo Bark" title="Logo Bark">
       </a>
     </nav>
-    <img id="kontor" src="../img/P1/kontor.png" alt="forsidebilde Bark" title="forsidebilde Bark">
+    <img id="kontor" src="../img/forsidebilde.jpg" alt="forsidebilde Bark" title="forsidebilde Bark">
   </header>
 
   <section id=title>
-    <h1>P1 – Project Requirements</h1>
+    <h1>P3 – Changes</h1>
     <h4>Group 11: Hedvig, Iver, Nora, Parisa, Vilde</h4>
-    <h5>September 14th 2020</h5>
+    <h5>November 4th 2020</h5>
   </section>
 
   <section>
     <h2>Bark Arkitekter</h2>
     <!-- Project: Outdo squarespace -->
     <p>
-        <a href="link to website" target="_blank">
+        <a href="http://folk.ntnu.no/hedvigbk/Documents/P3/html/hjem.html" target="_blank" style="color:blue;">
             Here
         </a>
         you'll find Bark's new website. 
@@ -121,37 +121,256 @@
       </p>
     <h3>Other changes</h3>
       <p>
-
+        We scratched making the koordinat.js due to it not being too important, giving us more time to work on the other parts of the website. 
       </p>
       <p>
-        
+        For larger viewports the margin increases. 
+        This is a choice based on website standards. 
+        If the margin had simply stayed 5% for all viewports, viewers on larger viewports would become overwhelmed by the content. 
+        The massivity would make the website feel messy and unpleasant. By using larger margins instead, we made the website more comprehensible, logical and accessible, in the end making it more user-friendly. 
       </p>
       <p>
+        The illustration “video”/gif for “På tegnebordet” was also abandoned. 
+        This element was not crucial, and we therefore decided upon leaving it. 
+        Making it would have been both laborious and time consuming.  
+        As the illustrations were already made, we would have had to edit out one and one line in photoshop, which did not seem like constructive usage of time. 
+      </p>
   </section>
   <hr>
 
   <section>
     <h2>Minimum requirements</h2>
-    <p></p>
+    <h3>Marg.js</h3>
+      <p>
+        Vilde implemented a script that automatically adds headers and footers to every html page. 
+        This aids in modularity by not having to write the same html over and over. 
+      </p>
+    <h3>Sortprojects.js</h3>
+      <p>
+        Nora implemented a menu that loads the appropriate project viewer, either a gallery or an interactive map, implemented separately. 
+        This gives the viewer the possibility of sorting Bark’s projects based on when, where and type.  
+      </p>
+    <h3>Prosjektlist.js</h3>
+      <p>
+        Vilde and Hedvig implemented prosjektlist.js. 
+        This is not functionally a script, but declares an object in which to store project data, with paths, descriptions and other relevant information, for ease of access.  
+      </p>
+    <h3>Galleri.js</h3>
+      <p>
+        Hedvig implemented galleri.js, a script that displays project images in a regular grid. 
+        It loads image data from prosjektlist.js, filters according to input filter and load images from img/.  
+      </p>
+    <br>
+    <h2>Additonal functions</h2>
+    <h3>Bildeviser.js</h3>
+      <p>
+        Iver implemented bildeviser.js, a function that shows a larger sized image of a clicked thumbnail, with blurred/transparent background, and appropriately scaled images for a given viewport. 
+        It shows basic information about the project, such as project name, a description, start and finish year, type, location and status. 
+      </p>
+    <h3>Loadingpage.js</h3>
+      <p>
+        Parisa implemented loading_page.html, an html with an inline script that displays a dynamic loading animation prior to page load. 
+        This is an implementation displaying a gif playing for 3.8 seconds.  
+      </p>
+    <h3>Kart.js</h3>
+      <p>
+        Iver implemented kart.js, an interactive map displaying projects on a map over Stavanger. 
+        Loading location from prosjektlist.js it displays a marker on the map, which on hover expands to a project view. 
+      </p>
+    <h3>Mobilmeny.js</h3>
+      <p>
+        Iver implemented mobilmeny.js which is a burger menu that replaces the navbar for smaller viewports.  
+      </p>
+    <h3>Velgmeny.js</h3>
+      <p>
+        Iver implemented velgmeny.js which registers the viewports size and based on this chooses to load either the navigation bar or the hamburger menu.   
+      </p>
+    <h3>Enkeltprosjekt.js</h3>
+      <p>
+        Iver implemented enkeltprosjekt.js.  
+      </p>
+    <h3>Favicon.js</h3>
+      <p>
+        Vilde implemented a simple script for loading a favicon to all pages. 
+        Favicons could have been added in the head section of all htmls, but with the script it takes less effort if the favicon was to be changed.   
+      </p>
+    <h3>Slideshow.js</h3>
+      <p>
+        Hedvig implemented slideshow.js for the newsroom in the home page. 
+        This allows the visitor to be more active when scrolling through the news. 
+        It also allows Bark to publish a larger amount of news.    
+      </p>
   </section>
   <hr>
 
   <section>
     <h2>Who worked on what</h2>
-    <p></p>
+    <h3>CSS</h3>
+      <p>
+        Main.css - Hedvig, Nora, Vilde
+      </p>
+    <h3>HTML</h3>
+      <p>
+        Hjem.html - Hedvig
+      </p>
+      <p>
+        Kontakt.html - Parisa, Nora
+      </p>
+      <p>
+        Loading_page.html - Parisa
+      </p>
+      <p>
+        Om_oss.html - Vilde
+      </p>
+      <p>
+        Prosjekt_...html - Hedvig (main responsibilty), Nora, Vilde, Iver
+      </p>
+      <p>
+        Paa_tegnebordet.html - Nora
+      </p>
+    <h3>JavaScript</h3>
+      <p>
+        Bildeviser.js - Iver
+      </p>
+      <p>
+        Enkeltprosjekt.js - Iver
+      </p>
+      <p>
+        Galleri.js - Hedvig
+      </p>
+      <p>
+        Kart.js - Iver
+      </p>
+      <p>
+        Marg.js - Vilde
+      </p>
+      <p>
+        Prosjektlist.js - Hedvig, Vilde
+      </p>
+      <p>
+        Enkeltprosjekt.js - Iver
+      </p>
+      <p>
+        Galleri.js - Hedvig
+      </p>
+      <p>
+        Kart.js - Iver
+      </p>
+      <p>
+        Marg.js - Vilde
+      </p>
+      <p>
+        Prosjektlist.js - Hedvig, Vilde
+      </p>
+      <p>
+        Slideshow.js - Hedvig
+      </p>
+      <p>
+        Sortprojects.js - Nora
+      </p>
+      <p>
+        Velgmeny.js - Iver
+      </p>
+      <p>
+        Favicon.js - Vilde
+      </p>
+      <p>
+        Mobilmeny.js - Iver, Nora
+      </p>
+    <h3>Artwork</h3>
+      <p>
+        Map.svg - Parisa
+      </p>
+      <p>
+        As we were working with an architecture firm that wanted a clean website to display their projects, we did not need to produce a large amount of extra design features or artwork. 
+        Instead of creating our own artwork we used Bark’s project sketches to add colour to the website.  
+      </p>
   </section>
   <hr>
 
   <section>
-    <h2>Handling and implementing modularity</h2>
-    <p></p>
+    <h2>Handling and implementing modularity (REWRITE AND ADD MORE HERE!!)</h2>
+    <p>
+      We implemented external scripts to handle the criteria of modularity. 
+      By calling javascript codes in each html file we managed to make our files shorter, as well as relieving ourselves of writing the same code several times. 
+      This was also helpful for us only having to change one file if something regarding all the pages that included a given function was to be changed – both in regards to functionality and aesthetics.  
+    </p>
+    <p>
+      All project pages have individual html files, however the gallery grid for all of them is generated by the same javascript. 
+      This way all grids are connected to each other in terms of style. Dataset and javascript that fetches the right information.
+    </p>
+    <p>
+      At first we wrote separate css files for each page. 
+      To minimize the number of different files we have added all possible styling to the main css. 
+      We have also tried to avoid inline styling as far as possible. 
+    </p>
   </section>
-
+  <hr>
+  
+  <section>
+    <h2>Challenges when developing the website</h2>
+    <p>
+      As our ambitions for the website were rather high, we needless to say met some challenges along the way.   
+    </p>
+    <p>
+      As we were making a website displaying an architecture firm’s projects, we needed to upload a great load of images to our git. 
+      In the aftermath of the uploading we were made aware of git’s limited capacity. 
+      The images took up a lot of space and we therefore explored the opportunity of storing the images in our drive, and having a function fetch them from the external repository. 
+      However, as we had already uploaded the images to our git, the images were saved in the git’s history and took up space even when deleted. 
+      We therefore chose to continue with the internal image repository, but limiting the amount of images for each project. 
+    </p>
+    <p>
+      Because of the big amount of large images, the website is also loading quite slowly, which can be both frustrating and confusing for the user. 
+      Additionally some of the functionalities that involve images are working on random. There is no system in when they are working and when they are not. 
+      This is especially a problem for the overlay. 
+      Sometimes the image loads correctly, sometimes the wrong image is loaded, and sometimes nothing is loaded. 
+      We are suspecting that the linking in the scripts might be the root of the problem. We are however yet to find a proper explanation for this issue. 
+    </p>
+    <p>
+      Moreover there were some challenges regarding the use of a javascript function to handle the images. 
+      The naming of the image paths were prone to error as they were not automatically filled in. 
+      Unforeseen changes constantly leading to manual rewriting of code was also quite tiresome. 
+      In hindsight it’s clear to see that we should have restricted ourselves with the amount of images to ease our workload. 
+    </p>
+    <p>
+      The footer also posed some challenges – it would not stay at the bottom of the page for “på tegnebordet”, “om oss” and “kontakt”. 
+      Somehow the structure of these pages allowed the footer to travel up to the middle of the page. 
+    </p>
+    <p>
+      In “Kontakt” we wanted to add a link to the office position in google maps through the image. 
+      When giving the image a link, the layout of the page was broken. 
+      This would be something we could spend time on troubleshooting if we had had the time. 
+    </p>
+    <p>
+      For the map in “beliggenhet” we had some trouble with it working with the sorting button. 
+      Somehow they would not work together. 
+      In addition there were some challenges getting the markers to stay in the right position in the map when the viewport got smaller.
+    </p>
+    <p>
+      There were some general troubles with the javascript functions. 
+      We found it somewhat difficult to understand the possibilities with using javascript. 
+      With HTML and CSS it was a lot easier to understand the different actions, as we could constantly get visual feedback on what we were doing. 
+      The aspect of modularity also offered some challenges. 
+      It was rather difficult and frustrating understanding how we got our modular functions to do what we wanted them to – especially when elements that were quite simple to make with HTML and CSS presented themselves as a lot more difficult to implement with Javascript. 
+      However, when finally getting the functions to work we understood why the modular scripts are preferable. 
+      There was put a lot of time and struggle into making the code modular, simple and clean. 
+    </p>
+    <p>
+      Even distribution of workload was also rather complicated. It was not as simple as assigning the same amount of tasks to everyone in the group. 
+      To predict how much work the different tasks would demand was quite difficult, both because of the different team mates’ programming skills and how difficult the different tasks actually were. 
+    </p>
+    <p>
+      An aspect which offered both challenges and advantages was the fact that our group resides in three different parts of the world. 
+      Cooperation over different countries and time zones was challenging especially due to technical issues. 
+      Our meetings depended on good internet connection technical equipment working. 
+      It has nevertheless been greatly eye-opening working interdisciplinary. 
+    </p>
+  </section>
 
 
   <footer>
       © 2020 Group 11
   </footer>
 
-  </body>
-  </html>
+</body>
+</html>
