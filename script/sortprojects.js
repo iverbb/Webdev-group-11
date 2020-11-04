@@ -1,6 +1,6 @@
 // Nora
 
-function buildHambar(destination, tags) {
+function buildHambar(destination, tags, name) {
 
   // create div dropdown
   let dropdown = document.createElement("div");
@@ -10,7 +10,7 @@ function buildHambar(destination, tags) {
   console.log("tags: ", tags);
   // create button
   let button = document.createElement("button");
-  button.innerText = "Sorter";
+  button.innerText = name;
   button.setAttribute("id", "button");
   button.onclick = ((e) => {toggleMenu(); console.log("click");});
   button.className = "dropbtn";

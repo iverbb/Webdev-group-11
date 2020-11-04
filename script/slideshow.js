@@ -99,7 +99,7 @@ function filterOnNews() {
       fileNewsHeaderList.push(file.projectName);
     }
   }
-  let imageAndText = [fileNewsImageList, fileNewsDescriptionList, fileNewsHeaderList]
+  let imageAndText = [fileNewsImageList, fileNewsDescriptionList, fileNewsHeaderList];
   console.log("Image and text: ", imageAndText);
   return imageAndText;
 }

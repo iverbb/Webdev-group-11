@@ -47,7 +47,7 @@ function filterByType(prosjektType) {
   return filterKronologiskByYear(fileTypeList);
 }
 
-let buildSortprojects = (() => buildHambar("sortingprojects", hambarOptions.buttons));
+let buildSortprojects = (() => buildHambar("sortingprojects", hambarOptions.buttons, "Sorter"));
 
 function onloadShow(type) {
   buildSortprojects();
