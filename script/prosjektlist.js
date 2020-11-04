@@ -406,7 +406,7 @@ imageLibrary =
                 {
                     projectName: "Kyrkjøy",
                     description: '"Erstatningsløe" på ett plan, på høye murer som skulle bevares. Hytten har en klassisk plan der mindre rom er knyttet til et stort gjennomlyst allrom, åpent helt opp til mønet. Takstolene i furu er eksponert. Materialer i sin opprinnelige form gir hytten en røff men lun og nordisk karakter.',
-                    fileName: "fritidsbolig_kyrkjoy.jpg",
+                    fileName: "fritidsbolig_kyrkjoy_01.jpg",
                     startYear: "2014",
                     finishYear: "2015",
                     type: "fritidsbolig",
@@ -506,7 +506,7 @@ imageLibrary =
                     ]
                 },
                 {
-                    projectName: "Forusvågen_2",
+                    projectName: "Forusvågen",
                     description: "Tilbygg til enebolig fra 1998. Siktlinjer mot sjøen, gjeldende for hele feltet, ga føringer for utformingen. Store vindusflater og materialer i sin naturlige form gir tilbygget en helt egen karakter.",
                     fileName: "enebolig_forusvaagen_01.jpg",
                     startYear: "2014",
@@ -547,23 +547,6 @@ imageLibrary =
                     finishYear: "2016",
                     type: "fritidsbolig",
                     location: "Sele",
-                    coordinate: "",
-                    address: "",
-                    projectImages: [
-                        "bilde1",
-                        "bilde2",
-                        "bilde3",
-                        "bilde4"
-                    ]
-                },
-                {
-                    projectName: "Vierneset",
-                    description: "Erstatningsnaust på Litla Vierneset. Naustet fra 1942 er revet til fordel for et nytt og større naust ført opp som et grindabygg, en gammel vestnorsk byggemetode. Materialene er rettskårne, og sammen med store skyvefelt gir det naustet et mer moderne uttrykk.",
-                    fileName: "fritidsbolig_vierneset.jpg",
-                    startYear: "2015",
-                    finishYear: "2016",
-                    type: "fritidsbolif",
-                    location: "Litla Vierneset",
                     coordinate: "",
                     address: "",
                     projectImages: [

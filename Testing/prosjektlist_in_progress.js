@@ -449,7 +449,7 @@ imageLibrary =
                 {
                     projectName: "Kyrkjøy",
                     description: '"Erstatningsløe" på ett plan, på høye murer som skulle bevares. Hytten har en klassisk plan der mindre rom er knyttet til et stort gjennomlyst allrom, åpent helt opp til mønet. Takstolene i furu er eksponert. Materialer i sin opprinnelige form gir hytten en røff men lun og nordisk karakter.',
-                    fileName: "Fritidsbolig_Kyrkjøy_01.jpg",
+                    fileName: "fritidsbolig_kyrkjoy_01.jpg",
                     startYear: "2014",
                     finishYear: "2015",
                     type: "fritidsbolig",
