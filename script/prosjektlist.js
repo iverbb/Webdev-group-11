@@ -4,7 +4,15 @@ hambarOptions =
     { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },
     { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
     { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
-  ]};
+  ],
+    pages : [
+      { name : "Kontakt", link: "kontakt.html" },
+      { name: "Om oss", link: "om_oss.html"},
+      { name: "På tegnebordet", link: "paa_tegnebordet.html"},
+      { name: "Prosjekter", link: "prosjekt_prosjekttype.html"},
+      { name: "Hjem", link: "hjem.html"},
+    ]
+  };
 
 imageLibrary =
     {
