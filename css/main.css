@@ -600,7 +600,7 @@ hr{
 }
 
 .omOssVision {
-    max-width: 70%;
+    max-width: 80%;
     margin-top: 10px;
     margin-bottom: 60px;
     float: left;
@@ -639,7 +639,6 @@ img.omOssImage {
 
 .timeline {
     margin: auto;
-    list-style-type: none;
     display: flex;
     text-align: center;
 }
