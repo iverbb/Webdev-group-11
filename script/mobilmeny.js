@@ -1,2 +1,7 @@
 // Nora
-buildHambar("hambarheader", hambarOptions.pages, "Velg side");
+function buildMobileMenu() {
+  console.log("hammy");
+  buildHambar("hambarheader", hambarOptions.pages.reverse(), "Velg side");
+}
+
+buildMobileMenu();
