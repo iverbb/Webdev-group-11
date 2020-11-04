@@ -6,8 +6,7 @@ let buttons = [
   { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
 ];
 
-function buildSortprojects(tags) {
-
+function buildHambar(destination, tags) {
 
   // create div dropdown
   let dropdown = document.createElement("div");
@@ -40,7 +39,7 @@ function buildSortprojects(tags) {
   dropdown.appendChild(myDropdown);
 
   // append everything to html
-  document.getElementById("sortingprojects").appendChild(dropdown);
+  document.getElementById(destination).appendChild(dropdown);
 }
 
 function onloadProjectpages(tags) {

@@ -58,6 +58,8 @@ function onloadShow(type) {
   imageGrid(filterByType(type));
 }
 
+let buildSortprojects = (() => buildHambar("sortingprojects", buttons));
+
 function onloadShowBolig() {
   buildSortprojects(tags);
   imageGrid(filterByType("bolig"));
