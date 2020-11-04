@@ -60,10 +60,8 @@ let buildSortprojects =
 //onloads it all
 function onloadShow(type) {
   buildSortprojects();
-  if
-    ( type === "beliggenhet"
-      || type  === "kronologisk") {
-      type = "";
-    }
-  imageGrid(filterByType(type));
+  if (type  === "kronologisk") {type = "";}
+  if (type !== "beliggenhet"){
+    imageGrid(filterByType(type));
+  }
 }
