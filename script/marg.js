@@ -1,4 +1,4 @@
-//navbar
+/* BUILDING NAVBAR */
 
 // pages added to navbar as links
 const pages = [
@@ -39,26 +39,22 @@ const pages = [
 let currentEndpoint = "";
 
 
-/*Returns the endpoint of the current page
-returns the current endpoint */
+// returns the current endpoint 
 function getCurrentEndpoint() {
   const url = window.location.href;
-
   return url.split("/").pop();
 }
 
 
-/* Checks if a given endpoint is the current one
-returns true if it is current, else false */
+/* checks if a given endpoint is the current one, 
+and returns if it true if current endpoint is included in the list */
 function isCurrentEndpoint(endpoint) {
-  //return endpoint === currentEndpoint;
   return endpoint.includes(currentEndpoint);
 }
 
 
-/* Creates an anchor element of a given page with link and content
-page: text and endpoint properties
-returns anchor element */
+/* creates an anchor element of a  page with link and content
+page: text and endpoint properties. Returns anchor element */
 function createLinkToPage(page) {
   let anchor = document.createElement("a");
   if (page.text) {
@@ -70,7 +66,7 @@ function createLinkToPage(page) {
     image.style.width = "300px";
 
     anchor.appendChild(image);
-    anchor.classList.add("navbarLogo"); //for styling logoimage
+    anchor.classList.add("navbarLogo"); //adding class for styling of logoimage
   }
 
   if (isCurrentEndpoint(page.endpoint)) {
@@ -78,20 +74,20 @@ function createLinkToPage(page) {
     anchor.style.textDecoration = "underline"; //underlining current page, and not logo
   }
 
-  anchor.href = page.endpoint[0];
+  anchor.href = page.endpoint[0]; //underlining the first element in the object list
 
   return anchor;
 }
 
 
-/*Adds a page to the navigation bar as a link.*/
+// adds a page to the navigation bar as a link 
 function addLinkToElement(page, element) {
   const link = createLinkToPage(page);
   element.appendChild(link);
 }
 
 
-// Builds the navigation bar by adding html elements to it
+// builds the navigation bar by adding html elements to it
 function buildNavbar() {
   currentEndpoint = getCurrentEndpoint();
 
@@ -107,7 +103,8 @@ function buildNavbar() {
   pages.forEach((page) => addLinkToElement(page, items));
 }
 
-//made with help from another webtek group
+// made with great help from studasses and another webtek group
+
 
 
 
@@ -133,7 +130,9 @@ function myFunction() {
 //source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 
 
-//Footer
+
+
+/* BUILDING FOOTER */
 
 function buildFooter() {
  
@@ -145,27 +144,8 @@ function buildFooter() {
 
   document.body.appendChild(myNode);
 
-  /* I think I could have made this prettier, but don't know if it would mess things up:
-
-  const footerList = [
-    "Kontakt oss",
-    "Avaldsnesgata 95 c",
-    "4014 Stavanger",
-    "T:  51 56 78 30",
-    "E: firmapost@barkarkitekter.no",
-    "© 2020 Group 11"
-  ]
-
-  for (let i = 0; i < footerList.length; i++) {
-    var node = document.createElement("li");
-    var textnode = document.createTextNode(footerList[i]);
-    myNode.appendChild(textnode);
-  }
-
-  could maybe work idk
-  */
-
-  if (!window.location.href.match(".*/kontakt.html$")) {
+  // added to all pages except "kontakt"
+  if (!window.location.href.match(".*/kontakt.html$")) { 
     let contact   = document.createElement("h4");
     let street    = document.createElement("li");
     let postcode  = document.createElement("li");
@@ -191,7 +171,8 @@ function buildFooter() {
     myNode.appendChild(email);
   }
 
-  let copyright = document.createElement("li");
+  //added to all pages
+  let copyright = document.createElement("li"); 
   copyright.classList.add("copyright");
   copyright.appendChild(document.createTextNode("© 2020 Group 11"));
 
@@ -201,12 +182,10 @@ function buildFooter() {
 
 
 
-// Event trigger when the DOM is ready (newer browsers)
-// window.onload = () => buildNavbar(), buildFooter();
-//buildNavbar();
-//buildFooter();
 
-//function for loading both 
+/* ONLOADING FOOTER AND NAVBAR */
+
+//function for loading footer and navbar 
 function onloadMarg() {
    buildNavbar();
    buildFooter();
