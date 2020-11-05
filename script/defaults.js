@@ -1,3 +1,4 @@
+// bunch add js to body
 function loadjsFiles(files) {
   let frag = document.createDocumentFragment();
   files.forEach((file) => {
@@ -10,6 +11,7 @@ function loadjsFiles(files) {
   document.body.appendChild(frag);
 }
 
+// List of scripts to be loaded
 let files = [
   "../script/prosjektlist.js",
   "../script/sortprojects.js",
