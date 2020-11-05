@@ -2,7 +2,7 @@ function buildHambar(destination, tags, name, mobile) {
 
   // create div dropdown
   let dropdown = document.createElement("div");
-  dropdown.className = "dropdown";
+  if (destination === "navbarMobile") { dropdown.className = "mobile-dropdown"; }
   dropdown.style = "float:right";
 
   console.log("tags: ", tags);
