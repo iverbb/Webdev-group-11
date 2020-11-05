@@ -9,8 +9,8 @@ function buildMobileMenu() {
   logo.style.float  = "left";
 
   logoRef.appendChild(logo);
-  document.getElementById("navbar").appendChild(logoRef);
-  buildHambar("navbar", hambarOptions.pages.reverse(), "../img/hambar.png", 1);
+  document.getElementById("navbarMobile").appendChild(logoRef);
+  buildHambar("navbarMobile", hambarOptions.pages.reverse(), "../img/hambar.png", 1);
 }
 
 buildMobileMenu();

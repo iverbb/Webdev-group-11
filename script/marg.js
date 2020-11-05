@@ -91,7 +91,7 @@ function addLinkToElement(page, element) {
 function buildNavbar() {
     currentEndpoint = getCurrentEndpoint();
 
-    const navbar = document.getElementById("navbar");
+    const navbar = document.getElementById("navbarPc");
     const content = document.createElement("div");
     content.classList.add("navbarContent");
     navbar.appendChild(content);
@@ -114,7 +114,7 @@ window.onscroll = function () {
 };
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+let navbar = document.getElementById("navbarPc");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;

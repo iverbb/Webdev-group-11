@@ -9,11 +9,18 @@ function loadjs(file, name) {
 function velgmeny() {
   viewwidth = window.screen.width;
   if (viewwidth < 900) {
-    loadjs("../script/mobilmeny.js", "mobile");
+    pc.style.display = "none";
+    mobile.style.display = "inline-block";
   } else {
-    loadjs("../script/marg.js", "pc");
+    pc.style.display = "inline-block";
+    mobile.style.display = "none";
   }
 }
 
+loadjs("../script/mobilmeny.js", "mobile");
+loadjs("../script/marg.js", "pc");
+
+let mobile = document.getElementById("navbarMobile");
+let pc = document.getElementById("navbarPc");
 velgmeny();
-///document.body.onresize = (() => velgmeny());
+document.body.onresize = (() => velgmeny());
