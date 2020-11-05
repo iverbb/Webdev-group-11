@@ -442,14 +442,14 @@ h3 {
 }
 
 /* The div container - needed to position the dropdown content */
-.dropdown {
+.dropdown, .mobile-dropdown {
     position: relative;
     display: inline-block;
     overflow: visible;
 }
 
 /* Dropdown content */
-.dropdown-content {
+.dropdown-content, .mobile-dropdown-content {
     display: none;
     position: absolute;
     right: 0;
@@ -461,7 +461,7 @@ h3 {
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a, .mobile-dropdown-content a {
     color: black;
     padding: 18px 4px;
     text-decoration: none;
@@ -470,7 +470,7 @@ h3 {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content a:hover, .mobile-dropdown-content a:hover {
     background-color: rgb(228, 228, 228)
 }
 
