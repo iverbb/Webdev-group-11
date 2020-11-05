@@ -27,7 +27,7 @@ function status(project) {
 // Skips null values
 function projectField(name, value) {
     //console.log(verdi);
-    return verdi ? name + ": " + value + "</br>" : "";
+    return value ? name + ": " + value + "</br>" : "";
 }
 
 // Creates a string representing start and finish year of function

@@ -1,12 +1,4 @@
-// First draft for a map drawing thingy
-// points should definitely be defined in an appropriate
-// JSON at some point in the future
-let points = [
-  {x:120, y:230},
-  {x:250, y:480},
-  {x:310, y:50}
-];
-
+// add coordinates to element
 function setCoords(element, x, y) {
   element.style.left = x;
   console.log("set x to: " + element.style.left);
