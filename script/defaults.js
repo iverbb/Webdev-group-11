@@ -8,7 +8,6 @@ function loadjsFiles(files) {
     console.log(file + " loaded");
   });
   document.body.appendChild(frag);
-  console.log(imageLibrary.projectName);
 }
 
 let files = [
