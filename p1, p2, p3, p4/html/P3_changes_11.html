@@ -189,7 +189,11 @@
       </p>
     <h3>Enkeltprosjekt.js</h3>
       <p>
-        Iver implemented enkeltprosjekt.js.
+        Iver implemented enkeltprosjekt.js. This was a proof of concept function for reading
+        url parameters and then automatically creating a page for it. This was not something that
+        ended up getting utilized as of now. Its functionality would have been to be something
+        more easily linkable from social media, or emails. It could also serve as a basis for
+        autogenerating full html files for galleries from a stripped down base.
       </p>
     <h3>Favicon.js</h3>
       <p>
@@ -201,6 +205,11 @@
         Hedvig implemented slideshow.js for the newsroom in the home page.
         This allows the visitor to be more active when scrolling through the news.
         It also allows Bark to publish a larger amount of news as it loads data from prosjektlist.js.
+      </p>
+      <h3>Default.js</h3>
+      <p>
+        Function adding default scripts to every file. Grew out of frustration at getting errors
+        due to lacking dependencies.
       </p>
   </section>
   <hr>
@@ -323,7 +332,7 @@
       The naming of the image paths were prone to error as they were not automatically filled in. 
       Unforeseen changes constantly leading to manual rewriting of code was also quite tiresome. 
       In hindsight it’s clear to see that we should have restricted ourselves with the amount of images to ease our workload. Another issue stemmed from issues of certain operating systems
-      favoring file endings of the type ".JPG", leading to some images not showing up on test else
+      favoring file endings of the type ".JPG", leading to some images not displaying properly.
       where.
     </p>
     <p>
@@ -360,6 +369,70 @@
       It was difficult and frustrating understanding how we got our modular functions to do what we wanted them to – especially when elements that were quite simple to make with HTML and CSS presented themselves as a lot more difficult to implement with Javascript. 
       However, when finally getting the functions to work we understood why the modular scripts are preferable. 
       We put a lot of time and struggle into making the code modular, simple and clean. 
+    </p>
+    <p>
+      Some modularity was planned from the start, other grew out of necessity/frustration, below
+      is a list of steps toward modularity either implemented or discussed:
+      <ul>
+        <li>Navbar and Footer: navbar and footer were part of the original outline for the task,
+          and were one of the first steps towards modularization undertaken.
+        </li>
+        <li>Gallery: the gallery was an obvious next step toward modularization. Many pages
+          options differed only marginally, by some filter/sorting function.
+        </li>
+        <li>Image display: The image display functionality was reused across multiple pages,
+          allowing for a consistent feel and increased ease of implementation.
+        </li>
+        <li>The hambar originally implemented for choosing modes of viewing projects was
+          reused as a men option for mobiles, which small screen makes using standard navbars a
+          hassle.
+        </li>
+        <li>Unquestionably the most important step toward modularity was to implement a datafile
+          emulating json, to more practically stor project information. This made for a very
+          structured project, having most important data located in only one file. This had the
+          effect of making changes being a relatively painless process, as it would seamlessly
+          propagate throughout the project.
+        </li>
+        <li>One step further, that was considered but downprioritized was to gather all the
+          pages in one file, and then let a script load gallery or map based on querystring.
+          We didn't consider it too daunting, however as it offered no real change of
+          it was not implemented.
+        </li>
+        <li>As the project progressed it soon became annoying keeping track of all the scripts
+          being loaded, as such defaults.js came into existence to aleviate the issue. 
+        </li>
+      </ul>
+    </p>
+    <p>
+      As with all good software engineering projects there are going to be issues, such is the
+      nature of the field. As such here are a few of the known ones, and how the group envisioned
+      rectifying them:
+      <ul>
+        <li>Markers in map moving on zoom, as well as showing somewhat inaccurate points:
+          This is likely caused by the markers position not being defined in terms of its point,
+          but rather its upper left corner. As such a step should be taken to redefine marker
+          position relative to its displayed size.
+        </li>
+        <li>Topbar hambar menu in mobile view not applying fixed property properly. CSS, need
+          more be said? A result of it being a somewhat late addition this feature was not quite
+          properly polished.
+        </li>
+        <li>Navbar id naming not consistent between pc and mobile. This was done as separation was
+          needed, but renaming both to be consistent would cause extra work clearing out the CSS.
+        </li>
+        <li>Image overlay should be updated to show more project images. As it is it makes it
+          feel a little empty that there is just a single image per project.
+        </li>
+        <li>Having half a dozen near identical html pages loading gallery with a slightly
+          different argument is a waste. Would likely be rectified via something like querystring
+          handling.
+        </li>
+        <li>There is no search functionality: this would likely be implemented in a two step
+          process: first an exact match search function. This would be rather trivial to match on
+          the data. The second step would be to implement some sort of fuzzy logic, perhaps
+          utilizing manhattan distance as a sorting criteria to deal with "not-exact" matches.
+        </li>
+      </ol>
     </p>
     <p>
       Even distribution of workload was also rather complicated. It was not as simple as assigning the same amount of tasks to everyone in the group. 
