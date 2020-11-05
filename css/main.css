@@ -795,6 +795,16 @@ img.timelineBuildingImage {
     }
 }
 
+@media screen and (max-width: 900px) {
+    #navbar {
+        font-size: 16px;
+    }
+
+    .navbarPages {
+        padding-left: 3%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .box-single {
         flex: 100%;
