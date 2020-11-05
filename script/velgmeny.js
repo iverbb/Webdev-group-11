@@ -1,5 +1,4 @@
 function loadjs(file) {
-    console.log("choosing");
     let script = document.createElement("script");
     script.src = file;
     script.type = "text/javascript";
@@ -8,7 +7,6 @@ function loadjs(file) {
 
 function velgmeny() {
     let viewwidth = window.screen.width;
-    console.log(viewwidth);
     if (viewwidth < 900) {
         loadjs("../script/mobilmeny.js");
 
