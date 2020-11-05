@@ -8,7 +8,7 @@ function buildHambar(destination, tags, name, mobile) {
   console.log("tags: ", tags);
   // create button
   let button = document.createElement("button");
-  button.innerText = name;
+  decorateButton(button, name);
   button.id = destination + "button";
   button.onclick = ((e) => {toggleMenu(e, destination); console.log("click");});
   button.className = "dropbtn";
@@ -32,12 +32,20 @@ function buildHambar(destination, tags, name, mobile) {
 
   // append everything to html
   let target = document.getElementById(destination);
-  if (mobile) {
-    //target.removeChild("navbar");
-    document.getElementById("navbar").style.display = "none";
-    target.prepend(dropdown);
-  } else {
-    target.appendChild(dropdown);
+  target.appendChild(dropdown);
+}
+
+function decorateButton(button, input) {
+  // Trivial regex to see if an image or a name is to be given
+  let isImg = input.match("\.svg|\.jpg|\.jpeg|\.png");
+  console.log("is it valifd?? ", isImg);
+  if (!isImg) {button.innerText = input;}
+  else {
+    button.style.backgroundImage = "url('" + input + "')";
+    button.style.width = "100px";
+    button.style.height = "100px";
+    button.style.backgroundSize = "contain";
+    button.style.backgroundRepeat = "no-repeat";
   }
 }
 

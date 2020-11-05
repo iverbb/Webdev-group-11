@@ -84,7 +84,7 @@ header {
 
 #navbar {
     z-index: 2;
-    overflow: hidden;
+    /* overflow: hidden;*/
     position: fixed; /* so the navbar doesn't change its size when scrolling */
     width: 100%;
     height: 60px;
@@ -425,6 +425,7 @@ h3 {
 .dropdown {
     position: relative;
     display: inline-block;
+    overflow: visible;
 }
 
 /* Dropdown content */
@@ -435,6 +436,7 @@ h3 {
     background-color: #ffffff;
     min-width: 110px;
     z-index: 1;
+    overflow: visible;
     text-align: center;
 }
 
