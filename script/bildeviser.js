@@ -1,3 +1,4 @@
+// Finds a file given its pathname
 function find(fileName) {
     let project = imageLibrary.files.filter(
         (file) => (("../img/" + file.fileName) === fileName))[0];
@@ -5,6 +6,7 @@ function find(fileName) {
     return project;
 }
 
+// Heuristic for determinging completion status for projects
 function status(project) {
     if (project.fileName.match("^ideer")) {
         return "ide";
@@ -21,15 +23,19 @@ function status(project) {
     return "Ide";
 }
 
-function prosjektFelt(navn, verdi) {
-    console.log(verdi);
-    return verdi ? navn + ": " + verdi + "</br>" : "";
+// Creates a templated value field given name and value in json
+// Skips null values
+function projectField(name, value) {
+    //console.log(verdi);
+    return verdi ? name + ": " + value + "</br>" : "";
 }
 
-function prosjektDato(project) {
+// Creates a string representing start and finish year of function
+function projectDate(project) {
     return project.startYear + (project.finishYear ? "-" + project.finishYear : "");
 }
 
+// Creates an informationbox
 function projectDetails(project) {
     let projectText = "";
     [
@@ -39,15 +45,16 @@ function projectDetails(project) {
         {navn: "Program", verdi: project.program},
         {navn: "Sted", verdi: project.location},
         {navn: "Team", verdi: "Bark Arkitekter"},
-        {navn: "År", verdi: prosjektDato(project)},
+        {navn: "År", verdi: projectDate(project)},
     ].forEach((a) => {
-        projectText += prosjektFelt(a.navn, a.verdi);
+        projectText += projectField(a.navn, a.verdi);
     });
     return projectText;
 
 
 }
 
+// Displays image overlay with information
 function on(img) {
     let project = find(img);
     let overlay = document.getElementById("overlay");
@@ -59,10 +66,12 @@ function on(img) {
         = projectDetails(project);
 }
 
+// hides image overlay
 function off() {
     document.getElementById("overlay").style.display = "none";
 }
 
+// displays image in the overlay
 function overlayImage() {
     let projectDisplay = document.createElement("div");
     projectDisplay.id = "displaybox";
