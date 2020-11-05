@@ -11,15 +11,15 @@ function status(project) {
     if (project.fileName.match("^ideer")) {
         return "ide";
     }
-    ;
+
     if (project.finishYear) {
         return "Fullført";
     }
-    ;
+
     if (project.startYear) {
         return "Pågående";
     }
-    ;
+
     return "Ide";
 }
 
@@ -62,8 +62,7 @@ function on(img) {
     overlay.querySelector("img").src = "../img/" + project.fileName;
     overlay.querySelector("#overlaytext").innerText = project.description;
     overlay.querySelector("#overlaytitle").innerText = project.projectName;
-    overlay.querySelector("#overlaydetails").innerHTML
-        = projectDetails(project);
+    overlay.querySelector("#overlaydetails").innerHTML = projectDetails(project);
 }
 
 // hides image overlay
