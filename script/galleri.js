@@ -9,7 +9,7 @@ function createSingleImage(file, boxSingle) {
     let imageSrc = "../img/" + file.fileName;
     let boxImage = document.createElement("img");
     boxImage.className = "box-img";
-    boxImage.alt = "bilde";
+    boxImage.alt = "bilde av " + file.projectName;
     boxImage.src = imageSrc;
     boxImage.onclick = (() => on(imageSrc));
     boxSingle.appendChild(boxImage);
