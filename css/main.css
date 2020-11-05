@@ -82,7 +82,7 @@ header {
     margin-bottom: 150px;
 }
 
-#navbar {
+#navbarPc {
     z-index: 2;
     /* overflow: hidden;*/
     position: fixed; /* so the navbar doesn't change its size when scrolling */
@@ -105,7 +105,7 @@ header {
     margin-bottom: 200px;
 }
 
-#navbar a {
+#navbarPc a {
     color: #1c1c1c; /* assuring that the links don't change color on hover */
 }
 
@@ -796,7 +796,7 @@ img.timelineBuildingImage {
 }
 
 @media screen and (max-width: 900px) {
-    #navbar {
+    #navbarPc {
         font-size: 16px;
     }
 
