@@ -4,7 +4,7 @@ function setFavicon(favImg) {
     setFavicon.setAttribute("rel", "shortcut icon");
     setFavicon.setAttribute("href", favImg);
     headTitle.appendChild(setFavicon);
-} 
+}
 
 setFavicon("../img/B_logo.png")
 

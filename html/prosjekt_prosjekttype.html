@@ -6,74 +6,79 @@
     <link href="../css/main.css" rel="stylesheet"/>
 </head>
 <body onload="onloadShow('prosjekttype')">
+    <header id="hambarheader">
+        <nav id="navbar"></nav>
+    </header>
 
-<header id="hambarheader">
-    <nav id="navbar"></nav>
-</header>
+    <h2>Prosjekttype</h2>
 
-<h2>Prosjekttype</h2>
+    <div id="sortingprojects"></div>
 
-<div id="sortingprojects"></div>
-
-<!-- Creates a gallery structured the same way as the other project pages, but this one has a fixed amount of box-single divs
-so it is coded in HTML rather than in javascript -->
-<div class="box-grid" id="stickyCaption">
-    <div class="box-single">
-        <div>
-            <a href="prosjekt_prosjekttype_naering.html"> <img class="box-img" alt="Næring" src="../img/naering_mellombygget_01.jpg"></a>
+    <!-- Creates a gallery structured the same way as the other project pages, but this one has a fixed amount of box-single divs
+    so it is coded in HTML rather than in javascript -->
+    <div class="box-grid" id="stickyCaption">
+        <div class="box-single">
+            <div>
+                <a href="prosjekt_prosjekttype_naering.html"> <img class="box-img" alt="Næring"
+                                                                   src="../img/naering_mellombygget_01.jpg"></a>
+                <div class="box-caption">
+                    <p>
+                        Næring
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box-single">
+            <a href="prosjekt_prosjekttype_bolig.html"> <img class="box-img" alt="Bolig"
+                                                             src="../img/bolig_grandkvartalet_01.jpg"></a>
             <div class="box-caption">
                 <p>
-                    Næring
+                    Bolig
+                </p>
+            </div>
+        </div>
+        <div class="box-single">
+            <a href="prosjekt_prosjekttype_enebolig.html"> <img class="box-img" alt="Enebolig"
+                                                                src="../img/enebolig_madlavollvegen_01.jpg"></a>
+            <div class="box-caption">
+                <p>
+                    Enebolig
+                </p>
+            </div>
+        </div>
+        <div class="box-single">
+            <a href="prosjekt_prosjekttype_fritidsbolig.html"> <img class="box-img" alt="Fritidsbolig"
+                                                                    src="../img/fritidsbolig_bergtun_01.jpg"></a>
+            <div class="box-caption">
+                <p>
+                    Fritidsbolig
+                </p>
+            </div>
+        </div>
+        <div class="box-single">
+            <a href="prosjekt_prosjekttype_mindrebygg.html"> <img class="box-img" alt="Mindre bygg"
+                                                                  src="../img/mindrebygg_brattaasveien_01.jpg"></a>
+            <div class="box-caption">
+                <p>
+                    Mindre bygg
+                </p>
+            </div>
+        </div>
+        <div class="box-single">
+            <a href="prosjekt_prosjekttype_ideer.html"> <img class="box-img" alt="Ideer"
+                                                             src="../img/ideer_pedersgata_01.jpg"></a>
+            <div class="box-caption">
+                <p>
+                    Ideer
                 </p>
             </div>
         </div>
     </div>
-    <div class="box-single">
-        <a href="prosjekt_prosjekttype_bolig.html"> <img class="box-img" alt="Bolig" src="../img/bolig_grandkvartalet_01.jpg"></a>
-        <div class="box-caption">
-            <p>
-                Bolig
-            </p>
-        </div>
-    </div>
-    <div class="box-single">
-        <a href="prosjekt_prosjekttype_enebolig.html"> <img class="box-img" alt="Enebolig" src="../img/enebolig_madlavollvegen_01.jpg"></a>
-        <div class="box-caption">
-            <p>
-                Enebolig
-            </p>
-        </div>
-    </div>
-    <div class="box-single">
-        <a href="prosjekt_prosjekttype_fritidsbolig.html"> <img class="box-img" alt="Fritidsbolig" src="../img/fritidsbolig_bergtun_01.jpg"></a>
-        <div class="box-caption">
-            <p>
-                Fritidsbolig
-            </p>
-        </div>
-    </div>
-    <div class="box-single">
-        <a href="prosjekt_prosjekttype_mindrebygg.html"> <img class="box-img" alt="Mindre bygg" src="../img/mindrebygg_brattaasveien_01.jpg"></a>
-        <div class="box-caption">
-            <p>
-                Mindre bygg
-            </p>
-        </div>
-    </div>
-    <div class="box-single">
-        <a href="prosjekt_prosjekttype_ideer.html"> <img class="box-img" alt="Ideer" src="../img/ideer_pedersgata_01.jpg"></a>
-        <div class="box-caption">
-            <p>
-                Ideer
-            </p>
-        </div>
-    </div>
-</div>
 
-<script src="../script/prosjektlist.js"></script>
-<script src="../script/sortprojects.js"></script>
-<script src="../script/galleri.js"></script>
-<script src="../script/velgmeny.js" ></script>
-<script src="../script/favicon.js"></script>
+    <script src="../script/prosjektlist.js"></script>
+    <script src="../script/sortprojects.js"></script>
+    <script src="../script/galleri.js"></script>
+    <script src="../script/velgmeny.js"></script>
+    <script src="../script/favicon.js"></script>
 </body>
 </html>

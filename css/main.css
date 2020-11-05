@@ -21,7 +21,6 @@ img {
 /* END styling body etc. */
 
 
-
 /* STYLING TEXT */
 /* Applies to all text on the webpage if not else is specified*/
 
@@ -74,7 +73,6 @@ h2 {
 }
 
 /* END styling text */
-
 
 
 /* STYLING NAVBAR */
@@ -139,7 +137,6 @@ header {
 /* END styling navbar */
 
 
-
 /* FOOTER STYLING */
 
 #stickyFooter {
@@ -167,7 +164,6 @@ li.postSpace {
 }
 
 /* END footer styling */
-
 
 
 /* STYLING OVERLAY */
@@ -206,7 +202,6 @@ li.postSpace {
 }
 
 /* END of styling overlay */
-
 
 
 /* STYLING IMAGE GRID */
@@ -252,7 +247,7 @@ body html {
 }
 
 /* Prosjekttype will display the type of building at all times*/
-#stickyCaption > .box-single .box-caption{
+#stickyCaption > .box-single .box-caption {
     opacity: 1;
 }
 
@@ -280,7 +275,6 @@ body html {
 }
 
 /* END styling image grid */
-
 
 
 /* STYLING HJEM */
@@ -384,7 +378,6 @@ h3 {
 /* END of styling hjem */
 
 
-
 /* STYLING TILBAKE-BUTTON */
 
 .tilbake {
@@ -467,12 +460,11 @@ h3 {
 /* END of styling dropdown menu */
 
 
-
 /* STYLING CONTACT AND PAA_TEGNEBORDET */
 
 /* CSS for paa_tegnebordet */
 
-.boxTegnebordMainImg {      /* box for main img */
+.boxTegnebordMainImg { /* box for main img */
     max-width: 100%;
     object-fit: fill;
 }
@@ -483,7 +475,7 @@ h3 {
     margin: 10px 10px 100px 10px;
 }
 
-.boxTegnebordImg {         /* box for images */
+.boxTegnebordImg { /* box for images */
     clear: both;
     float: right;
     display: flex;
@@ -499,7 +491,7 @@ h3 {
 }
 
 .boxTegnebordMainImg img {
-    object-fit: cover;          /* the image will cover the box for images, responsive */
+    object-fit: cover; /* the image will cover the box for images, responsive */
     width: 100%;
 }
 
@@ -531,7 +523,6 @@ h3 {
 }
 
 /* END of styling contact and paa_tegnebordet */
-
 
 
 /* STYLING OM OSS */
@@ -661,7 +652,6 @@ img.timelineBuildingImage {
 }
 
 /* END of styling om oss */
-
 
 
 /* RESPONSIVE STYLING for different screensizes */

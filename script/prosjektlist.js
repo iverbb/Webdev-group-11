@@ -1,17 +1,18 @@
 hambarOptions =
-  { buttons : [
-    { name : "Prosjekttype", link : "prosjekt_prosjekttype.html" },
-    { name : "Kronologisk",  link : "prosjekt_kronologisk.html" },
-    { name : "Beliggenhet",  link : "prosjekt_beliggenhet.html" }
-  ],
-    pages : [
-      { name : "Kontakt", link: "kontakt.html" },
-      { name: "Om oss", link: "om_oss.html"},
-      { name: "På tegnebordet", link: "paa_tegnebordet.html"},
-      { name: "Prosjekter", link: "prosjekt_prosjekttype.html"},
-      { name: "Hjem", link: "hjem.html"},
-    ]
-  };
+    {
+        buttons: [
+            {name: "Prosjekttype", link: "prosjekt_prosjekttype.html"},
+            {name: "Kronologisk", link: "prosjekt_kronologisk.html"},
+            {name: "Beliggenhet", link: "prosjekt_beliggenhet.html"}
+        ],
+        pages: [
+            {name: "Kontakt", link: "kontakt.html"},
+            {name: "Om oss", link: "om_oss.html"},
+            {name: "På tegnebordet", link: "paa_tegnebordet.html"},
+            {name: "Prosjekter", link: "prosjekt_prosjekttype.html"},
+            {name: "Hjem", link: "hjem.html"},
+        ]
+    };
 
 imageLibrary =
     {
@@ -343,7 +344,7 @@ imageLibrary =
                     finishYear: "2015",
                     type: "naering",
                     location: "Sentrum",
-                    coordinate: {north:58.976564, east:5.720586},
+                    coordinate: {north: 58.976564, east: 5.720586},
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -360,7 +361,7 @@ imageLibrary =
                     finishYear: "2015", //mangler
                     type: "naering",
                     location: "Mosvannet",
-                    coordinate: {north:58.955642, east:5.702335},
+                    coordinate: {north: 58.955642, east: 5.702335},
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -377,7 +378,7 @@ imageLibrary =
                     finishYear: "2015",
                     type: "naering",
                     location: "Mariero",
-                    coordinate: {north:58.938601, east:5.748428},
+                    coordinate: {north: 58.938601, east: 5.748428},
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -445,7 +446,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Storhaug",
-                    coordinate: {north:58.961959, east:5.760958},
+                    coordinate: {north: 58.961959, east: 5.760958},
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -462,7 +463,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Stokka",
-                    coordinate: {north:58.969189, east:5.706609},
+                    coordinate: {north: 58.969189, east: 5.706609},
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -479,7 +480,7 @@ imageLibrary =
                     finishYear: "2016",
                     type: "naering",
                     location: "Tastarustå",
-                    coordinate: {north:58.984365, east:5.688994},
+                    coordinate: {north: 58.984365, east: 5.688994},
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -598,7 +599,7 @@ imageLibrary =
                     finishYear: "2017",
                     type: "naering",
                     location: "Sentrum",
-                    coordinate: {north:58.967429, east:5.726546},
+                    coordinate: {north: 58.967429, east: 5.726546},
                     address: "",
                     projectImages: [
                         "bilde1",
@@ -744,4 +745,4 @@ imageLibrary =
                     ],
                 },
             ]
-    }
+    };

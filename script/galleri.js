@@ -48,17 +48,15 @@ function imageGrid(fileList) {
 //  - positive value otherwise.
 // The elements are sorted in descending.
 function sortByYearDescending(fileList) {
-    let sortedFileListByYearDesc = fileList.sort((a, b) => {
+    return fileList.sort((a, b) => {
         return b.finishYear - a.finishYear;
     });
-    return sortedFileListByYearDesc;
 }
 
 // Filters either on type of building or if chronological it removes the news
 // Then it is sorted chronologically before the list is returned
 function filterByTypeAndSortDesc(sortingParameter) {
     let fileTypeList = imageLibrary.files;
-    console.log("Prosjekttype: ", sortingParameter)
     if (sortingParameter === "kronologisk") {
         fileTypeList = fileTypeList
             .filter((file) => file.type !== "nyhet");
