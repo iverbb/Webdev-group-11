@@ -533,6 +533,7 @@ h3 {
 /* END of styling contact and paa_tegnebordet */
 
 
+
 /* STYLING OM OSS */
 
 hr {
@@ -662,7 +663,8 @@ img.timelineBuildingImage {
 /* END of styling om oss */
 
 
-/* Responsive styling for different screensizes */
+
+/* RESPONSIVE STYLING for different screensizes */
 
 @media screen and (max-width: 5000px) {
     .box-single {
@@ -848,5 +850,6 @@ img.timelineBuildingImage {
     .timelineContainer {
         display: none;
     }
-
 }
+
+/* END responsive styling for different screen sizes */
