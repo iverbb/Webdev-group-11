@@ -123,18 +123,20 @@ function drawPoint(project, i) {
 
 // Create a document fragment to batch add children simultaneously
 // Supposedly increases efficiency
-let docFrag = document.createDocumentFragment();
-let counter = 0;
-imageLibrary.files.forEach((project) =>
-  { if (project.coordinate && onMap(project.coordinate))
-    {
-      let house = drawPoint(project, counter);
-      if (house) {
-        docFrag.appendChild(house);
-        counter++;
+function markMap() {
+  let docFrag = document.createDocumentFragment();
+  let counter = 0;
+  imageLibrary.files.forEach((project) =>
+    { if (project.coordinate && onMap(project.coordinate))
+      {
+        let house = drawPoint(project, counter);
+        if (house) {
+          docFrag.appendChild(house);
+          counter++;
+        }
       }
-    }
-  });
+    });
 
-let myContainer = document.querySelector("#mapContainer");
-myContainer.appendChild(docFrag);
+  let myContainer = document.querySelector("#mapContainer");
+  myContainer.appendChild(docFrag);
+}
