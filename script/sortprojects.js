@@ -51,11 +51,6 @@ function onloadProjectpages(tags) {
 
 
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = ((e) =>
-  {
-    document.getElementById("myDropdown").style.display = "none";
-  });
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleMenu(e, destination) {
@@ -66,6 +61,12 @@ function toggleMenu(e, destination) {
   if (displayStatus != "block") { displayStatus = "block"; }
   else { displayStatus = "none"; }
   document.getElementById(destination + "_dropdown").style.display = displayStatus;
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = ((e) =>
+    {
+      document.getElementById(destination + "_dropdown").style.display = "none";
+    });
 }
 
 
