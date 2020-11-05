@@ -15,9 +15,10 @@ function createSlide(fileNameList, i, slideShowContainer) {
   // Creates image element within mySlides
   let mySlidesImage = document.createElement("img");
   mySlidesImage.setAttribute("class", "mySlides-img");
-  mySlidesImage.setAttribute("alt", "bilde");
+  mySlidesImage.setAttribute("alt", "bilde av " + fileName);
   mySlidesImage.setAttribute("src", "../img/" + fileName);
   mySlides.appendChild(mySlidesImage);
+  console.log("my slides image: ", mySlidesImage);
 
   // Creates a div element for text an title on each slide
   let mySlidesCaption = document.createElement("div");
