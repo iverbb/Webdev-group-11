@@ -126,6 +126,7 @@ function drawPoint(project, i) {
 function markMap() {
   let docFrag = document.createDocumentFragment();
   let counter = 0;
+  console.log(imageLibrary.length);
   imageLibrary.files.forEach((project) =>
     { if (project.coordinate && onMap(project.coordinate))
       {
@@ -140,3 +141,4 @@ function markMap() {
   let myContainer = document.querySelector("#mapContainer");
   myContainer.appendChild(docFrag);
 }
+markMap();

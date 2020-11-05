@@ -84,7 +84,7 @@ header {
 
 #navbarPc {
     z-index: 2;
-    /* overflow: hidden;*/
+    overflow: hidden;
     position: fixed; /* so the navbar doesn't change its size when scrolling */
     width: 100%;
     height: 60px;
