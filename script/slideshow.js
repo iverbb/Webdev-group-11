@@ -49,7 +49,8 @@ function createDot(i, dotContainer) {
     let dotSpan = document.createElement("span");
     dotSpan.setAttribute("class", "dot");
     dotSpan.onclick = function () {
-        switchSlide(i);
+        switchSlide(parseInt(parseInt(i)));
+        console.log("i in dotspan; ",parseInt(i));
     };
     dotContainer.appendChild(dotSpan);
 }
@@ -66,6 +67,8 @@ function slideShowContainer(fileNameList) {
         createDot(i, dotContainer);
     }
 }
+// To keep track of which slide the user will see
+var slideIndex = 0;
 
 // Every time the user switch slides (previous or next button) the slideIndex is either +1 or -1
 function plusSlides(n) {
@@ -77,9 +80,6 @@ function switchSlide(n) {
     carousel(slideIndex = n);
 }
 
-// To keep track of which slide the user will see
-var slideIndex = 1;
-
 // Makes the actual slideshow/carousel.
 // If you get to the end the slideshow will start over.
 // If you go previous from the first slide, you will come to the end of the slideshow.
@@ -87,25 +87,26 @@ var slideIndex = 1;
 // The slides are styled as taken up the full width available and on a new line.
 // The dot is active when the user has selected it
 function carousel(n) {
+    console.log("slideindex +=n: ", n);
     var i;
     let slides = document.getElementsByClassName("mySlide");
-    console.log("Slides: ", slides);
     let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-        slideIndex = 1;
+    if (n === slides.length) {
+        slideIndex = 0;
     }
-    if (n < 1) {
-        slideIndex = slides.length;
+    if (n < 0) {
+        slideIndex = slides.length-1;
     }
+
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    console.log("Slideindex: ", slideIndex);
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    slides[slideIndex].style.display = "block";
+    dots[slideIndex].className += " active";
+    console.log("dots: ", dots);
 }
 
 // Filter on the type "news" in the object imageLibrary and appends the name of the news and description to two
