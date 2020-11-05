@@ -167,40 +167,40 @@
     <h3>Bildeviser.js</h3>
       <p>
         Iver implemented bildeviser.js, a function that shows a larger sized image of a clicked thumbnail, with transparent background, and appropriately scaled images for a given viewport. 
-        It shows basic information about the project, such as project name, a description, start and finish year, type, location and status. 
+        It shows basic information about the project, such as project name, a description, start and finish year, type, location and status.
       </p>
     <h3>Loadingpage.js</h3>
       <p>
-        Parisa implemented loading_page.html, an html with an inline script that displays a dynamic loading animation prior to page load. 
-        This is an implementation displaying a gif playing for 1.9 seconds.  
+        Parisa implemented loading_page.html, an html with an inline script that displays a dynamic loading animation prior to page load.
+        This is an implementation displaying a gif playing for 1.9 seconds.
       </p>
     <h3>Kart.js</h3>
       <p>
         Iver implemented kart.js, an interactive map displaying projects on a map over Stavanger. 
-        Loading location from prosjektlist.js it displays a marker on the map, which on hover expands to a project view. 
+        Loading location from prosjektlist.js it displays a marker on the map, which on hover expands to a project view.
       </p>
     <h3>Mobilmeny.js</h3>
       <p>
-        Iver implemented mobilmeny.js which is a burger menu that replaces the navbar for smaller viewports.  
+        Iver implemented mobilmeny.js which is a burger menu that replaces the navbar for smaller viewports.
       </p>
     <h3>Velgmeny.js</h3>
       <p>
-        Iver implemented velgmeny.js which registers the viewports size and based on this chooses to load either the navigation bar or the hamburger menu.   
+        Iver implemented velgmeny.js which registers the viewports size and based on this chooses to load either the navigation bar or the hamburger menu.
       </p>
     <h3>Enkeltprosjekt.js</h3>
       <p>
-        Iver implemented enkeltprosjekt.js.  
+        Iver implemented enkeltprosjekt.js.
       </p>
     <h3>Favicon.js</h3>
       <p>
-        Vilde implemented a simple script for loading a favicon to all pages. 
-        Favicons could have been added in the head section of all htmls, but with the script it takes less effort if the favicon was to be changed.   
+        Vilde implemented a simple script for loading a favicon to all pages.
+        Favicons could have been added in the head section of all htmls, but with the script it takes less effort if the favicon was to be changed.
       </p>
     <h3>Slideshow.js</h3>
       <p>
-        Hedvig implemented slideshow.js for the newsroom in the home page. 
-        This allows the visitor to be more active when scrolling through the news. 
-        It also allows Bark to publish a larger amount of news as it loads data from prosjektlist.js.    
+        Hedvig implemented slideshow.js for the newsroom in the home page.
+        This allows the visitor to be more active when scrolling through the news.
+        It also allows Bark to publish a larger amount of news as it loads data from prosjektlist.js.
       </p>
   </section>
   <hr>
@@ -268,8 +268,8 @@
         Map.svg - Parisa
       </p>
       <p>
-        As we were working with an architecture firm that wanted a clean website to display their projects, we did not need to produce a large amount of extra design features or artwork. 
-        Instead of creating our own artwork we used Bark’s project sketches and images to add colour to the website.  
+        As we were working with an architecture firm that wanted a clean website to display their projects, we did not need to produce a large amount of extra design features or artwork.
+        Instead of creating our own artwork we used Bark’s project sketches and images to add colour to the website.
       </p>
   </section>
   <hr>
@@ -336,7 +336,19 @@
     <p>
       For the map in “beliggenhet” we had some trouble with it working with the sorting button. 
       Somehow they would not work together. 
-      In addition there were some challenges getting the markers to stay in the right position in the map when the viewport got smaller.
+      In addition there were some challenges getting the markers to stay in the right position
+      in the map when the viewport got smaller. Further difficulties were encountered trying to
+      calculate the correct locations on the map, given that map APIs like google's were not
+      allowed to be used. As a result it was particularly tricky to determine the edges of the
+      map, leading to a need for resorting to using free geolocating tools to approximate by eye.
+      This got particularly egregious when estimating the right edge of the map, given it fell in
+      the middle of the ocean, as such it was calculated by means of function. Furthermore it
+      turned somewhat tricky to make sure this was calculated properly, before markers were to
+      be drawn, in a sense it behaved sort of like a race condition, where if this calculation
+      started before the image was loaded it would not calculate even remotely reasonable
+      x-coordinates for the markers, as they depended on the image width to calculate offset.
+      Further issues also included making markers appear correctly, as hardcoded pixel offsets
+      made for slightly moving coordinates.
     </p>
     <p>
       There were some general troubles with the javascript functions. 
