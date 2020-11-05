@@ -6,6 +6,6 @@ function setFavicon(favImg) {
     headTitle.appendChild(setFavicon);
 }
 
-setFavicon("../img/B_logo.png")
+setFavicon("../img/B_logo.png");
 
 //source: https://spemer.com/articles/set-favicon-with-javascript.html
