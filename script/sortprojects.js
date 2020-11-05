@@ -2,7 +2,7 @@ function buildHambar(destination, tags, name, mobile) {
 
   // create div dropdown
   let dropdown = document.createElement("div");
-  dropdown.className = "dropdown";
+  if (destination === "navbarMobile") { dropdown.className = "mobile-dropdown"; }
   dropdown.style = "float:right";
 
   console.log("tags: ", tags);
@@ -10,12 +10,12 @@ function buildHambar(destination, tags, name, mobile) {
   let button = document.createElement("button");
   decorateButton(button, name);
   button.id = destination + "button";
-  button.onclick = ((e) => {toggleMenu(e, destination); console.log("click");});
+  button.onclick = ((e) => toggleMenu(e, destination));
   button.className = "dropbtn";
 
   // create div2 dropdown content
   let myDropdown = document.createElement("div");
-  myDropdown.className = "dropdown-content";
+  if (destination === "navbarMobile") { myDropdown.className = "mobile-dropdown-content";}
   myDropdown.id = destination + "_dropdown";
 
   tags.forEach
