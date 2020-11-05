@@ -1,8 +1,10 @@
 function buildMobileMenu() {
   let logoRef       = document.createElement("a");
   logoRef.href      = "../html/hjem.html";
+  logoRef.id        = "mobileLogoRef";
 
   let logo          = document.createElement("img");
+  logo.id           = "mobileLogo";
   logo.src          = "../img/logo_correct.png";
   logo.alt          = "../img/logo_correct.png";
   logo.style.height = "80px"; //"100px";

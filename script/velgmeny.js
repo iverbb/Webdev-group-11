@@ -7,7 +7,11 @@ function loadjs(file, name) {
 }
 
 function velgmeny() {
-  let viewwidth = window.innerWidth;
+  let viewwidth
+      =  window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
   console.log("view width: " + viewwidth);
   if (viewwidth < 900) {
     pc.style.display = "none";
