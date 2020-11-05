@@ -7,7 +7,8 @@ function loadjs(file, name) {
 }
 
 function velgmeny() {
-  viewwidth = window.screen.width;
+  let viewwidth = window.innerWidth;
+  console.log("view width: " + viewwidth);
   if (viewwidth < 900) {
     pc.style.display = "none";
     mobile.style.display = "inline-block";
@@ -23,4 +24,5 @@ loadjs("../script/marg.js", "pc");
 let mobile = document.getElementById("navbarMobile");
 let pc = document.getElementById("navbarPc");
 velgmeny();
-document.body.onresize = (() => velgmeny());
+window.addEventListener("resize", velgmeny);
+//window.onresize = (() => velgmeny());
