@@ -2,7 +2,7 @@ function buildHambar(destination, tags, name, mobile) {
 
   // create div dropdown
   let dropdown = document.createElement("div");
-  if (destination === "navbarMobile") { dropdown.className = "mobile-dropdown"; }
+  dropdown.className = ((destination === "navbarMobile") ? "mobile-" : "") + "dropdown";
   dropdown.style = "float:right";
 
   console.log("tags: ", tags);
@@ -15,7 +15,7 @@ function buildHambar(destination, tags, name, mobile) {
 
   // create div2 dropdown content
   let myDropdown = document.createElement("div");
-  if (destination === "navbarMobile") { myDropdown.className = "mobile-dropdown-content";}
+  myDropdown.className = ((destination === "navbarMobile") ? "mobile-" : "") + "dropdown-content";
   myDropdown.id = destination + "_dropdown";
 
   tags.forEach
