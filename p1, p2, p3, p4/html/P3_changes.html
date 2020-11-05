@@ -64,10 +64,11 @@
       </p>
     <h3>Project page</h3>
       <p>
-        To make the image grid of the projects have the most wholesome look, we decided upon using a black and white filter on all images, and having them colored on hover. 
-        We discovered that this was the simplest way to make all images have the same style and harmonize. 
+        To make the image grid of the projects have the most wholesome look, we decided upon using a black and white filter on all images except from "Prosjekttype" page, and having them colored on hover. 
+        We discovered that this was the simplest way to make all filtered image galleries have the same style and harmonize. 
         When hovering the name of the project and the finish year is placed next to each other instead of on each side of the image. 
         This choice was made for simplicity. 
+        We wanted to introduce the user to coloured images on “Prosjekttype” and fixed caption underneath the images to make it stand out as the introductory page the user is introduced to when clicking on the “Prosjekter” button in the navbar . 
       </p>
       <p>
         The hamburger menu from the prototype was replaced with a “Sorter”-button. 
@@ -97,11 +98,11 @@
       <p>
         In the “Om oss” page we have edited the timeline quite a bit. 
         Firstly, it has been made without a javascript as we found it unnecessary. 
-        We could have used javascript for it to be more interactive, possibly giving it a sliding function, but we decided that this was not a vital function and therefore not to be prioritized. 
+        We could have used javascript for the timeline to be more interactive, possibly giving it a sliding function, but we decided that this was not a vital function and therefore not to be prioritized. 
         We could probably have implemented it quite easily, but we didn’t spend time on it.
       </p>
       <p>
-        However, the choice of avoiding to write additional javascript code resulted in the timeline being hidden on smaller viewports due to it looking rather bad, and the readability being rather bad, when made small. 
+        However, the choice of avoiding to write additional javascript code resulted in the timeline being hidden on smaller viewports due to it looking rather bad, and the readability got worse, when made small. 
         The timeline is therefore working as an extra treat for those who visit the website on their desktop or tablet.
       </p>
       <p>
@@ -159,18 +160,19 @@
       <p>
         Hedvig implemented galleri.js, a script that displays project images in a regular grid. 
         It loads image data from prosjektlist.js, filters according to input filter and load images from img/.  
+        The data is loaded mainly from prosjektlist.js for modularity and where it was convenient to do so. 
       </p>
     <br>
     <h2>Additonal functions</h2>
     <h3>Bildeviser.js</h3>
       <p>
-        Iver implemented bildeviser.js, a function that shows a larger sized image of a clicked thumbnail, with blurred/transparent background, and appropriately scaled images for a given viewport. 
+        Iver implemented bildeviser.js, a function that shows a larger sized image of a clicked thumbnail, with transparent background, and appropriately scaled images for a given viewport. 
         It shows basic information about the project, such as project name, a description, start and finish year, type, location and status. 
       </p>
     <h3>Loadingpage.js</h3>
       <p>
         Parisa implemented loading_page.html, an html with an inline script that displays a dynamic loading animation prior to page load. 
-        This is an implementation displaying a gif playing for 3.8 seconds.  
+        This is an implementation displaying a gif playing for 1.9 seconds.  
       </p>
     <h3>Kart.js</h3>
       <p>
@@ -198,7 +200,7 @@
       <p>
         Hedvig implemented slideshow.js for the newsroom in the home page. 
         This allows the visitor to be more active when scrolling through the news. 
-        It also allows Bark to publish a larger amount of news.    
+        It also allows Bark to publish a larger amount of news as it loads data from prosjektlist.js.    
       </p>
   </section>
   <hr>
@@ -267,7 +269,7 @@
       </p>
       <p>
         As we were working with an architecture firm that wanted a clean website to display their projects, we did not need to produce a large amount of extra design features or artwork. 
-        Instead of creating our own artwork we used Bark’s project sketches to add colour to the website.  
+        Instead of creating our own artwork we used Bark’s project sketches and images to add colour to the website.  
       </p>
   </section>
   <hr>
@@ -294,7 +296,7 @@
   <section>
     <h2>Challenges when developing the website</h2>
     <p>
-      As our ambitions for the website were rather high, we needless to say met some challenges along the way.   
+      As our ambitions for the website were rather high, it is needless to say that we met some challenges along the way.   
     </p>
     <p>
       As we were making a website displaying an architecture firm’s projects, we needed to upload a great load of images to our git. 
@@ -302,6 +304,7 @@
       The images took up a lot of space and we therefore explored the opportunity of storing the images in our drive, and having a function fetch them from the external repository. 
       However, as we had already uploaded the images to our git, the images were saved in the git’s history and took up space even when deleted. 
       We therefore chose to continue with the internal image repository, but limiting the amount of images for each project. 
+      n the end, the goal is to show how the projects are filtered by using a selection of images, which is what we have implemented.
     </p>
     <p>
       Because of the big amount of large images, the website is also loading quite slowly, which can be both frustrating and confusing for the user. 
@@ -323,7 +326,7 @@
     <p>
       In “Kontakt” we wanted to add a link to the office position in google maps through the image. 
       When giving the image a link, the layout of the page was broken. 
-      This would be something we could spend time on troubleshooting if we had had the time. 
+      This would be something we could spend time on troubleshooting if we had the time. 
     </p>
     <p>
       For the map in “beliggenhet” we had some trouble with it working with the sorting button. 
@@ -335,9 +338,9 @@
       We found it somewhat difficult to understand the possibilities with using javascript. 
       With HTML and CSS it was a lot easier to understand the different actions, as we could constantly get visual feedback on what we were doing. 
       The aspect of modularity also offered some challenges. 
-      It was rather difficult and frustrating understanding how we got our modular functions to do what we wanted them to – especially when elements that were quite simple to make with HTML and CSS presented themselves as a lot more difficult to implement with Javascript. 
+      It was difficult and frustrating understanding how we got our modular functions to do what we wanted them to – especially when elements that were quite simple to make with HTML and CSS presented themselves as a lot more difficult to implement with Javascript. 
       However, when finally getting the functions to work we understood why the modular scripts are preferable. 
-      There was put a lot of time and struggle into making the code modular, simple and clean. 
+      We put a lot of time and struggle into making the code modular, simple and clean. 
     </p>
     <p>
       Even distribution of workload was also rather complicated. It was not as simple as assigning the same amount of tasks to everyone in the group. 
