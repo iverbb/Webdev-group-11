@@ -19,13 +19,8 @@ section {
 }
 
 hr {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 30%;
-    margin-right: 10%;
-    border: 0.1px;
-    border-style: solid;
-    border-color: lightgray;
+    margin: 50px 10% 50px 30%;
+    border: 0.1px solid lightgray;
 }
 
 p, ul {
