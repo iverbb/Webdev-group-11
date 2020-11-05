@@ -134,7 +134,27 @@ header {
     margin-left: 5%;
 }
 
+/* mobile navbar */
+
+
+#navbarMobile {
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    header {
+        margin-bottom: 30px;
+    } 
+
+}
+
+
 /* END styling navbar */
+
+
 
 
 /* FOOTER STYLING */

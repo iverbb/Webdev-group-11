@@ -42,8 +42,8 @@ function decorateButton(button, input) {
   if (!isImg) {button.innerText = input;}
   else {
     button.style.backgroundImage = "url('" + input + "')";
-    button.style.width = "100px";
-    button.style.height = "100px";
+    button.style.width = "30px";
+    button.style.height = "30px";
     button.style.backgroundSize = "contain";
     button.style.backgroundRepeat = "no-repeat";
   }
